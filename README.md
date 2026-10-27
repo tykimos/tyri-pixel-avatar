@@ -70,7 +70,7 @@ Attribution: **Tyri Pixel Avatar by Taeyoung Kim (tykimos)**.
 
 ## Multilingual greeting review
 
-These silent GIFs show the **current, unmodified sprites** in all nine directions.
+These silent GIFs show the **repaired v5 sprites** in all nine directions.
 Mouth timing is manually approximated from phonetic sequences, not generated from
 TTS or aligned to recorded speech. English reads “Hi, I’m Tyri. Nice to meet you!”;
 Japanese reads “こんにちは、タイリだよ。よろしくね。” Korean reads “안녕, 난 타이리야, 반가워”.
@@ -86,7 +86,22 @@ Japanese reads “こんにちは、タイリだよ。よろしくね。” Kore
 ### 日本語
 ![Japanese greeting](previews/greeting_ja_9directions.gif)
 
-The dark, angular outlines of several mouth shapes stand out at this resolution.
-These previews are for reviewing that issue; they do not claim a mouth-art repair.
+Revision v5 aligns mouths to face landmarks, shrinks down-view mouths, restricts
+mouth pixels to interior skin, and reinforces gold eyeglass rims at native resolution.
 See `previews/timing_and_checks.json` for manual cues and GIF decode checks.
 Regenerate with `python make_review_previews.py --font /path/to/CJK-font.otf` (Pillow required).
+
+
+## Mouth and glasses repair (v5)
+
+![Repaired nine-direction faces](previews/repaired_9directions.png)
+
+- Mouth anchors follow the face/glasses axis rather than the head image box.
+- Down-view mouths are smaller; mouth pixels are constrained to interior skin.
+- Gold lens rims and bridges are reinforced on the 64px pixel grid for every pose.
+- Opposite side poses use mirrored matching heads. View angles remain stylized and approximate.
+- All 324 frames and greeting GIFs have been regenerated. `repair_sprites.py`
+  reproduces the atlas from `sources/glasses_head_sheet.png` and `mouths/`.
+- `previews/mouth_boundary_checks.json` records clipping per frame; clipping is
+  intentional to keep lips inside the face. These checks do not measure perceived
+  likeness, pose accuracy, or real-audio lip synchronization.

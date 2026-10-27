@@ -1981,41 +1981,134 @@
   },
   "mouth_anchors": {
     "up_left": [
-      23,
-      42
+      25,
+      43
     ],
     "up": [
-      32,
-      42
+      25,
+      43
     ],
     "up_right": [
-      41,
-      39
+      38,
+      43
     ],
     "left": [
       22,
-      44
+      43
     ],
     "front": [
-      32,
+      31,
       43
     ],
     "right": [
       41,
-      42
+      43
     ],
     "down_left": [
       23,
-      45
+      43
     ],
     "down": [
-      32,
-      47
+      31,
+      45
     ],
     "down_right": [
-      42,
-      47
+      40,
+      43
     ]
   },
-  "direction_mouth_projection": "horizontal compression approximation"
+  "direction_mouth_projection": "horizontal compression; down-view mouths also reduced vertically",
+  "revision": "aligned-mouths-visible-glasses-v5",
+  "eye_centers": {
+    "up_left": [
+      [
+        18,
+        34
+      ],
+      [
+        32,
+        36
+      ]
+    ],
+    "up": [
+      [
+        18,
+        34
+      ],
+      [
+        32,
+        35
+      ]
+    ],
+    "up_right": [
+      [
+        31,
+        36
+      ],
+      [
+        45,
+        34
+      ]
+    ],
+    "left": [
+      [
+        15,
+        34
+      ],
+      [
+        29,
+        36
+      ]
+    ],
+    "front": [
+      [
+        22,
+        35
+      ],
+      [
+        40,
+        35
+      ]
+    ],
+    "right": [
+      [
+        34,
+        36
+      ],
+      [
+        48,
+        34
+      ]
+    ],
+    "down_left": [
+      [
+        16,
+        35
+      ],
+      [
+        30,
+        38
+      ]
+    ],
+    "down": [
+      [
+        22,
+        37
+      ],
+      [
+        40,
+        37
+      ]
+    ],
+    "down_right": [
+      [
+        33,
+        38
+      ],
+      [
+        47,
+        35
+      ]
+    ]
+  }
 }
