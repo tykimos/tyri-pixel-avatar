@@ -25,8 +25,12 @@ All files are covered by the repository's personal/noncommercial research licens
 
 The UP pose now uses a dedicated frontal, upward-pitched source with centered nose, glasses and mouth landmarks. Other eight directions are unchanged. See `up_before_after.png`. The pitch is stylized, not a calibrated 3D angle.
 
-## Emotions and winks
+## Emotions and winks v2
 
-`emotions_contact.png`: 10 frontal expression examples.
-`emotions_9directions.gif`: all expressions across nine directions with test mouth movements.
-`winks_9directions.gif`: both anatomical wink sides. All GIFs are silent.
+- `emotions_contact.png`: 24 expressions, frontal view.
+- `happy_9directions.png`: closed smiling eyes correctly fitted in all nine directions.
+- `emotions_9directions.gif`: 24 expressions in all directions with speech-mouth tests.
+- `winks_9directions.gif`: anatomical left/right winks.
+
+The lens interiors are fully cleared before drawing, preventing leftover irises.
+These GIFs are silent and use manual timing.
