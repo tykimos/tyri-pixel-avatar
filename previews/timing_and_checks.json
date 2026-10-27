@@ -1,0 +1,416 @@
+{
+  "timing": "manual phonetic approximation; no audio or forced alignment",
+  "languages": {
+    "ko": {
+      "caption": "안녕, 난 타이리야, 반가워",
+      "duration_ms": 4510,
+      "frames": 25,
+      "timeline": [
+        {
+          "end_ms": 450,
+          "viseme": "REST",
+          "phrase": ""
+        },
+        {
+          "end_ms": 610,
+          "viseme": "AA",
+          "phrase": "안녕"
+        },
+        {
+          "end_ms": 710,
+          "viseme": "L",
+          "phrase": "안녕"
+        },
+        {
+          "end_ms": 860,
+          "viseme": "EH",
+          "phrase": "안녕"
+        },
+        {
+          "end_ms": 1070,
+          "viseme": "NEUTRAL",
+          "phrase": "안녕"
+        },
+        {
+          "end_ms": 1330,
+          "viseme": "REST",
+          "phrase": "안녕"
+        },
+        {
+          "end_ms": 1420,
+          "viseme": "L",
+          "phrase": "난 타이리야"
+        },
+        {
+          "end_ms": 1560,
+          "viseme": "AA",
+          "phrase": "난 타이리야"
+        },
+        {
+          "end_ms": 1640,
+          "viseme": "L",
+          "phrase": "난 타이리야"
+        },
+        {
+          "end_ms": 1720,
+          "viseme": "L",
+          "phrase": "난 타이리야"
+        },
+        {
+          "end_ms": 1860,
+          "viseme": "AA",
+          "phrase": "난 타이리야"
+        },
+        {
+          "end_ms": 2000,
+          "viseme": "EE",
+          "phrase": "난 타이리야"
+        },
+        {
+          "end_ms": 2090,
+          "viseme": "L",
+          "phrase": "난 타이리야"
+        },
+        {
+          "end_ms": 2240,
+          "viseme": "EE",
+          "phrase": "난 타이리야"
+        },
+        {
+          "end_ms": 2430,
+          "viseme": "AA",
+          "phrase": "난 타이리야"
+        },
+        {
+          "end_ms": 2690,
+          "viseme": "REST",
+          "phrase": "난 타이리야"
+        },
+        {
+          "end_ms": 2780,
+          "viseme": "MBP",
+          "phrase": "반가워"
+        },
+        {
+          "end_ms": 2940,
+          "viseme": "AA",
+          "phrase": "반가워"
+        },
+        {
+          "end_ms": 3020,
+          "viseme": "L",
+          "phrase": "반가워"
+        },
+        {
+          "end_ms": 3200,
+          "viseme": "AA",
+          "phrase": "반가워"
+        },
+        {
+          "end_ms": 3330,
+          "viseme": "OO",
+          "phrase": "반가워"
+        },
+        {
+          "end_ms": 3550,
+          "viseme": "NEUTRAL",
+          "phrase": "반가워"
+        },
+        {
+          "end_ms": 3810,
+          "viseme": "REST",
+          "phrase": "반가워"
+        },
+        {
+          "end_ms": 4510,
+          "viseme": "REST",
+          "phrase": ""
+        }
+      ]
+    },
+    "en": {
+      "caption": "Hi, I’m Tyri. Nice to meet you!",
+      "duration_ms": 4630,
+      "frames": 30,
+      "timeline": [
+        {
+          "end_ms": 450,
+          "viseme": "REST",
+          "phrase": ""
+        },
+        {
+          "end_ms": 650,
+          "viseme": "AA",
+          "phrase": "Hi"
+        },
+        {
+          "end_ms": 830,
+          "viseme": "EE",
+          "phrase": "Hi"
+        },
+        {
+          "end_ms": 1090,
+          "viseme": "REST",
+          "phrase": "Hi"
+        },
+        {
+          "end_ms": 1220,
+          "viseme": "AA",
+          "phrase": "I’m Tyri"
+        },
+        {
+          "end_ms": 1340,
+          "viseme": "EE",
+          "phrase": "I’m Tyri"
+        },
+        {
+          "end_ms": 1440,
+          "viseme": "MBP",
+          "phrase": "I’m Tyri"
+        },
+        {
+          "end_ms": 1520,
+          "viseme": "L",
+          "phrase": "I’m Tyri"
+        },
+        {
+          "end_ms": 1690,
+          "viseme": "AA",
+          "phrase": "I’m Tyri"
+        },
+        {
+          "end_ms": 1830,
+          "viseme": "EE",
+          "phrase": "I’m Tyri"
+        },
+        {
+          "end_ms": 1940,
+          "viseme": "RSH",
+          "phrase": "I’m Tyri"
+        },
+        {
+          "end_ms": 2110,
+          "viseme": "EE",
+          "phrase": "I’m Tyri"
+        },
+        {
+          "end_ms": 2370,
+          "viseme": "REST",
+          "phrase": "I’m Tyri"
+        },
+        {
+          "end_ms": 2440,
+          "viseme": "L",
+          "phrase": "Nice to meet you"
+        },
+        {
+          "end_ms": 2580,
+          "viseme": "AA",
+          "phrase": "Nice to meet you"
+        },
+        {
+          "end_ms": 2710,
+          "viseme": "EE",
+          "phrase": "Nice to meet you"
+        },
+        {
+          "end_ms": 2800,
+          "viseme": "RSH",
+          "phrase": "Nice to meet you"
+        },
+        {
+          "end_ms": 2880,
+          "viseme": "L",
+          "phrase": "Nice to meet you"
+        },
+        {
+          "end_ms": 3020,
+          "viseme": "OO",
+          "phrase": "Nice to meet you"
+        },
+        {
+          "end_ms": 3120,
+          "viseme": "MBP",
+          "phrase": "Nice to meet you"
+        },
+        {
+          "end_ms": 3290,
+          "viseme": "EE",
+          "phrase": "Nice to meet you"
+        },
+        {
+          "end_ms": 3360,
+          "viseme": "L",
+          "phrase": "Nice to meet you"
+        },
+        {
+          "end_ms": 3460,
+          "viseme": "RSH",
+          "phrase": "Nice to meet you"
+        },
+        {
+          "end_ms": 3670,
+          "viseme": "OO",
+          "phrase": "Nice to meet you"
+        },
+        {
+          "end_ms": 3930,
+          "viseme": "REST",
+          "phrase": "Nice to meet you"
+        },
+        {
+          "end_ms": 4630,
+          "viseme": "REST",
+          "phrase": ""
+        }
+      ]
+    },
+    "ja": {
+      "caption": "こんにちは、タイリだよ。よろしくね。",
+      "duration_ms": 4740,
+      "frames": 30,
+      "timeline": [
+        {
+          "end_ms": 450,
+          "viseme": "REST",
+          "phrase": ""
+        },
+        {
+          "end_ms": 590,
+          "viseme": "OH",
+          "phrase": "こんにちは"
+        },
+        {
+          "end_ms": 670,
+          "viseme": "L",
+          "phrase": "こんにちは"
+        },
+        {
+          "end_ms": 760,
+          "viseme": "L",
+          "phrase": "こんにちは"
+        },
+        {
+          "end_ms": 910,
+          "viseme": "EE",
+          "phrase": "こんにちは"
+        },
+        {
+          "end_ms": 1010,
+          "viseme": "RSH",
+          "phrase": "こんにちは"
+        },
+        {
+          "end_ms": 1110,
+          "viseme": "EE",
+          "phrase": "こんにちは"
+        },
+        {
+          "end_ms": 1300,
+          "viseme": "AA",
+          "phrase": "こんにちは"
+        },
+        {
+          "end_ms": 1560,
+          "viseme": "REST",
+          "phrase": "こんにちは"
+        },
+        {
+          "end_ms": 1630,
+          "viseme": "L",
+          "phrase": "タイリだよ"
+        },
+        {
+          "end_ms": 1770,
+          "viseme": "AA",
+          "phrase": "タイリだよ"
+        },
+        {
+          "end_ms": 1900,
+          "viseme": "EE",
+          "phrase": "タイリだよ"
+        },
+        {
+          "end_ms": 1980,
+          "viseme": "L",
+          "phrase": "タイリだよ"
+        },
+        {
+          "end_ms": 2120,
+          "viseme": "EE",
+          "phrase": "タイリだよ"
+        },
+        {
+          "end_ms": 2190,
+          "viseme": "L",
+          "phrase": "タイリだよ"
+        },
+        {
+          "end_ms": 2330,
+          "viseme": "AA",
+          "phrase": "タイリだよ"
+        },
+        {
+          "end_ms": 2530,
+          "viseme": "OH",
+          "phrase": "タイリだよ"
+        },
+        {
+          "end_ms": 2790,
+          "viseme": "REST",
+          "phrase": "タイリだよ"
+        },
+        {
+          "end_ms": 2930,
+          "viseme": "OH",
+          "phrase": "よろしくね"
+        },
+        {
+          "end_ms": 3010,
+          "viseme": "L",
+          "phrase": "よろしくね"
+        },
+        {
+          "end_ms": 3150,
+          "viseme": "OH",
+          "phrase": "よろしくね"
+        },
+        {
+          "end_ms": 3250,
+          "viseme": "RSH",
+          "phrase": "よろしくね"
+        },
+        {
+          "end_ms": 3360,
+          "viseme": "EE",
+          "phrase": "よろしくね"
+        },
+        {
+          "end_ms": 3490,
+          "viseme": "OO",
+          "phrase": "よろしくね"
+        },
+        {
+          "end_ms": 3580,
+          "viseme": "L",
+          "phrase": "よろしくね"
+        },
+        {
+          "end_ms": 3780,
+          "viseme": "EH",
+          "phrase": "よろしくね"
+        },
+        {
+          "end_ms": 4040,
+          "viseme": "REST",
+          "phrase": "よろしくね"
+        },
+        {
+          "end_ms": 4740,
+          "viseme": "REST",
+          "phrase": ""
+        }
+      ]
+    }
+  }
+}

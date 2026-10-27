@@ -66,3 +66,27 @@ been validated. GIF previews are silent.
 소스 공개 프로젝트이며, OSI 기준의 오픈소스 라이선스는 아닙니다.
 
 Attribution: **Tyri Pixel Avatar by Taeyoung Kim (tykimos)**.
+
+
+## Multilingual greeting review
+
+These silent GIFs show the **current, unmodified sprites** in all nine directions.
+Mouth timing is manually approximated from phonetic sequences, not generated from
+TTS or aligned to recorded speech. English reads “Hi, I’m Tyri. Nice to meet you!”;
+Japanese reads “こんにちは、タイリだよ。よろしくね。” Korean reads “안녕, 난 타이리야, 반가워”.
+
+![Entire 324-frame sheet, reduced](previews/full_sheet_small.png)
+
+### 한국어
+![Korean greeting](previews/greeting_ko_9directions.gif)
+
+### English
+![English greeting](previews/greeting_en_9directions.gif)
+
+### 日本語
+![Japanese greeting](previews/greeting_ja_9directions.gif)
+
+The dark, angular outlines of several mouth shapes stand out at this resolution.
+These previews are for reviewing that issue; they do not claim a mouth-art repair.
+See `previews/timing_and_checks.json` for manual cues and GIF decode checks.
+Regenerate with `python make_review_previews.py --font /path/to/CJK-font.otf` (Pillow required).
