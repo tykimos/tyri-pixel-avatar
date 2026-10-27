@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "gestures": 12,
   "variants": 37,
   "frame_slots": 148,
@@ -7,6 +7,8 @@
   "alpha_binary": true,
   "shared_palette_colors": 12,
   "canvas_bounds_valid": true,
+  "wrist_pivot_fixed": true,
+  "virtual_arm_rig": true,
   "single_hand_max_size": [
     12,
     16
