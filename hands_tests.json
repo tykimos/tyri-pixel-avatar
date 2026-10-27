@@ -1,0 +1,9 @@
+{
+  "gestures": 12,
+  "frames": 48,
+  "directions": 9,
+  "compositions_checked": 432,
+  "alpha_binary": true,
+  "canvas_bounds_valid": true,
+  "perspective_note": "Screen-facing hands, not 9 independently drawn hand perspectives."
+}

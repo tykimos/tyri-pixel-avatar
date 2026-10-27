@@ -1,0 +1,907 @@
+{
+  "version": 1,
+  "atlas": "hands_atlas.png",
+  "frame_size": [
+    32,
+    32
+  ],
+  "duration_ms": 150,
+  "canvas_size": [
+    96,
+    96
+  ],
+  "face_offset": [
+    16,
+    8
+  ],
+  "layer": "foreground",
+  "gestures": {
+    "wave": {
+      "label_ko": "손흔들기",
+      "frames": [
+        [
+          0,
+          0,
+          32,
+          32
+        ],
+        [
+          32,
+          0,
+          32,
+          32
+        ],
+        [
+          64,
+          0,
+          32,
+          32
+        ],
+        [
+          96,
+          0,
+          32,
+          32
+        ]
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "loop": true
+    },
+    "write": {
+      "label_ko": "글씨 쓰기",
+      "frames": [
+        [
+          0,
+          32,
+          32,
+          32
+        ],
+        [
+          32,
+          32,
+          32,
+          32
+        ],
+        [
+          64,
+          32,
+          32,
+          32
+        ],
+        [
+          96,
+          32,
+          32,
+          32
+        ]
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "loop": true
+    },
+    "peace": {
+      "label_ko": "V",
+      "frames": [
+        [
+          0,
+          64,
+          32,
+          32
+        ],
+        [
+          32,
+          64,
+          32,
+          32
+        ],
+        [
+          64,
+          64,
+          32,
+          32
+        ],
+        [
+          96,
+          64,
+          32,
+          32
+        ]
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "loop": true
+    },
+    "shush": {
+      "label_ko": "쉿",
+      "frames": [
+        [
+          0,
+          96,
+          32,
+          32
+        ],
+        [
+          32,
+          96,
+          32,
+          32
+        ],
+        [
+          64,
+          96,
+          32,
+          32
+        ],
+        [
+          96,
+          96,
+          32,
+          32
+        ]
+      ],
+      "anchor": [
+        16,
+        3
+      ],
+      "loop": true
+    },
+    "heart": {
+      "label_ko": "양손 하트",
+      "frames": [
+        [
+          0,
+          128,
+          32,
+          32
+        ],
+        [
+          32,
+          128,
+          32,
+          32
+        ],
+        [
+          64,
+          128,
+          32,
+          32
+        ],
+        [
+          96,
+          128,
+          32,
+          32
+        ]
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "loop": true
+    },
+    "finger_heart": {
+      "label_ko": "손가락 하트",
+      "frames": [
+        [
+          0,
+          160,
+          32,
+          32
+        ],
+        [
+          32,
+          160,
+          32,
+          32
+        ],
+        [
+          64,
+          160,
+          32,
+          32
+        ],
+        [
+          96,
+          160,
+          32,
+          32
+        ]
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "loop": true
+    },
+    "thumbs_up": {
+      "label_ko": "최고",
+      "frames": [
+        [
+          0,
+          192,
+          32,
+          32
+        ],
+        [
+          32,
+          192,
+          32,
+          32
+        ],
+        [
+          64,
+          192,
+          32,
+          32
+        ],
+        [
+          96,
+          192,
+          32,
+          32
+        ]
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "loop": true
+    },
+    "ok": {
+      "label_ko": "OK",
+      "frames": [
+        [
+          0,
+          224,
+          32,
+          32
+        ],
+        [
+          32,
+          224,
+          32,
+          32
+        ],
+        [
+          64,
+          224,
+          32,
+          32
+        ],
+        [
+          96,
+          224,
+          32,
+          32
+        ]
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "loop": true
+    },
+    "point": {
+      "label_ko": "가리키기",
+      "frames": [
+        [
+          0,
+          256,
+          32,
+          32
+        ],
+        [
+          32,
+          256,
+          32,
+          32
+        ],
+        [
+          64,
+          256,
+          32,
+          32
+        ],
+        [
+          96,
+          256,
+          32,
+          32
+        ]
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "loop": true
+    },
+    "clap": {
+      "label_ko": "박수",
+      "frames": [
+        [
+          0,
+          288,
+          32,
+          32
+        ],
+        [
+          32,
+          288,
+          32,
+          32
+        ],
+        [
+          64,
+          288,
+          32,
+          32
+        ],
+        [
+          96,
+          288,
+          32,
+          32
+        ]
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "loop": true
+    },
+    "thanks": {
+      "label_ko": "감사",
+      "frames": [
+        [
+          0,
+          320,
+          32,
+          32
+        ],
+        [
+          32,
+          320,
+          32,
+          32
+        ],
+        [
+          64,
+          320,
+          32,
+          32
+        ],
+        [
+          96,
+          320,
+          32,
+          32
+        ]
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "loop": true
+    },
+    "cheer": {
+      "label_ko": "응원",
+      "frames": [
+        [
+          0,
+          352,
+          32,
+          32
+        ],
+        [
+          32,
+          352,
+          32,
+          32
+        ],
+        [
+          64,
+          352,
+          32,
+          32
+        ],
+        [
+          96,
+          352,
+          32,
+          32
+        ]
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "loop": true
+    }
+  },
+  "directions": {
+    "up_left": {
+      "positions": {
+        "wave": [
+          20,
+          54
+        ],
+        "write": [
+          48,
+          72
+        ],
+        "peace": [
+          20,
+          54
+        ],
+        "shush": [
+          41,
+          49
+        ],
+        "heart": [
+          48,
+          72
+        ],
+        "finger_heart": [
+          20,
+          54
+        ],
+        "thumbs_up": [
+          20,
+          54
+        ],
+        "ok": [
+          20,
+          54
+        ],
+        "point": [
+          20,
+          54
+        ],
+        "clap": [
+          48,
+          72
+        ],
+        "thanks": [
+          48,
+          72
+        ],
+        "cheer": [
+          20,
+          54
+        ]
+      },
+      "projection": "screen-facing hand; direction-specific placement"
+    },
+    "up": {
+      "positions": {
+        "wave": [
+          76,
+          54
+        ],
+        "write": [
+          48,
+          72
+        ],
+        "peace": [
+          76,
+          54
+        ],
+        "shush": [
+          47,
+          48
+        ],
+        "heart": [
+          48,
+          72
+        ],
+        "finger_heart": [
+          76,
+          54
+        ],
+        "thumbs_up": [
+          76,
+          54
+        ],
+        "ok": [
+          76,
+          54
+        ],
+        "point": [
+          76,
+          54
+        ],
+        "clap": [
+          48,
+          72
+        ],
+        "thanks": [
+          48,
+          72
+        ],
+        "cheer": [
+          76,
+          54
+        ]
+      },
+      "projection": "screen-facing hand; direction-specific placement"
+    },
+    "up_right": {
+      "positions": {
+        "wave": [
+          76,
+          54
+        ],
+        "write": [
+          48,
+          72
+        ],
+        "peace": [
+          76,
+          54
+        ],
+        "shush": [
+          54,
+          49
+        ],
+        "heart": [
+          48,
+          72
+        ],
+        "finger_heart": [
+          76,
+          54
+        ],
+        "thumbs_up": [
+          76,
+          54
+        ],
+        "ok": [
+          76,
+          54
+        ],
+        "point": [
+          76,
+          54
+        ],
+        "clap": [
+          48,
+          72
+        ],
+        "thanks": [
+          48,
+          72
+        ],
+        "cheer": [
+          76,
+          54
+        ]
+      },
+      "projection": "screen-facing hand; direction-specific placement"
+    },
+    "left": {
+      "positions": {
+        "wave": [
+          20,
+          54
+        ],
+        "write": [
+          48,
+          72
+        ],
+        "peace": [
+          20,
+          54
+        ],
+        "shush": [
+          38,
+          49
+        ],
+        "heart": [
+          48,
+          72
+        ],
+        "finger_heart": [
+          20,
+          54
+        ],
+        "thumbs_up": [
+          20,
+          54
+        ],
+        "ok": [
+          20,
+          54
+        ],
+        "point": [
+          20,
+          54
+        ],
+        "clap": [
+          48,
+          72
+        ],
+        "thanks": [
+          48,
+          72
+        ],
+        "cheer": [
+          20,
+          54
+        ]
+      },
+      "projection": "screen-facing hand; direction-specific placement"
+    },
+    "front": {
+      "positions": {
+        "wave": [
+          76,
+          54
+        ],
+        "write": [
+          48,
+          72
+        ],
+        "peace": [
+          76,
+          54
+        ],
+        "shush": [
+          47,
+          49
+        ],
+        "heart": [
+          48,
+          72
+        ],
+        "finger_heart": [
+          76,
+          54
+        ],
+        "thumbs_up": [
+          76,
+          54
+        ],
+        "ok": [
+          76,
+          54
+        ],
+        "point": [
+          76,
+          54
+        ],
+        "clap": [
+          48,
+          72
+        ],
+        "thanks": [
+          48,
+          72
+        ],
+        "cheer": [
+          76,
+          54
+        ]
+      },
+      "projection": "screen-facing hand; direction-specific placement"
+    },
+    "right": {
+      "positions": {
+        "wave": [
+          76,
+          54
+        ],
+        "write": [
+          48,
+          72
+        ],
+        "peace": [
+          76,
+          54
+        ],
+        "shush": [
+          57,
+          49
+        ],
+        "heart": [
+          48,
+          72
+        ],
+        "finger_heart": [
+          76,
+          54
+        ],
+        "thumbs_up": [
+          76,
+          54
+        ],
+        "ok": [
+          76,
+          54
+        ],
+        "point": [
+          76,
+          54
+        ],
+        "clap": [
+          48,
+          72
+        ],
+        "thanks": [
+          48,
+          72
+        ],
+        "cheer": [
+          76,
+          54
+        ]
+      },
+      "projection": "screen-facing hand; direction-specific placement"
+    },
+    "down_left": {
+      "positions": {
+        "wave": [
+          20,
+          54
+        ],
+        "write": [
+          48,
+          72
+        ],
+        "peace": [
+          20,
+          54
+        ],
+        "shush": [
+          39,
+          49
+        ],
+        "heart": [
+          48,
+          72
+        ],
+        "finger_heart": [
+          20,
+          54
+        ],
+        "thumbs_up": [
+          20,
+          54
+        ],
+        "ok": [
+          20,
+          54
+        ],
+        "point": [
+          20,
+          54
+        ],
+        "clap": [
+          48,
+          72
+        ],
+        "thanks": [
+          48,
+          72
+        ],
+        "cheer": [
+          20,
+          54
+        ]
+      },
+      "projection": "screen-facing hand; direction-specific placement"
+    },
+    "down": {
+      "positions": {
+        "wave": [
+          76,
+          54
+        ],
+        "write": [
+          48,
+          72
+        ],
+        "peace": [
+          76,
+          54
+        ],
+        "shush": [
+          47,
+          51
+        ],
+        "heart": [
+          48,
+          72
+        ],
+        "finger_heart": [
+          76,
+          54
+        ],
+        "thumbs_up": [
+          76,
+          54
+        ],
+        "ok": [
+          76,
+          54
+        ],
+        "point": [
+          76,
+          54
+        ],
+        "clap": [
+          48,
+          72
+        ],
+        "thanks": [
+          48,
+          72
+        ],
+        "cheer": [
+          76,
+          54
+        ]
+      },
+      "projection": "screen-facing hand; direction-specific placement"
+    },
+    "down_right": {
+      "positions": {
+        "wave": [
+          76,
+          54
+        ],
+        "write": [
+          48,
+          72
+        ],
+        "peace": [
+          76,
+          54
+        ],
+        "shush": [
+          56,
+          49
+        ],
+        "heart": [
+          48,
+          72
+        ],
+        "finger_heart": [
+          76,
+          54
+        ],
+        "thumbs_up": [
+          76,
+          54
+        ],
+        "ok": [
+          76,
+          54
+        ],
+        "point": [
+          76,
+          54
+        ],
+        "clap": [
+          48,
+          72
+        ],
+        "thanks": [
+          48,
+          72
+        ],
+        "cheer": [
+          76,
+          54
+        ]
+      },
+      "projection": "screen-facing hand; direction-specific placement"
+    }
+  }
+}

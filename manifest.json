@@ -2117,5 +2117,12 @@
     "atlas": "emotion_atlas.png",
     "frames": 2592,
     "version": 2
+  },
+  "hand_extension": {
+    "manifest": "hands.json",
+    "atlas": "hands_atlas.png",
+    "preview": "hands_preview.html",
+    "guide": "HANDS.md",
+    "version": 1
   }
 }

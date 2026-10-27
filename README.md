@@ -42,6 +42,12 @@ Look up, down, left, right, and between. Keep talking.
 
 *GIFs are silent, scripted demonstrations. Speech recognition, TTS, and a conversation model are not included; real-audio lip sync has not been validated.*
 
+## Hand gestures, separate from the face
+
+Wave, write, V, shush, two-hand heart, finger heart, thumbs up, OK, point, clap, thanks and cheer. **12 gestures · 32 px transparent layers · 9 direction placements.**
+
+[Hand sprite guide](HANDS.md) · [Interactive preview (download and open)](hands_preview.html) · [9-direction animation](previews/hands_9directions.gif) · [Download hand pack](tyri-hands-v1.zip)
+
 ## Get started
 
 ```bash
