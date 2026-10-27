@@ -1,0 +1,12 @@
+{
+  "frames": 324,
+  "all_12_visemes_distinct_per_direction_and_eye": true,
+  "mouth_changes_preserve_alpha": true,
+  "gif_decoding": {
+    "directions.gif": 9,
+    "mouths_12.gif": 12,
+    "blink.gif": 5,
+    "combined.gif": 108
+  },
+  "real_speech_sync_tested": false
+}

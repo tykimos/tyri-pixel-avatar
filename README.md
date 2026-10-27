@@ -1,2 +1,68 @@
-# tyri-pixel-avatar
-Face-only pixel avatar with 9 directions and 12 visemes for Korean, Japanese and English. Personal and noncommercial research use only.
+# Tyri Pixel Avatar
+
+A face-only pixel avatar sprite kit for multilingual conversational interfaces.
+
+**Personal and noncommercial research use only. Commercial use is prohibited
+without separate written permission.** See [LICENSE](LICENSE).
+
+![12 mouth shapes](viseme_contact.png)
+
+## Quick start
+
+Download this repository and open `preview.html` in a browser. Select a direction
+and mouth shape, or cycle through all 12 mouth shapes. The preview works offline.
+To follow speech, load an audio file and its matching timestamp JSON.
+
+## Included
+
+- 324 frames: 9 directions × 3 eye states × 12 mouth shapes, each 64×64 RGBA.
+- `atlas.png` and `manifest.json`: 36 columns × 9 rows and frame coordinates.
+- Direction folders: complete frames and mouth-free `base_e*.png` layers.
+- `mouths/`: isolated mouth components; anchors are in `manifest.json`.
+- `phoneme_map.json`: approximate English, Japanese and Korean sound groups.
+- `sample_timing.json`: synthetic articulation timing example.
+- GIF previews, palette metadata, source artwork and automated check results.
+
+Use nearest-neighbor scaling. Frame coordinates are `[x, y, width, height]`.
+
+## Speech timing
+
+```json
+{"units":"seconds","cues":[
+  {"start":0.0,"end":0.12,"viseme":"MBP"},
+  {"start":0.12,"end":0.35,"viseme":"AA"},
+  {"start":0.35,"end":0.50,"viseme":"REST"}
+]}
+```
+
+Cues must be ordered, non-overlapping and use one of: REST, MBP, AA, EH, EE,
+OH, OO, NEUTRAL, FV, TH, L, RSH. The preview uses audio playback time, including
+after seeking. Use TTS phoneme/viseme events or forced alignment to create real
+cues. A text-to-phoneme converter, speech engine and conversation model are not
+included. The sample is not aligned to a recorded sentence.
+
+## Limits and validation
+
+AI-assisted source artwork has been reduced and assembled into pixel assets.
+Side-view mouths use horizontal compression rather than independently drawn
+perspective. The phoneme mapping is approximate and context-dependent. Small
+teeth and tongue differences are limited by the resolution.
+
+Automated checks cover 324 frames, 12 distinct mouth images for each direction
+and eye state, stable alpha within each mouth sequence, GIF decoding and ZIP
+integrity. Real English, Japanese and Korean speech synchronization has **not**
+been validated. GIF previews are silent.
+
+## 이용 조건 요약
+
+- 허용: 개인의 비상업적 프로젝트·학습·실험, 비상업적 과학·학술 연구와 결과 발표.
+- 금지: 판매, 유료·광고 수익 서비스, 고객 납품, 사업 홍보, 기업 내부 업무,
+  상업 제품·서비스 개발을 위한 연구. 무료 제공이어도 상업 목적이면 금지됩니다.
+- 수정·재배포: 출처·라이선스 유지, 변경 표시, 동일 조건으로 무료 배포.
+- 일반 연구비·연구자 급여·통상적인 논문 게재료만으로 상업적 연구가 되지는 않습니다.
+- 별도 상업 이용 허가는 GitHub `tykimos`에 요청하세요.
+
+이 요약보다 영문 [LICENSE](LICENSE) 본문이 우선합니다. 사용 분야 제한이 있는
+소스 공개 프로젝트이며, OSI 기준의 오픈소스 라이선스는 아닙니다.
+
+Attribution: **Tyri Pixel Avatar by Taeyoung Kim (tykimos)**.

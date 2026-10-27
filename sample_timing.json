@@ -1,0 +1,66 @@
+{
+  "units": "seconds",
+  "note": "Synthetic articulation test; not aligned to recorded speech. Replace with TTS/forced-aligner timestamps.",
+  "cues": [
+    {
+      "start": 0.0,
+      "end": 0.22,
+      "viseme": "REST"
+    },
+    {
+      "start": 0.22,
+      "end": 0.44,
+      "viseme": "MBP"
+    },
+    {
+      "start": 0.44,
+      "end": 0.66,
+      "viseme": "AA"
+    },
+    {
+      "start": 0.66,
+      "end": 0.88,
+      "viseme": "EH"
+    },
+    {
+      "start": 0.88,
+      "end": 1.1,
+      "viseme": "EE"
+    },
+    {
+      "start": 1.1,
+      "end": 1.32,
+      "viseme": "OH"
+    },
+    {
+      "start": 1.32,
+      "end": 1.54,
+      "viseme": "OO"
+    },
+    {
+      "start": 1.54,
+      "end": 1.76,
+      "viseme": "NEUTRAL"
+    },
+    {
+      "start": 1.76,
+      "end": 1.98,
+      "viseme": "FV"
+    },
+    {
+      "start": 1.98,
+      "end": 2.2,
+      "viseme": "TH"
+    },
+    {
+      "start": 2.2,
+      "end": 2.42,
+      "viseme": "L"
+    },
+    {
+      "start": 2.42,
+      "end": 2.64,
+      "viseme": "RSH"
+    }
+  ]
+}
