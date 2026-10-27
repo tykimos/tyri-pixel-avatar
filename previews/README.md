@@ -24,3 +24,9 @@ All files are covered by the repository's personal/noncommercial research licens
 ## Centered UP base (v6)
 
 The UP pose now uses a dedicated frontal, upward-pitched source with centered nose, glasses and mouth landmarks. Other eight directions are unchanged. See `up_before_after.png`. The pitch is stylized, not a calibrated 3D angle.
+
+## Emotions and winks
+
+`emotions_contact.png`: 10 frontal expression examples.
+`emotions_9directions.gif`: all expressions across nine directions with test mouth movements.
+`winks_9directions.gif`: both anatomical wink sides. All GIFs are silent.
