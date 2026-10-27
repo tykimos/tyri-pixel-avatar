@@ -1,6 +1,6 @@
 # Greeting review
 
-The 3 GIFs each display all 9 directions simultaneously using the repaired v5 sprite atlas with 12 mouth shapes.
+The 3 GIFs each display all 9 directions simultaneously using the repaired v6 sprite atlas with 12 mouth shapes.
 Mouth positions and down-view sizes were corrected; glasses are reinforced.
 
 - Korean: 안녕, 난 타이리야, 반가워
@@ -20,3 +20,7 @@ head silhouette. Side-view mouth projection remains approximate and low-resoluti
 lip contours remain stylized. Real multilingual audio synchronization remains untested.
 
 All files are covered by the repository's personal/noncommercial research license.
+
+## Centered UP base (v6)
+
+The UP pose now uses a dedicated frontal, upward-pitched source with centered nose, glasses and mouth landmarks. Other eight directions are unchanged. See `up_before_after.png`. The pitch is stylized, not a calibrated 3D angle.
