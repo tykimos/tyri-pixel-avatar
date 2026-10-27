@@ -1,0 +1,6541 @@
+{
+  "version": 1,
+  "frame_size": [
+    64,
+    64
+  ],
+  "atlas": "emotion_atlas.png",
+  "directions": [
+    "up_left",
+    "up",
+    "up_right",
+    "left",
+    "front",
+    "right",
+    "down_left",
+    "down",
+    "down_right"
+  ],
+  "emotions": [
+    "neutral",
+    "wink_left",
+    "wink_right",
+    "happy",
+    "sad",
+    "side_eye",
+    "sulky",
+    "surprised",
+    "angry",
+    "sleepy"
+  ],
+  "labels_ko": {
+    "neutral": "기본",
+    "wink_left": "왼쪽 윙크",
+    "wink_right": "오른쪽 윙크",
+    "happy": "행복",
+    "sad": "슬픔",
+    "side_eye": "눈치주기",
+    "sulky": "삐짐",
+    "surprised": "놀람",
+    "angry": "화남",
+    "sleepy": "졸림"
+  },
+  "visemes": [
+    "REST",
+    "MBP",
+    "AA",
+    "EH",
+    "EE",
+    "OH",
+    "OO",
+    "NEUTRAL",
+    "FV",
+    "TH",
+    "L",
+    "RSH"
+  ],
+  "wink_side": "character anatomical side; left appears on viewer right",
+  "frames": {
+    "up_left/neutral/REST": [
+      0,
+      0,
+      64,
+      64
+    ],
+    "up_left/neutral/MBP": [
+      64,
+      0,
+      64,
+      64
+    ],
+    "up_left/neutral/AA": [
+      128,
+      0,
+      64,
+      64
+    ],
+    "up_left/neutral/EH": [
+      192,
+      0,
+      64,
+      64
+    ],
+    "up_left/neutral/EE": [
+      256,
+      0,
+      64,
+      64
+    ],
+    "up_left/neutral/OH": [
+      320,
+      0,
+      64,
+      64
+    ],
+    "up_left/neutral/OO": [
+      384,
+      0,
+      64,
+      64
+    ],
+    "up_left/neutral/NEUTRAL": [
+      448,
+      0,
+      64,
+      64
+    ],
+    "up_left/neutral/FV": [
+      512,
+      0,
+      64,
+      64
+    ],
+    "up_left/neutral/TH": [
+      576,
+      0,
+      64,
+      64
+    ],
+    "up_left/neutral/L": [
+      640,
+      0,
+      64,
+      64
+    ],
+    "up_left/neutral/RSH": [
+      704,
+      0,
+      64,
+      64
+    ],
+    "up_left/wink_left/REST": [
+      768,
+      0,
+      64,
+      64
+    ],
+    "up_left/wink_left/MBP": [
+      832,
+      0,
+      64,
+      64
+    ],
+    "up_left/wink_left/AA": [
+      896,
+      0,
+      64,
+      64
+    ],
+    "up_left/wink_left/EH": [
+      960,
+      0,
+      64,
+      64
+    ],
+    "up_left/wink_left/EE": [
+      1024,
+      0,
+      64,
+      64
+    ],
+    "up_left/wink_left/OH": [
+      1088,
+      0,
+      64,
+      64
+    ],
+    "up_left/wink_left/OO": [
+      1152,
+      0,
+      64,
+      64
+    ],
+    "up_left/wink_left/NEUTRAL": [
+      1216,
+      0,
+      64,
+      64
+    ],
+    "up_left/wink_left/FV": [
+      1280,
+      0,
+      64,
+      64
+    ],
+    "up_left/wink_left/TH": [
+      1344,
+      0,
+      64,
+      64
+    ],
+    "up_left/wink_left/L": [
+      1408,
+      0,
+      64,
+      64
+    ],
+    "up_left/wink_left/RSH": [
+      1472,
+      0,
+      64,
+      64
+    ],
+    "up_left/wink_right/REST": [
+      1536,
+      0,
+      64,
+      64
+    ],
+    "up_left/wink_right/MBP": [
+      1600,
+      0,
+      64,
+      64
+    ],
+    "up_left/wink_right/AA": [
+      1664,
+      0,
+      64,
+      64
+    ],
+    "up_left/wink_right/EH": [
+      1728,
+      0,
+      64,
+      64
+    ],
+    "up_left/wink_right/EE": [
+      1792,
+      0,
+      64,
+      64
+    ],
+    "up_left/wink_right/OH": [
+      1856,
+      0,
+      64,
+      64
+    ],
+    "up_left/wink_right/OO": [
+      1920,
+      0,
+      64,
+      64
+    ],
+    "up_left/wink_right/NEUTRAL": [
+      1984,
+      0,
+      64,
+      64
+    ],
+    "up_left/wink_right/FV": [
+      2048,
+      0,
+      64,
+      64
+    ],
+    "up_left/wink_right/TH": [
+      2112,
+      0,
+      64,
+      64
+    ],
+    "up_left/wink_right/L": [
+      2176,
+      0,
+      64,
+      64
+    ],
+    "up_left/wink_right/RSH": [
+      2240,
+      0,
+      64,
+      64
+    ],
+    "up_left/happy/REST": [
+      2304,
+      0,
+      64,
+      64
+    ],
+    "up_left/happy/MBP": [
+      2368,
+      0,
+      64,
+      64
+    ],
+    "up_left/happy/AA": [
+      2432,
+      0,
+      64,
+      64
+    ],
+    "up_left/happy/EH": [
+      2496,
+      0,
+      64,
+      64
+    ],
+    "up_left/happy/EE": [
+      2560,
+      0,
+      64,
+      64
+    ],
+    "up_left/happy/OH": [
+      2624,
+      0,
+      64,
+      64
+    ],
+    "up_left/happy/OO": [
+      2688,
+      0,
+      64,
+      64
+    ],
+    "up_left/happy/NEUTRAL": [
+      2752,
+      0,
+      64,
+      64
+    ],
+    "up_left/happy/FV": [
+      2816,
+      0,
+      64,
+      64
+    ],
+    "up_left/happy/TH": [
+      2880,
+      0,
+      64,
+      64
+    ],
+    "up_left/happy/L": [
+      2944,
+      0,
+      64,
+      64
+    ],
+    "up_left/happy/RSH": [
+      3008,
+      0,
+      64,
+      64
+    ],
+    "up_left/sad/REST": [
+      3072,
+      0,
+      64,
+      64
+    ],
+    "up_left/sad/MBP": [
+      3136,
+      0,
+      64,
+      64
+    ],
+    "up_left/sad/AA": [
+      3200,
+      0,
+      64,
+      64
+    ],
+    "up_left/sad/EH": [
+      3264,
+      0,
+      64,
+      64
+    ],
+    "up_left/sad/EE": [
+      3328,
+      0,
+      64,
+      64
+    ],
+    "up_left/sad/OH": [
+      3392,
+      0,
+      64,
+      64
+    ],
+    "up_left/sad/OO": [
+      3456,
+      0,
+      64,
+      64
+    ],
+    "up_left/sad/NEUTRAL": [
+      3520,
+      0,
+      64,
+      64
+    ],
+    "up_left/sad/FV": [
+      3584,
+      0,
+      64,
+      64
+    ],
+    "up_left/sad/TH": [
+      3648,
+      0,
+      64,
+      64
+    ],
+    "up_left/sad/L": [
+      3712,
+      0,
+      64,
+      64
+    ],
+    "up_left/sad/RSH": [
+      3776,
+      0,
+      64,
+      64
+    ],
+    "up_left/side_eye/REST": [
+      3840,
+      0,
+      64,
+      64
+    ],
+    "up_left/side_eye/MBP": [
+      3904,
+      0,
+      64,
+      64
+    ],
+    "up_left/side_eye/AA": [
+      3968,
+      0,
+      64,
+      64
+    ],
+    "up_left/side_eye/EH": [
+      4032,
+      0,
+      64,
+      64
+    ],
+    "up_left/side_eye/EE": [
+      4096,
+      0,
+      64,
+      64
+    ],
+    "up_left/side_eye/OH": [
+      4160,
+      0,
+      64,
+      64
+    ],
+    "up_left/side_eye/OO": [
+      4224,
+      0,
+      64,
+      64
+    ],
+    "up_left/side_eye/NEUTRAL": [
+      4288,
+      0,
+      64,
+      64
+    ],
+    "up_left/side_eye/FV": [
+      4352,
+      0,
+      64,
+      64
+    ],
+    "up_left/side_eye/TH": [
+      4416,
+      0,
+      64,
+      64
+    ],
+    "up_left/side_eye/L": [
+      4480,
+      0,
+      64,
+      64
+    ],
+    "up_left/side_eye/RSH": [
+      4544,
+      0,
+      64,
+      64
+    ],
+    "up_left/sulky/REST": [
+      4608,
+      0,
+      64,
+      64
+    ],
+    "up_left/sulky/MBP": [
+      4672,
+      0,
+      64,
+      64
+    ],
+    "up_left/sulky/AA": [
+      4736,
+      0,
+      64,
+      64
+    ],
+    "up_left/sulky/EH": [
+      4800,
+      0,
+      64,
+      64
+    ],
+    "up_left/sulky/EE": [
+      4864,
+      0,
+      64,
+      64
+    ],
+    "up_left/sulky/OH": [
+      4928,
+      0,
+      64,
+      64
+    ],
+    "up_left/sulky/OO": [
+      4992,
+      0,
+      64,
+      64
+    ],
+    "up_left/sulky/NEUTRAL": [
+      5056,
+      0,
+      64,
+      64
+    ],
+    "up_left/sulky/FV": [
+      5120,
+      0,
+      64,
+      64
+    ],
+    "up_left/sulky/TH": [
+      5184,
+      0,
+      64,
+      64
+    ],
+    "up_left/sulky/L": [
+      5248,
+      0,
+      64,
+      64
+    ],
+    "up_left/sulky/RSH": [
+      5312,
+      0,
+      64,
+      64
+    ],
+    "up_left/surprised/REST": [
+      5376,
+      0,
+      64,
+      64
+    ],
+    "up_left/surprised/MBP": [
+      5440,
+      0,
+      64,
+      64
+    ],
+    "up_left/surprised/AA": [
+      5504,
+      0,
+      64,
+      64
+    ],
+    "up_left/surprised/EH": [
+      5568,
+      0,
+      64,
+      64
+    ],
+    "up_left/surprised/EE": [
+      5632,
+      0,
+      64,
+      64
+    ],
+    "up_left/surprised/OH": [
+      5696,
+      0,
+      64,
+      64
+    ],
+    "up_left/surprised/OO": [
+      5760,
+      0,
+      64,
+      64
+    ],
+    "up_left/surprised/NEUTRAL": [
+      5824,
+      0,
+      64,
+      64
+    ],
+    "up_left/surprised/FV": [
+      5888,
+      0,
+      64,
+      64
+    ],
+    "up_left/surprised/TH": [
+      5952,
+      0,
+      64,
+      64
+    ],
+    "up_left/surprised/L": [
+      6016,
+      0,
+      64,
+      64
+    ],
+    "up_left/surprised/RSH": [
+      6080,
+      0,
+      64,
+      64
+    ],
+    "up_left/angry/REST": [
+      6144,
+      0,
+      64,
+      64
+    ],
+    "up_left/angry/MBP": [
+      6208,
+      0,
+      64,
+      64
+    ],
+    "up_left/angry/AA": [
+      6272,
+      0,
+      64,
+      64
+    ],
+    "up_left/angry/EH": [
+      6336,
+      0,
+      64,
+      64
+    ],
+    "up_left/angry/EE": [
+      6400,
+      0,
+      64,
+      64
+    ],
+    "up_left/angry/OH": [
+      6464,
+      0,
+      64,
+      64
+    ],
+    "up_left/angry/OO": [
+      6528,
+      0,
+      64,
+      64
+    ],
+    "up_left/angry/NEUTRAL": [
+      6592,
+      0,
+      64,
+      64
+    ],
+    "up_left/angry/FV": [
+      6656,
+      0,
+      64,
+      64
+    ],
+    "up_left/angry/TH": [
+      6720,
+      0,
+      64,
+      64
+    ],
+    "up_left/angry/L": [
+      6784,
+      0,
+      64,
+      64
+    ],
+    "up_left/angry/RSH": [
+      6848,
+      0,
+      64,
+      64
+    ],
+    "up_left/sleepy/REST": [
+      6912,
+      0,
+      64,
+      64
+    ],
+    "up_left/sleepy/MBP": [
+      6976,
+      0,
+      64,
+      64
+    ],
+    "up_left/sleepy/AA": [
+      7040,
+      0,
+      64,
+      64
+    ],
+    "up_left/sleepy/EH": [
+      7104,
+      0,
+      64,
+      64
+    ],
+    "up_left/sleepy/EE": [
+      7168,
+      0,
+      64,
+      64
+    ],
+    "up_left/sleepy/OH": [
+      7232,
+      0,
+      64,
+      64
+    ],
+    "up_left/sleepy/OO": [
+      7296,
+      0,
+      64,
+      64
+    ],
+    "up_left/sleepy/NEUTRAL": [
+      7360,
+      0,
+      64,
+      64
+    ],
+    "up_left/sleepy/FV": [
+      7424,
+      0,
+      64,
+      64
+    ],
+    "up_left/sleepy/TH": [
+      7488,
+      0,
+      64,
+      64
+    ],
+    "up_left/sleepy/L": [
+      7552,
+      0,
+      64,
+      64
+    ],
+    "up_left/sleepy/RSH": [
+      7616,
+      0,
+      64,
+      64
+    ],
+    "up/neutral/REST": [
+      0,
+      64,
+      64,
+      64
+    ],
+    "up/neutral/MBP": [
+      64,
+      64,
+      64,
+      64
+    ],
+    "up/neutral/AA": [
+      128,
+      64,
+      64,
+      64
+    ],
+    "up/neutral/EH": [
+      192,
+      64,
+      64,
+      64
+    ],
+    "up/neutral/EE": [
+      256,
+      64,
+      64,
+      64
+    ],
+    "up/neutral/OH": [
+      320,
+      64,
+      64,
+      64
+    ],
+    "up/neutral/OO": [
+      384,
+      64,
+      64,
+      64
+    ],
+    "up/neutral/NEUTRAL": [
+      448,
+      64,
+      64,
+      64
+    ],
+    "up/neutral/FV": [
+      512,
+      64,
+      64,
+      64
+    ],
+    "up/neutral/TH": [
+      576,
+      64,
+      64,
+      64
+    ],
+    "up/neutral/L": [
+      640,
+      64,
+      64,
+      64
+    ],
+    "up/neutral/RSH": [
+      704,
+      64,
+      64,
+      64
+    ],
+    "up/wink_left/REST": [
+      768,
+      64,
+      64,
+      64
+    ],
+    "up/wink_left/MBP": [
+      832,
+      64,
+      64,
+      64
+    ],
+    "up/wink_left/AA": [
+      896,
+      64,
+      64,
+      64
+    ],
+    "up/wink_left/EH": [
+      960,
+      64,
+      64,
+      64
+    ],
+    "up/wink_left/EE": [
+      1024,
+      64,
+      64,
+      64
+    ],
+    "up/wink_left/OH": [
+      1088,
+      64,
+      64,
+      64
+    ],
+    "up/wink_left/OO": [
+      1152,
+      64,
+      64,
+      64
+    ],
+    "up/wink_left/NEUTRAL": [
+      1216,
+      64,
+      64,
+      64
+    ],
+    "up/wink_left/FV": [
+      1280,
+      64,
+      64,
+      64
+    ],
+    "up/wink_left/TH": [
+      1344,
+      64,
+      64,
+      64
+    ],
+    "up/wink_left/L": [
+      1408,
+      64,
+      64,
+      64
+    ],
+    "up/wink_left/RSH": [
+      1472,
+      64,
+      64,
+      64
+    ],
+    "up/wink_right/REST": [
+      1536,
+      64,
+      64,
+      64
+    ],
+    "up/wink_right/MBP": [
+      1600,
+      64,
+      64,
+      64
+    ],
+    "up/wink_right/AA": [
+      1664,
+      64,
+      64,
+      64
+    ],
+    "up/wink_right/EH": [
+      1728,
+      64,
+      64,
+      64
+    ],
+    "up/wink_right/EE": [
+      1792,
+      64,
+      64,
+      64
+    ],
+    "up/wink_right/OH": [
+      1856,
+      64,
+      64,
+      64
+    ],
+    "up/wink_right/OO": [
+      1920,
+      64,
+      64,
+      64
+    ],
+    "up/wink_right/NEUTRAL": [
+      1984,
+      64,
+      64,
+      64
+    ],
+    "up/wink_right/FV": [
+      2048,
+      64,
+      64,
+      64
+    ],
+    "up/wink_right/TH": [
+      2112,
+      64,
+      64,
+      64
+    ],
+    "up/wink_right/L": [
+      2176,
+      64,
+      64,
+      64
+    ],
+    "up/wink_right/RSH": [
+      2240,
+      64,
+      64,
+      64
+    ],
+    "up/happy/REST": [
+      2304,
+      64,
+      64,
+      64
+    ],
+    "up/happy/MBP": [
+      2368,
+      64,
+      64,
+      64
+    ],
+    "up/happy/AA": [
+      2432,
+      64,
+      64,
+      64
+    ],
+    "up/happy/EH": [
+      2496,
+      64,
+      64,
+      64
+    ],
+    "up/happy/EE": [
+      2560,
+      64,
+      64,
+      64
+    ],
+    "up/happy/OH": [
+      2624,
+      64,
+      64,
+      64
+    ],
+    "up/happy/OO": [
+      2688,
+      64,
+      64,
+      64
+    ],
+    "up/happy/NEUTRAL": [
+      2752,
+      64,
+      64,
+      64
+    ],
+    "up/happy/FV": [
+      2816,
+      64,
+      64,
+      64
+    ],
+    "up/happy/TH": [
+      2880,
+      64,
+      64,
+      64
+    ],
+    "up/happy/L": [
+      2944,
+      64,
+      64,
+      64
+    ],
+    "up/happy/RSH": [
+      3008,
+      64,
+      64,
+      64
+    ],
+    "up/sad/REST": [
+      3072,
+      64,
+      64,
+      64
+    ],
+    "up/sad/MBP": [
+      3136,
+      64,
+      64,
+      64
+    ],
+    "up/sad/AA": [
+      3200,
+      64,
+      64,
+      64
+    ],
+    "up/sad/EH": [
+      3264,
+      64,
+      64,
+      64
+    ],
+    "up/sad/EE": [
+      3328,
+      64,
+      64,
+      64
+    ],
+    "up/sad/OH": [
+      3392,
+      64,
+      64,
+      64
+    ],
+    "up/sad/OO": [
+      3456,
+      64,
+      64,
+      64
+    ],
+    "up/sad/NEUTRAL": [
+      3520,
+      64,
+      64,
+      64
+    ],
+    "up/sad/FV": [
+      3584,
+      64,
+      64,
+      64
+    ],
+    "up/sad/TH": [
+      3648,
+      64,
+      64,
+      64
+    ],
+    "up/sad/L": [
+      3712,
+      64,
+      64,
+      64
+    ],
+    "up/sad/RSH": [
+      3776,
+      64,
+      64,
+      64
+    ],
+    "up/side_eye/REST": [
+      3840,
+      64,
+      64,
+      64
+    ],
+    "up/side_eye/MBP": [
+      3904,
+      64,
+      64,
+      64
+    ],
+    "up/side_eye/AA": [
+      3968,
+      64,
+      64,
+      64
+    ],
+    "up/side_eye/EH": [
+      4032,
+      64,
+      64,
+      64
+    ],
+    "up/side_eye/EE": [
+      4096,
+      64,
+      64,
+      64
+    ],
+    "up/side_eye/OH": [
+      4160,
+      64,
+      64,
+      64
+    ],
+    "up/side_eye/OO": [
+      4224,
+      64,
+      64,
+      64
+    ],
+    "up/side_eye/NEUTRAL": [
+      4288,
+      64,
+      64,
+      64
+    ],
+    "up/side_eye/FV": [
+      4352,
+      64,
+      64,
+      64
+    ],
+    "up/side_eye/TH": [
+      4416,
+      64,
+      64,
+      64
+    ],
+    "up/side_eye/L": [
+      4480,
+      64,
+      64,
+      64
+    ],
+    "up/side_eye/RSH": [
+      4544,
+      64,
+      64,
+      64
+    ],
+    "up/sulky/REST": [
+      4608,
+      64,
+      64,
+      64
+    ],
+    "up/sulky/MBP": [
+      4672,
+      64,
+      64,
+      64
+    ],
+    "up/sulky/AA": [
+      4736,
+      64,
+      64,
+      64
+    ],
+    "up/sulky/EH": [
+      4800,
+      64,
+      64,
+      64
+    ],
+    "up/sulky/EE": [
+      4864,
+      64,
+      64,
+      64
+    ],
+    "up/sulky/OH": [
+      4928,
+      64,
+      64,
+      64
+    ],
+    "up/sulky/OO": [
+      4992,
+      64,
+      64,
+      64
+    ],
+    "up/sulky/NEUTRAL": [
+      5056,
+      64,
+      64,
+      64
+    ],
+    "up/sulky/FV": [
+      5120,
+      64,
+      64,
+      64
+    ],
+    "up/sulky/TH": [
+      5184,
+      64,
+      64,
+      64
+    ],
+    "up/sulky/L": [
+      5248,
+      64,
+      64,
+      64
+    ],
+    "up/sulky/RSH": [
+      5312,
+      64,
+      64,
+      64
+    ],
+    "up/surprised/REST": [
+      5376,
+      64,
+      64,
+      64
+    ],
+    "up/surprised/MBP": [
+      5440,
+      64,
+      64,
+      64
+    ],
+    "up/surprised/AA": [
+      5504,
+      64,
+      64,
+      64
+    ],
+    "up/surprised/EH": [
+      5568,
+      64,
+      64,
+      64
+    ],
+    "up/surprised/EE": [
+      5632,
+      64,
+      64,
+      64
+    ],
+    "up/surprised/OH": [
+      5696,
+      64,
+      64,
+      64
+    ],
+    "up/surprised/OO": [
+      5760,
+      64,
+      64,
+      64
+    ],
+    "up/surprised/NEUTRAL": [
+      5824,
+      64,
+      64,
+      64
+    ],
+    "up/surprised/FV": [
+      5888,
+      64,
+      64,
+      64
+    ],
+    "up/surprised/TH": [
+      5952,
+      64,
+      64,
+      64
+    ],
+    "up/surprised/L": [
+      6016,
+      64,
+      64,
+      64
+    ],
+    "up/surprised/RSH": [
+      6080,
+      64,
+      64,
+      64
+    ],
+    "up/angry/REST": [
+      6144,
+      64,
+      64,
+      64
+    ],
+    "up/angry/MBP": [
+      6208,
+      64,
+      64,
+      64
+    ],
+    "up/angry/AA": [
+      6272,
+      64,
+      64,
+      64
+    ],
+    "up/angry/EH": [
+      6336,
+      64,
+      64,
+      64
+    ],
+    "up/angry/EE": [
+      6400,
+      64,
+      64,
+      64
+    ],
+    "up/angry/OH": [
+      6464,
+      64,
+      64,
+      64
+    ],
+    "up/angry/OO": [
+      6528,
+      64,
+      64,
+      64
+    ],
+    "up/angry/NEUTRAL": [
+      6592,
+      64,
+      64,
+      64
+    ],
+    "up/angry/FV": [
+      6656,
+      64,
+      64,
+      64
+    ],
+    "up/angry/TH": [
+      6720,
+      64,
+      64,
+      64
+    ],
+    "up/angry/L": [
+      6784,
+      64,
+      64,
+      64
+    ],
+    "up/angry/RSH": [
+      6848,
+      64,
+      64,
+      64
+    ],
+    "up/sleepy/REST": [
+      6912,
+      64,
+      64,
+      64
+    ],
+    "up/sleepy/MBP": [
+      6976,
+      64,
+      64,
+      64
+    ],
+    "up/sleepy/AA": [
+      7040,
+      64,
+      64,
+      64
+    ],
+    "up/sleepy/EH": [
+      7104,
+      64,
+      64,
+      64
+    ],
+    "up/sleepy/EE": [
+      7168,
+      64,
+      64,
+      64
+    ],
+    "up/sleepy/OH": [
+      7232,
+      64,
+      64,
+      64
+    ],
+    "up/sleepy/OO": [
+      7296,
+      64,
+      64,
+      64
+    ],
+    "up/sleepy/NEUTRAL": [
+      7360,
+      64,
+      64,
+      64
+    ],
+    "up/sleepy/FV": [
+      7424,
+      64,
+      64,
+      64
+    ],
+    "up/sleepy/TH": [
+      7488,
+      64,
+      64,
+      64
+    ],
+    "up/sleepy/L": [
+      7552,
+      64,
+      64,
+      64
+    ],
+    "up/sleepy/RSH": [
+      7616,
+      64,
+      64,
+      64
+    ],
+    "up_right/neutral/REST": [
+      0,
+      128,
+      64,
+      64
+    ],
+    "up_right/neutral/MBP": [
+      64,
+      128,
+      64,
+      64
+    ],
+    "up_right/neutral/AA": [
+      128,
+      128,
+      64,
+      64
+    ],
+    "up_right/neutral/EH": [
+      192,
+      128,
+      64,
+      64
+    ],
+    "up_right/neutral/EE": [
+      256,
+      128,
+      64,
+      64
+    ],
+    "up_right/neutral/OH": [
+      320,
+      128,
+      64,
+      64
+    ],
+    "up_right/neutral/OO": [
+      384,
+      128,
+      64,
+      64
+    ],
+    "up_right/neutral/NEUTRAL": [
+      448,
+      128,
+      64,
+      64
+    ],
+    "up_right/neutral/FV": [
+      512,
+      128,
+      64,
+      64
+    ],
+    "up_right/neutral/TH": [
+      576,
+      128,
+      64,
+      64
+    ],
+    "up_right/neutral/L": [
+      640,
+      128,
+      64,
+      64
+    ],
+    "up_right/neutral/RSH": [
+      704,
+      128,
+      64,
+      64
+    ],
+    "up_right/wink_left/REST": [
+      768,
+      128,
+      64,
+      64
+    ],
+    "up_right/wink_left/MBP": [
+      832,
+      128,
+      64,
+      64
+    ],
+    "up_right/wink_left/AA": [
+      896,
+      128,
+      64,
+      64
+    ],
+    "up_right/wink_left/EH": [
+      960,
+      128,
+      64,
+      64
+    ],
+    "up_right/wink_left/EE": [
+      1024,
+      128,
+      64,
+      64
+    ],
+    "up_right/wink_left/OH": [
+      1088,
+      128,
+      64,
+      64
+    ],
+    "up_right/wink_left/OO": [
+      1152,
+      128,
+      64,
+      64
+    ],
+    "up_right/wink_left/NEUTRAL": [
+      1216,
+      128,
+      64,
+      64
+    ],
+    "up_right/wink_left/FV": [
+      1280,
+      128,
+      64,
+      64
+    ],
+    "up_right/wink_left/TH": [
+      1344,
+      128,
+      64,
+      64
+    ],
+    "up_right/wink_left/L": [
+      1408,
+      128,
+      64,
+      64
+    ],
+    "up_right/wink_left/RSH": [
+      1472,
+      128,
+      64,
+      64
+    ],
+    "up_right/wink_right/REST": [
+      1536,
+      128,
+      64,
+      64
+    ],
+    "up_right/wink_right/MBP": [
+      1600,
+      128,
+      64,
+      64
+    ],
+    "up_right/wink_right/AA": [
+      1664,
+      128,
+      64,
+      64
+    ],
+    "up_right/wink_right/EH": [
+      1728,
+      128,
+      64,
+      64
+    ],
+    "up_right/wink_right/EE": [
+      1792,
+      128,
+      64,
+      64
+    ],
+    "up_right/wink_right/OH": [
+      1856,
+      128,
+      64,
+      64
+    ],
+    "up_right/wink_right/OO": [
+      1920,
+      128,
+      64,
+      64
+    ],
+    "up_right/wink_right/NEUTRAL": [
+      1984,
+      128,
+      64,
+      64
+    ],
+    "up_right/wink_right/FV": [
+      2048,
+      128,
+      64,
+      64
+    ],
+    "up_right/wink_right/TH": [
+      2112,
+      128,
+      64,
+      64
+    ],
+    "up_right/wink_right/L": [
+      2176,
+      128,
+      64,
+      64
+    ],
+    "up_right/wink_right/RSH": [
+      2240,
+      128,
+      64,
+      64
+    ],
+    "up_right/happy/REST": [
+      2304,
+      128,
+      64,
+      64
+    ],
+    "up_right/happy/MBP": [
+      2368,
+      128,
+      64,
+      64
+    ],
+    "up_right/happy/AA": [
+      2432,
+      128,
+      64,
+      64
+    ],
+    "up_right/happy/EH": [
+      2496,
+      128,
+      64,
+      64
+    ],
+    "up_right/happy/EE": [
+      2560,
+      128,
+      64,
+      64
+    ],
+    "up_right/happy/OH": [
+      2624,
+      128,
+      64,
+      64
+    ],
+    "up_right/happy/OO": [
+      2688,
+      128,
+      64,
+      64
+    ],
+    "up_right/happy/NEUTRAL": [
+      2752,
+      128,
+      64,
+      64
+    ],
+    "up_right/happy/FV": [
+      2816,
+      128,
+      64,
+      64
+    ],
+    "up_right/happy/TH": [
+      2880,
+      128,
+      64,
+      64
+    ],
+    "up_right/happy/L": [
+      2944,
+      128,
+      64,
+      64
+    ],
+    "up_right/happy/RSH": [
+      3008,
+      128,
+      64,
+      64
+    ],
+    "up_right/sad/REST": [
+      3072,
+      128,
+      64,
+      64
+    ],
+    "up_right/sad/MBP": [
+      3136,
+      128,
+      64,
+      64
+    ],
+    "up_right/sad/AA": [
+      3200,
+      128,
+      64,
+      64
+    ],
+    "up_right/sad/EH": [
+      3264,
+      128,
+      64,
+      64
+    ],
+    "up_right/sad/EE": [
+      3328,
+      128,
+      64,
+      64
+    ],
+    "up_right/sad/OH": [
+      3392,
+      128,
+      64,
+      64
+    ],
+    "up_right/sad/OO": [
+      3456,
+      128,
+      64,
+      64
+    ],
+    "up_right/sad/NEUTRAL": [
+      3520,
+      128,
+      64,
+      64
+    ],
+    "up_right/sad/FV": [
+      3584,
+      128,
+      64,
+      64
+    ],
+    "up_right/sad/TH": [
+      3648,
+      128,
+      64,
+      64
+    ],
+    "up_right/sad/L": [
+      3712,
+      128,
+      64,
+      64
+    ],
+    "up_right/sad/RSH": [
+      3776,
+      128,
+      64,
+      64
+    ],
+    "up_right/side_eye/REST": [
+      3840,
+      128,
+      64,
+      64
+    ],
+    "up_right/side_eye/MBP": [
+      3904,
+      128,
+      64,
+      64
+    ],
+    "up_right/side_eye/AA": [
+      3968,
+      128,
+      64,
+      64
+    ],
+    "up_right/side_eye/EH": [
+      4032,
+      128,
+      64,
+      64
+    ],
+    "up_right/side_eye/EE": [
+      4096,
+      128,
+      64,
+      64
+    ],
+    "up_right/side_eye/OH": [
+      4160,
+      128,
+      64,
+      64
+    ],
+    "up_right/side_eye/OO": [
+      4224,
+      128,
+      64,
+      64
+    ],
+    "up_right/side_eye/NEUTRAL": [
+      4288,
+      128,
+      64,
+      64
+    ],
+    "up_right/side_eye/FV": [
+      4352,
+      128,
+      64,
+      64
+    ],
+    "up_right/side_eye/TH": [
+      4416,
+      128,
+      64,
+      64
+    ],
+    "up_right/side_eye/L": [
+      4480,
+      128,
+      64,
+      64
+    ],
+    "up_right/side_eye/RSH": [
+      4544,
+      128,
+      64,
+      64
+    ],
+    "up_right/sulky/REST": [
+      4608,
+      128,
+      64,
+      64
+    ],
+    "up_right/sulky/MBP": [
+      4672,
+      128,
+      64,
+      64
+    ],
+    "up_right/sulky/AA": [
+      4736,
+      128,
+      64,
+      64
+    ],
+    "up_right/sulky/EH": [
+      4800,
+      128,
+      64,
+      64
+    ],
+    "up_right/sulky/EE": [
+      4864,
+      128,
+      64,
+      64
+    ],
+    "up_right/sulky/OH": [
+      4928,
+      128,
+      64,
+      64
+    ],
+    "up_right/sulky/OO": [
+      4992,
+      128,
+      64,
+      64
+    ],
+    "up_right/sulky/NEUTRAL": [
+      5056,
+      128,
+      64,
+      64
+    ],
+    "up_right/sulky/FV": [
+      5120,
+      128,
+      64,
+      64
+    ],
+    "up_right/sulky/TH": [
+      5184,
+      128,
+      64,
+      64
+    ],
+    "up_right/sulky/L": [
+      5248,
+      128,
+      64,
+      64
+    ],
+    "up_right/sulky/RSH": [
+      5312,
+      128,
+      64,
+      64
+    ],
+    "up_right/surprised/REST": [
+      5376,
+      128,
+      64,
+      64
+    ],
+    "up_right/surprised/MBP": [
+      5440,
+      128,
+      64,
+      64
+    ],
+    "up_right/surprised/AA": [
+      5504,
+      128,
+      64,
+      64
+    ],
+    "up_right/surprised/EH": [
+      5568,
+      128,
+      64,
+      64
+    ],
+    "up_right/surprised/EE": [
+      5632,
+      128,
+      64,
+      64
+    ],
+    "up_right/surprised/OH": [
+      5696,
+      128,
+      64,
+      64
+    ],
+    "up_right/surprised/OO": [
+      5760,
+      128,
+      64,
+      64
+    ],
+    "up_right/surprised/NEUTRAL": [
+      5824,
+      128,
+      64,
+      64
+    ],
+    "up_right/surprised/FV": [
+      5888,
+      128,
+      64,
+      64
+    ],
+    "up_right/surprised/TH": [
+      5952,
+      128,
+      64,
+      64
+    ],
+    "up_right/surprised/L": [
+      6016,
+      128,
+      64,
+      64
+    ],
+    "up_right/surprised/RSH": [
+      6080,
+      128,
+      64,
+      64
+    ],
+    "up_right/angry/REST": [
+      6144,
+      128,
+      64,
+      64
+    ],
+    "up_right/angry/MBP": [
+      6208,
+      128,
+      64,
+      64
+    ],
+    "up_right/angry/AA": [
+      6272,
+      128,
+      64,
+      64
+    ],
+    "up_right/angry/EH": [
+      6336,
+      128,
+      64,
+      64
+    ],
+    "up_right/angry/EE": [
+      6400,
+      128,
+      64,
+      64
+    ],
+    "up_right/angry/OH": [
+      6464,
+      128,
+      64,
+      64
+    ],
+    "up_right/angry/OO": [
+      6528,
+      128,
+      64,
+      64
+    ],
+    "up_right/angry/NEUTRAL": [
+      6592,
+      128,
+      64,
+      64
+    ],
+    "up_right/angry/FV": [
+      6656,
+      128,
+      64,
+      64
+    ],
+    "up_right/angry/TH": [
+      6720,
+      128,
+      64,
+      64
+    ],
+    "up_right/angry/L": [
+      6784,
+      128,
+      64,
+      64
+    ],
+    "up_right/angry/RSH": [
+      6848,
+      128,
+      64,
+      64
+    ],
+    "up_right/sleepy/REST": [
+      6912,
+      128,
+      64,
+      64
+    ],
+    "up_right/sleepy/MBP": [
+      6976,
+      128,
+      64,
+      64
+    ],
+    "up_right/sleepy/AA": [
+      7040,
+      128,
+      64,
+      64
+    ],
+    "up_right/sleepy/EH": [
+      7104,
+      128,
+      64,
+      64
+    ],
+    "up_right/sleepy/EE": [
+      7168,
+      128,
+      64,
+      64
+    ],
+    "up_right/sleepy/OH": [
+      7232,
+      128,
+      64,
+      64
+    ],
+    "up_right/sleepy/OO": [
+      7296,
+      128,
+      64,
+      64
+    ],
+    "up_right/sleepy/NEUTRAL": [
+      7360,
+      128,
+      64,
+      64
+    ],
+    "up_right/sleepy/FV": [
+      7424,
+      128,
+      64,
+      64
+    ],
+    "up_right/sleepy/TH": [
+      7488,
+      128,
+      64,
+      64
+    ],
+    "up_right/sleepy/L": [
+      7552,
+      128,
+      64,
+      64
+    ],
+    "up_right/sleepy/RSH": [
+      7616,
+      128,
+      64,
+      64
+    ],
+    "left/neutral/REST": [
+      0,
+      192,
+      64,
+      64
+    ],
+    "left/neutral/MBP": [
+      64,
+      192,
+      64,
+      64
+    ],
+    "left/neutral/AA": [
+      128,
+      192,
+      64,
+      64
+    ],
+    "left/neutral/EH": [
+      192,
+      192,
+      64,
+      64
+    ],
+    "left/neutral/EE": [
+      256,
+      192,
+      64,
+      64
+    ],
+    "left/neutral/OH": [
+      320,
+      192,
+      64,
+      64
+    ],
+    "left/neutral/OO": [
+      384,
+      192,
+      64,
+      64
+    ],
+    "left/neutral/NEUTRAL": [
+      448,
+      192,
+      64,
+      64
+    ],
+    "left/neutral/FV": [
+      512,
+      192,
+      64,
+      64
+    ],
+    "left/neutral/TH": [
+      576,
+      192,
+      64,
+      64
+    ],
+    "left/neutral/L": [
+      640,
+      192,
+      64,
+      64
+    ],
+    "left/neutral/RSH": [
+      704,
+      192,
+      64,
+      64
+    ],
+    "left/wink_left/REST": [
+      768,
+      192,
+      64,
+      64
+    ],
+    "left/wink_left/MBP": [
+      832,
+      192,
+      64,
+      64
+    ],
+    "left/wink_left/AA": [
+      896,
+      192,
+      64,
+      64
+    ],
+    "left/wink_left/EH": [
+      960,
+      192,
+      64,
+      64
+    ],
+    "left/wink_left/EE": [
+      1024,
+      192,
+      64,
+      64
+    ],
+    "left/wink_left/OH": [
+      1088,
+      192,
+      64,
+      64
+    ],
+    "left/wink_left/OO": [
+      1152,
+      192,
+      64,
+      64
+    ],
+    "left/wink_left/NEUTRAL": [
+      1216,
+      192,
+      64,
+      64
+    ],
+    "left/wink_left/FV": [
+      1280,
+      192,
+      64,
+      64
+    ],
+    "left/wink_left/TH": [
+      1344,
+      192,
+      64,
+      64
+    ],
+    "left/wink_left/L": [
+      1408,
+      192,
+      64,
+      64
+    ],
+    "left/wink_left/RSH": [
+      1472,
+      192,
+      64,
+      64
+    ],
+    "left/wink_right/REST": [
+      1536,
+      192,
+      64,
+      64
+    ],
+    "left/wink_right/MBP": [
+      1600,
+      192,
+      64,
+      64
+    ],
+    "left/wink_right/AA": [
+      1664,
+      192,
+      64,
+      64
+    ],
+    "left/wink_right/EH": [
+      1728,
+      192,
+      64,
+      64
+    ],
+    "left/wink_right/EE": [
+      1792,
+      192,
+      64,
+      64
+    ],
+    "left/wink_right/OH": [
+      1856,
+      192,
+      64,
+      64
+    ],
+    "left/wink_right/OO": [
+      1920,
+      192,
+      64,
+      64
+    ],
+    "left/wink_right/NEUTRAL": [
+      1984,
+      192,
+      64,
+      64
+    ],
+    "left/wink_right/FV": [
+      2048,
+      192,
+      64,
+      64
+    ],
+    "left/wink_right/TH": [
+      2112,
+      192,
+      64,
+      64
+    ],
+    "left/wink_right/L": [
+      2176,
+      192,
+      64,
+      64
+    ],
+    "left/wink_right/RSH": [
+      2240,
+      192,
+      64,
+      64
+    ],
+    "left/happy/REST": [
+      2304,
+      192,
+      64,
+      64
+    ],
+    "left/happy/MBP": [
+      2368,
+      192,
+      64,
+      64
+    ],
+    "left/happy/AA": [
+      2432,
+      192,
+      64,
+      64
+    ],
+    "left/happy/EH": [
+      2496,
+      192,
+      64,
+      64
+    ],
+    "left/happy/EE": [
+      2560,
+      192,
+      64,
+      64
+    ],
+    "left/happy/OH": [
+      2624,
+      192,
+      64,
+      64
+    ],
+    "left/happy/OO": [
+      2688,
+      192,
+      64,
+      64
+    ],
+    "left/happy/NEUTRAL": [
+      2752,
+      192,
+      64,
+      64
+    ],
+    "left/happy/FV": [
+      2816,
+      192,
+      64,
+      64
+    ],
+    "left/happy/TH": [
+      2880,
+      192,
+      64,
+      64
+    ],
+    "left/happy/L": [
+      2944,
+      192,
+      64,
+      64
+    ],
+    "left/happy/RSH": [
+      3008,
+      192,
+      64,
+      64
+    ],
+    "left/sad/REST": [
+      3072,
+      192,
+      64,
+      64
+    ],
+    "left/sad/MBP": [
+      3136,
+      192,
+      64,
+      64
+    ],
+    "left/sad/AA": [
+      3200,
+      192,
+      64,
+      64
+    ],
+    "left/sad/EH": [
+      3264,
+      192,
+      64,
+      64
+    ],
+    "left/sad/EE": [
+      3328,
+      192,
+      64,
+      64
+    ],
+    "left/sad/OH": [
+      3392,
+      192,
+      64,
+      64
+    ],
+    "left/sad/OO": [
+      3456,
+      192,
+      64,
+      64
+    ],
+    "left/sad/NEUTRAL": [
+      3520,
+      192,
+      64,
+      64
+    ],
+    "left/sad/FV": [
+      3584,
+      192,
+      64,
+      64
+    ],
+    "left/sad/TH": [
+      3648,
+      192,
+      64,
+      64
+    ],
+    "left/sad/L": [
+      3712,
+      192,
+      64,
+      64
+    ],
+    "left/sad/RSH": [
+      3776,
+      192,
+      64,
+      64
+    ],
+    "left/side_eye/REST": [
+      3840,
+      192,
+      64,
+      64
+    ],
+    "left/side_eye/MBP": [
+      3904,
+      192,
+      64,
+      64
+    ],
+    "left/side_eye/AA": [
+      3968,
+      192,
+      64,
+      64
+    ],
+    "left/side_eye/EH": [
+      4032,
+      192,
+      64,
+      64
+    ],
+    "left/side_eye/EE": [
+      4096,
+      192,
+      64,
+      64
+    ],
+    "left/side_eye/OH": [
+      4160,
+      192,
+      64,
+      64
+    ],
+    "left/side_eye/OO": [
+      4224,
+      192,
+      64,
+      64
+    ],
+    "left/side_eye/NEUTRAL": [
+      4288,
+      192,
+      64,
+      64
+    ],
+    "left/side_eye/FV": [
+      4352,
+      192,
+      64,
+      64
+    ],
+    "left/side_eye/TH": [
+      4416,
+      192,
+      64,
+      64
+    ],
+    "left/side_eye/L": [
+      4480,
+      192,
+      64,
+      64
+    ],
+    "left/side_eye/RSH": [
+      4544,
+      192,
+      64,
+      64
+    ],
+    "left/sulky/REST": [
+      4608,
+      192,
+      64,
+      64
+    ],
+    "left/sulky/MBP": [
+      4672,
+      192,
+      64,
+      64
+    ],
+    "left/sulky/AA": [
+      4736,
+      192,
+      64,
+      64
+    ],
+    "left/sulky/EH": [
+      4800,
+      192,
+      64,
+      64
+    ],
+    "left/sulky/EE": [
+      4864,
+      192,
+      64,
+      64
+    ],
+    "left/sulky/OH": [
+      4928,
+      192,
+      64,
+      64
+    ],
+    "left/sulky/OO": [
+      4992,
+      192,
+      64,
+      64
+    ],
+    "left/sulky/NEUTRAL": [
+      5056,
+      192,
+      64,
+      64
+    ],
+    "left/sulky/FV": [
+      5120,
+      192,
+      64,
+      64
+    ],
+    "left/sulky/TH": [
+      5184,
+      192,
+      64,
+      64
+    ],
+    "left/sulky/L": [
+      5248,
+      192,
+      64,
+      64
+    ],
+    "left/sulky/RSH": [
+      5312,
+      192,
+      64,
+      64
+    ],
+    "left/surprised/REST": [
+      5376,
+      192,
+      64,
+      64
+    ],
+    "left/surprised/MBP": [
+      5440,
+      192,
+      64,
+      64
+    ],
+    "left/surprised/AA": [
+      5504,
+      192,
+      64,
+      64
+    ],
+    "left/surprised/EH": [
+      5568,
+      192,
+      64,
+      64
+    ],
+    "left/surprised/EE": [
+      5632,
+      192,
+      64,
+      64
+    ],
+    "left/surprised/OH": [
+      5696,
+      192,
+      64,
+      64
+    ],
+    "left/surprised/OO": [
+      5760,
+      192,
+      64,
+      64
+    ],
+    "left/surprised/NEUTRAL": [
+      5824,
+      192,
+      64,
+      64
+    ],
+    "left/surprised/FV": [
+      5888,
+      192,
+      64,
+      64
+    ],
+    "left/surprised/TH": [
+      5952,
+      192,
+      64,
+      64
+    ],
+    "left/surprised/L": [
+      6016,
+      192,
+      64,
+      64
+    ],
+    "left/surprised/RSH": [
+      6080,
+      192,
+      64,
+      64
+    ],
+    "left/angry/REST": [
+      6144,
+      192,
+      64,
+      64
+    ],
+    "left/angry/MBP": [
+      6208,
+      192,
+      64,
+      64
+    ],
+    "left/angry/AA": [
+      6272,
+      192,
+      64,
+      64
+    ],
+    "left/angry/EH": [
+      6336,
+      192,
+      64,
+      64
+    ],
+    "left/angry/EE": [
+      6400,
+      192,
+      64,
+      64
+    ],
+    "left/angry/OH": [
+      6464,
+      192,
+      64,
+      64
+    ],
+    "left/angry/OO": [
+      6528,
+      192,
+      64,
+      64
+    ],
+    "left/angry/NEUTRAL": [
+      6592,
+      192,
+      64,
+      64
+    ],
+    "left/angry/FV": [
+      6656,
+      192,
+      64,
+      64
+    ],
+    "left/angry/TH": [
+      6720,
+      192,
+      64,
+      64
+    ],
+    "left/angry/L": [
+      6784,
+      192,
+      64,
+      64
+    ],
+    "left/angry/RSH": [
+      6848,
+      192,
+      64,
+      64
+    ],
+    "left/sleepy/REST": [
+      6912,
+      192,
+      64,
+      64
+    ],
+    "left/sleepy/MBP": [
+      6976,
+      192,
+      64,
+      64
+    ],
+    "left/sleepy/AA": [
+      7040,
+      192,
+      64,
+      64
+    ],
+    "left/sleepy/EH": [
+      7104,
+      192,
+      64,
+      64
+    ],
+    "left/sleepy/EE": [
+      7168,
+      192,
+      64,
+      64
+    ],
+    "left/sleepy/OH": [
+      7232,
+      192,
+      64,
+      64
+    ],
+    "left/sleepy/OO": [
+      7296,
+      192,
+      64,
+      64
+    ],
+    "left/sleepy/NEUTRAL": [
+      7360,
+      192,
+      64,
+      64
+    ],
+    "left/sleepy/FV": [
+      7424,
+      192,
+      64,
+      64
+    ],
+    "left/sleepy/TH": [
+      7488,
+      192,
+      64,
+      64
+    ],
+    "left/sleepy/L": [
+      7552,
+      192,
+      64,
+      64
+    ],
+    "left/sleepy/RSH": [
+      7616,
+      192,
+      64,
+      64
+    ],
+    "front/neutral/REST": [
+      0,
+      256,
+      64,
+      64
+    ],
+    "front/neutral/MBP": [
+      64,
+      256,
+      64,
+      64
+    ],
+    "front/neutral/AA": [
+      128,
+      256,
+      64,
+      64
+    ],
+    "front/neutral/EH": [
+      192,
+      256,
+      64,
+      64
+    ],
+    "front/neutral/EE": [
+      256,
+      256,
+      64,
+      64
+    ],
+    "front/neutral/OH": [
+      320,
+      256,
+      64,
+      64
+    ],
+    "front/neutral/OO": [
+      384,
+      256,
+      64,
+      64
+    ],
+    "front/neutral/NEUTRAL": [
+      448,
+      256,
+      64,
+      64
+    ],
+    "front/neutral/FV": [
+      512,
+      256,
+      64,
+      64
+    ],
+    "front/neutral/TH": [
+      576,
+      256,
+      64,
+      64
+    ],
+    "front/neutral/L": [
+      640,
+      256,
+      64,
+      64
+    ],
+    "front/neutral/RSH": [
+      704,
+      256,
+      64,
+      64
+    ],
+    "front/wink_left/REST": [
+      768,
+      256,
+      64,
+      64
+    ],
+    "front/wink_left/MBP": [
+      832,
+      256,
+      64,
+      64
+    ],
+    "front/wink_left/AA": [
+      896,
+      256,
+      64,
+      64
+    ],
+    "front/wink_left/EH": [
+      960,
+      256,
+      64,
+      64
+    ],
+    "front/wink_left/EE": [
+      1024,
+      256,
+      64,
+      64
+    ],
+    "front/wink_left/OH": [
+      1088,
+      256,
+      64,
+      64
+    ],
+    "front/wink_left/OO": [
+      1152,
+      256,
+      64,
+      64
+    ],
+    "front/wink_left/NEUTRAL": [
+      1216,
+      256,
+      64,
+      64
+    ],
+    "front/wink_left/FV": [
+      1280,
+      256,
+      64,
+      64
+    ],
+    "front/wink_left/TH": [
+      1344,
+      256,
+      64,
+      64
+    ],
+    "front/wink_left/L": [
+      1408,
+      256,
+      64,
+      64
+    ],
+    "front/wink_left/RSH": [
+      1472,
+      256,
+      64,
+      64
+    ],
+    "front/wink_right/REST": [
+      1536,
+      256,
+      64,
+      64
+    ],
+    "front/wink_right/MBP": [
+      1600,
+      256,
+      64,
+      64
+    ],
+    "front/wink_right/AA": [
+      1664,
+      256,
+      64,
+      64
+    ],
+    "front/wink_right/EH": [
+      1728,
+      256,
+      64,
+      64
+    ],
+    "front/wink_right/EE": [
+      1792,
+      256,
+      64,
+      64
+    ],
+    "front/wink_right/OH": [
+      1856,
+      256,
+      64,
+      64
+    ],
+    "front/wink_right/OO": [
+      1920,
+      256,
+      64,
+      64
+    ],
+    "front/wink_right/NEUTRAL": [
+      1984,
+      256,
+      64,
+      64
+    ],
+    "front/wink_right/FV": [
+      2048,
+      256,
+      64,
+      64
+    ],
+    "front/wink_right/TH": [
+      2112,
+      256,
+      64,
+      64
+    ],
+    "front/wink_right/L": [
+      2176,
+      256,
+      64,
+      64
+    ],
+    "front/wink_right/RSH": [
+      2240,
+      256,
+      64,
+      64
+    ],
+    "front/happy/REST": [
+      2304,
+      256,
+      64,
+      64
+    ],
+    "front/happy/MBP": [
+      2368,
+      256,
+      64,
+      64
+    ],
+    "front/happy/AA": [
+      2432,
+      256,
+      64,
+      64
+    ],
+    "front/happy/EH": [
+      2496,
+      256,
+      64,
+      64
+    ],
+    "front/happy/EE": [
+      2560,
+      256,
+      64,
+      64
+    ],
+    "front/happy/OH": [
+      2624,
+      256,
+      64,
+      64
+    ],
+    "front/happy/OO": [
+      2688,
+      256,
+      64,
+      64
+    ],
+    "front/happy/NEUTRAL": [
+      2752,
+      256,
+      64,
+      64
+    ],
+    "front/happy/FV": [
+      2816,
+      256,
+      64,
+      64
+    ],
+    "front/happy/TH": [
+      2880,
+      256,
+      64,
+      64
+    ],
+    "front/happy/L": [
+      2944,
+      256,
+      64,
+      64
+    ],
+    "front/happy/RSH": [
+      3008,
+      256,
+      64,
+      64
+    ],
+    "front/sad/REST": [
+      3072,
+      256,
+      64,
+      64
+    ],
+    "front/sad/MBP": [
+      3136,
+      256,
+      64,
+      64
+    ],
+    "front/sad/AA": [
+      3200,
+      256,
+      64,
+      64
+    ],
+    "front/sad/EH": [
+      3264,
+      256,
+      64,
+      64
+    ],
+    "front/sad/EE": [
+      3328,
+      256,
+      64,
+      64
+    ],
+    "front/sad/OH": [
+      3392,
+      256,
+      64,
+      64
+    ],
+    "front/sad/OO": [
+      3456,
+      256,
+      64,
+      64
+    ],
+    "front/sad/NEUTRAL": [
+      3520,
+      256,
+      64,
+      64
+    ],
+    "front/sad/FV": [
+      3584,
+      256,
+      64,
+      64
+    ],
+    "front/sad/TH": [
+      3648,
+      256,
+      64,
+      64
+    ],
+    "front/sad/L": [
+      3712,
+      256,
+      64,
+      64
+    ],
+    "front/sad/RSH": [
+      3776,
+      256,
+      64,
+      64
+    ],
+    "front/side_eye/REST": [
+      3840,
+      256,
+      64,
+      64
+    ],
+    "front/side_eye/MBP": [
+      3904,
+      256,
+      64,
+      64
+    ],
+    "front/side_eye/AA": [
+      3968,
+      256,
+      64,
+      64
+    ],
+    "front/side_eye/EH": [
+      4032,
+      256,
+      64,
+      64
+    ],
+    "front/side_eye/EE": [
+      4096,
+      256,
+      64,
+      64
+    ],
+    "front/side_eye/OH": [
+      4160,
+      256,
+      64,
+      64
+    ],
+    "front/side_eye/OO": [
+      4224,
+      256,
+      64,
+      64
+    ],
+    "front/side_eye/NEUTRAL": [
+      4288,
+      256,
+      64,
+      64
+    ],
+    "front/side_eye/FV": [
+      4352,
+      256,
+      64,
+      64
+    ],
+    "front/side_eye/TH": [
+      4416,
+      256,
+      64,
+      64
+    ],
+    "front/side_eye/L": [
+      4480,
+      256,
+      64,
+      64
+    ],
+    "front/side_eye/RSH": [
+      4544,
+      256,
+      64,
+      64
+    ],
+    "front/sulky/REST": [
+      4608,
+      256,
+      64,
+      64
+    ],
+    "front/sulky/MBP": [
+      4672,
+      256,
+      64,
+      64
+    ],
+    "front/sulky/AA": [
+      4736,
+      256,
+      64,
+      64
+    ],
+    "front/sulky/EH": [
+      4800,
+      256,
+      64,
+      64
+    ],
+    "front/sulky/EE": [
+      4864,
+      256,
+      64,
+      64
+    ],
+    "front/sulky/OH": [
+      4928,
+      256,
+      64,
+      64
+    ],
+    "front/sulky/OO": [
+      4992,
+      256,
+      64,
+      64
+    ],
+    "front/sulky/NEUTRAL": [
+      5056,
+      256,
+      64,
+      64
+    ],
+    "front/sulky/FV": [
+      5120,
+      256,
+      64,
+      64
+    ],
+    "front/sulky/TH": [
+      5184,
+      256,
+      64,
+      64
+    ],
+    "front/sulky/L": [
+      5248,
+      256,
+      64,
+      64
+    ],
+    "front/sulky/RSH": [
+      5312,
+      256,
+      64,
+      64
+    ],
+    "front/surprised/REST": [
+      5376,
+      256,
+      64,
+      64
+    ],
+    "front/surprised/MBP": [
+      5440,
+      256,
+      64,
+      64
+    ],
+    "front/surprised/AA": [
+      5504,
+      256,
+      64,
+      64
+    ],
+    "front/surprised/EH": [
+      5568,
+      256,
+      64,
+      64
+    ],
+    "front/surprised/EE": [
+      5632,
+      256,
+      64,
+      64
+    ],
+    "front/surprised/OH": [
+      5696,
+      256,
+      64,
+      64
+    ],
+    "front/surprised/OO": [
+      5760,
+      256,
+      64,
+      64
+    ],
+    "front/surprised/NEUTRAL": [
+      5824,
+      256,
+      64,
+      64
+    ],
+    "front/surprised/FV": [
+      5888,
+      256,
+      64,
+      64
+    ],
+    "front/surprised/TH": [
+      5952,
+      256,
+      64,
+      64
+    ],
+    "front/surprised/L": [
+      6016,
+      256,
+      64,
+      64
+    ],
+    "front/surprised/RSH": [
+      6080,
+      256,
+      64,
+      64
+    ],
+    "front/angry/REST": [
+      6144,
+      256,
+      64,
+      64
+    ],
+    "front/angry/MBP": [
+      6208,
+      256,
+      64,
+      64
+    ],
+    "front/angry/AA": [
+      6272,
+      256,
+      64,
+      64
+    ],
+    "front/angry/EH": [
+      6336,
+      256,
+      64,
+      64
+    ],
+    "front/angry/EE": [
+      6400,
+      256,
+      64,
+      64
+    ],
+    "front/angry/OH": [
+      6464,
+      256,
+      64,
+      64
+    ],
+    "front/angry/OO": [
+      6528,
+      256,
+      64,
+      64
+    ],
+    "front/angry/NEUTRAL": [
+      6592,
+      256,
+      64,
+      64
+    ],
+    "front/angry/FV": [
+      6656,
+      256,
+      64,
+      64
+    ],
+    "front/angry/TH": [
+      6720,
+      256,
+      64,
+      64
+    ],
+    "front/angry/L": [
+      6784,
+      256,
+      64,
+      64
+    ],
+    "front/angry/RSH": [
+      6848,
+      256,
+      64,
+      64
+    ],
+    "front/sleepy/REST": [
+      6912,
+      256,
+      64,
+      64
+    ],
+    "front/sleepy/MBP": [
+      6976,
+      256,
+      64,
+      64
+    ],
+    "front/sleepy/AA": [
+      7040,
+      256,
+      64,
+      64
+    ],
+    "front/sleepy/EH": [
+      7104,
+      256,
+      64,
+      64
+    ],
+    "front/sleepy/EE": [
+      7168,
+      256,
+      64,
+      64
+    ],
+    "front/sleepy/OH": [
+      7232,
+      256,
+      64,
+      64
+    ],
+    "front/sleepy/OO": [
+      7296,
+      256,
+      64,
+      64
+    ],
+    "front/sleepy/NEUTRAL": [
+      7360,
+      256,
+      64,
+      64
+    ],
+    "front/sleepy/FV": [
+      7424,
+      256,
+      64,
+      64
+    ],
+    "front/sleepy/TH": [
+      7488,
+      256,
+      64,
+      64
+    ],
+    "front/sleepy/L": [
+      7552,
+      256,
+      64,
+      64
+    ],
+    "front/sleepy/RSH": [
+      7616,
+      256,
+      64,
+      64
+    ],
+    "right/neutral/REST": [
+      0,
+      320,
+      64,
+      64
+    ],
+    "right/neutral/MBP": [
+      64,
+      320,
+      64,
+      64
+    ],
+    "right/neutral/AA": [
+      128,
+      320,
+      64,
+      64
+    ],
+    "right/neutral/EH": [
+      192,
+      320,
+      64,
+      64
+    ],
+    "right/neutral/EE": [
+      256,
+      320,
+      64,
+      64
+    ],
+    "right/neutral/OH": [
+      320,
+      320,
+      64,
+      64
+    ],
+    "right/neutral/OO": [
+      384,
+      320,
+      64,
+      64
+    ],
+    "right/neutral/NEUTRAL": [
+      448,
+      320,
+      64,
+      64
+    ],
+    "right/neutral/FV": [
+      512,
+      320,
+      64,
+      64
+    ],
+    "right/neutral/TH": [
+      576,
+      320,
+      64,
+      64
+    ],
+    "right/neutral/L": [
+      640,
+      320,
+      64,
+      64
+    ],
+    "right/neutral/RSH": [
+      704,
+      320,
+      64,
+      64
+    ],
+    "right/wink_left/REST": [
+      768,
+      320,
+      64,
+      64
+    ],
+    "right/wink_left/MBP": [
+      832,
+      320,
+      64,
+      64
+    ],
+    "right/wink_left/AA": [
+      896,
+      320,
+      64,
+      64
+    ],
+    "right/wink_left/EH": [
+      960,
+      320,
+      64,
+      64
+    ],
+    "right/wink_left/EE": [
+      1024,
+      320,
+      64,
+      64
+    ],
+    "right/wink_left/OH": [
+      1088,
+      320,
+      64,
+      64
+    ],
+    "right/wink_left/OO": [
+      1152,
+      320,
+      64,
+      64
+    ],
+    "right/wink_left/NEUTRAL": [
+      1216,
+      320,
+      64,
+      64
+    ],
+    "right/wink_left/FV": [
+      1280,
+      320,
+      64,
+      64
+    ],
+    "right/wink_left/TH": [
+      1344,
+      320,
+      64,
+      64
+    ],
+    "right/wink_left/L": [
+      1408,
+      320,
+      64,
+      64
+    ],
+    "right/wink_left/RSH": [
+      1472,
+      320,
+      64,
+      64
+    ],
+    "right/wink_right/REST": [
+      1536,
+      320,
+      64,
+      64
+    ],
+    "right/wink_right/MBP": [
+      1600,
+      320,
+      64,
+      64
+    ],
+    "right/wink_right/AA": [
+      1664,
+      320,
+      64,
+      64
+    ],
+    "right/wink_right/EH": [
+      1728,
+      320,
+      64,
+      64
+    ],
+    "right/wink_right/EE": [
+      1792,
+      320,
+      64,
+      64
+    ],
+    "right/wink_right/OH": [
+      1856,
+      320,
+      64,
+      64
+    ],
+    "right/wink_right/OO": [
+      1920,
+      320,
+      64,
+      64
+    ],
+    "right/wink_right/NEUTRAL": [
+      1984,
+      320,
+      64,
+      64
+    ],
+    "right/wink_right/FV": [
+      2048,
+      320,
+      64,
+      64
+    ],
+    "right/wink_right/TH": [
+      2112,
+      320,
+      64,
+      64
+    ],
+    "right/wink_right/L": [
+      2176,
+      320,
+      64,
+      64
+    ],
+    "right/wink_right/RSH": [
+      2240,
+      320,
+      64,
+      64
+    ],
+    "right/happy/REST": [
+      2304,
+      320,
+      64,
+      64
+    ],
+    "right/happy/MBP": [
+      2368,
+      320,
+      64,
+      64
+    ],
+    "right/happy/AA": [
+      2432,
+      320,
+      64,
+      64
+    ],
+    "right/happy/EH": [
+      2496,
+      320,
+      64,
+      64
+    ],
+    "right/happy/EE": [
+      2560,
+      320,
+      64,
+      64
+    ],
+    "right/happy/OH": [
+      2624,
+      320,
+      64,
+      64
+    ],
+    "right/happy/OO": [
+      2688,
+      320,
+      64,
+      64
+    ],
+    "right/happy/NEUTRAL": [
+      2752,
+      320,
+      64,
+      64
+    ],
+    "right/happy/FV": [
+      2816,
+      320,
+      64,
+      64
+    ],
+    "right/happy/TH": [
+      2880,
+      320,
+      64,
+      64
+    ],
+    "right/happy/L": [
+      2944,
+      320,
+      64,
+      64
+    ],
+    "right/happy/RSH": [
+      3008,
+      320,
+      64,
+      64
+    ],
+    "right/sad/REST": [
+      3072,
+      320,
+      64,
+      64
+    ],
+    "right/sad/MBP": [
+      3136,
+      320,
+      64,
+      64
+    ],
+    "right/sad/AA": [
+      3200,
+      320,
+      64,
+      64
+    ],
+    "right/sad/EH": [
+      3264,
+      320,
+      64,
+      64
+    ],
+    "right/sad/EE": [
+      3328,
+      320,
+      64,
+      64
+    ],
+    "right/sad/OH": [
+      3392,
+      320,
+      64,
+      64
+    ],
+    "right/sad/OO": [
+      3456,
+      320,
+      64,
+      64
+    ],
+    "right/sad/NEUTRAL": [
+      3520,
+      320,
+      64,
+      64
+    ],
+    "right/sad/FV": [
+      3584,
+      320,
+      64,
+      64
+    ],
+    "right/sad/TH": [
+      3648,
+      320,
+      64,
+      64
+    ],
+    "right/sad/L": [
+      3712,
+      320,
+      64,
+      64
+    ],
+    "right/sad/RSH": [
+      3776,
+      320,
+      64,
+      64
+    ],
+    "right/side_eye/REST": [
+      3840,
+      320,
+      64,
+      64
+    ],
+    "right/side_eye/MBP": [
+      3904,
+      320,
+      64,
+      64
+    ],
+    "right/side_eye/AA": [
+      3968,
+      320,
+      64,
+      64
+    ],
+    "right/side_eye/EH": [
+      4032,
+      320,
+      64,
+      64
+    ],
+    "right/side_eye/EE": [
+      4096,
+      320,
+      64,
+      64
+    ],
+    "right/side_eye/OH": [
+      4160,
+      320,
+      64,
+      64
+    ],
+    "right/side_eye/OO": [
+      4224,
+      320,
+      64,
+      64
+    ],
+    "right/side_eye/NEUTRAL": [
+      4288,
+      320,
+      64,
+      64
+    ],
+    "right/side_eye/FV": [
+      4352,
+      320,
+      64,
+      64
+    ],
+    "right/side_eye/TH": [
+      4416,
+      320,
+      64,
+      64
+    ],
+    "right/side_eye/L": [
+      4480,
+      320,
+      64,
+      64
+    ],
+    "right/side_eye/RSH": [
+      4544,
+      320,
+      64,
+      64
+    ],
+    "right/sulky/REST": [
+      4608,
+      320,
+      64,
+      64
+    ],
+    "right/sulky/MBP": [
+      4672,
+      320,
+      64,
+      64
+    ],
+    "right/sulky/AA": [
+      4736,
+      320,
+      64,
+      64
+    ],
+    "right/sulky/EH": [
+      4800,
+      320,
+      64,
+      64
+    ],
+    "right/sulky/EE": [
+      4864,
+      320,
+      64,
+      64
+    ],
+    "right/sulky/OH": [
+      4928,
+      320,
+      64,
+      64
+    ],
+    "right/sulky/OO": [
+      4992,
+      320,
+      64,
+      64
+    ],
+    "right/sulky/NEUTRAL": [
+      5056,
+      320,
+      64,
+      64
+    ],
+    "right/sulky/FV": [
+      5120,
+      320,
+      64,
+      64
+    ],
+    "right/sulky/TH": [
+      5184,
+      320,
+      64,
+      64
+    ],
+    "right/sulky/L": [
+      5248,
+      320,
+      64,
+      64
+    ],
+    "right/sulky/RSH": [
+      5312,
+      320,
+      64,
+      64
+    ],
+    "right/surprised/REST": [
+      5376,
+      320,
+      64,
+      64
+    ],
+    "right/surprised/MBP": [
+      5440,
+      320,
+      64,
+      64
+    ],
+    "right/surprised/AA": [
+      5504,
+      320,
+      64,
+      64
+    ],
+    "right/surprised/EH": [
+      5568,
+      320,
+      64,
+      64
+    ],
+    "right/surprised/EE": [
+      5632,
+      320,
+      64,
+      64
+    ],
+    "right/surprised/OH": [
+      5696,
+      320,
+      64,
+      64
+    ],
+    "right/surprised/OO": [
+      5760,
+      320,
+      64,
+      64
+    ],
+    "right/surprised/NEUTRAL": [
+      5824,
+      320,
+      64,
+      64
+    ],
+    "right/surprised/FV": [
+      5888,
+      320,
+      64,
+      64
+    ],
+    "right/surprised/TH": [
+      5952,
+      320,
+      64,
+      64
+    ],
+    "right/surprised/L": [
+      6016,
+      320,
+      64,
+      64
+    ],
+    "right/surprised/RSH": [
+      6080,
+      320,
+      64,
+      64
+    ],
+    "right/angry/REST": [
+      6144,
+      320,
+      64,
+      64
+    ],
+    "right/angry/MBP": [
+      6208,
+      320,
+      64,
+      64
+    ],
+    "right/angry/AA": [
+      6272,
+      320,
+      64,
+      64
+    ],
+    "right/angry/EH": [
+      6336,
+      320,
+      64,
+      64
+    ],
+    "right/angry/EE": [
+      6400,
+      320,
+      64,
+      64
+    ],
+    "right/angry/OH": [
+      6464,
+      320,
+      64,
+      64
+    ],
+    "right/angry/OO": [
+      6528,
+      320,
+      64,
+      64
+    ],
+    "right/angry/NEUTRAL": [
+      6592,
+      320,
+      64,
+      64
+    ],
+    "right/angry/FV": [
+      6656,
+      320,
+      64,
+      64
+    ],
+    "right/angry/TH": [
+      6720,
+      320,
+      64,
+      64
+    ],
+    "right/angry/L": [
+      6784,
+      320,
+      64,
+      64
+    ],
+    "right/angry/RSH": [
+      6848,
+      320,
+      64,
+      64
+    ],
+    "right/sleepy/REST": [
+      6912,
+      320,
+      64,
+      64
+    ],
+    "right/sleepy/MBP": [
+      6976,
+      320,
+      64,
+      64
+    ],
+    "right/sleepy/AA": [
+      7040,
+      320,
+      64,
+      64
+    ],
+    "right/sleepy/EH": [
+      7104,
+      320,
+      64,
+      64
+    ],
+    "right/sleepy/EE": [
+      7168,
+      320,
+      64,
+      64
+    ],
+    "right/sleepy/OH": [
+      7232,
+      320,
+      64,
+      64
+    ],
+    "right/sleepy/OO": [
+      7296,
+      320,
+      64,
+      64
+    ],
+    "right/sleepy/NEUTRAL": [
+      7360,
+      320,
+      64,
+      64
+    ],
+    "right/sleepy/FV": [
+      7424,
+      320,
+      64,
+      64
+    ],
+    "right/sleepy/TH": [
+      7488,
+      320,
+      64,
+      64
+    ],
+    "right/sleepy/L": [
+      7552,
+      320,
+      64,
+      64
+    ],
+    "right/sleepy/RSH": [
+      7616,
+      320,
+      64,
+      64
+    ],
+    "down_left/neutral/REST": [
+      0,
+      384,
+      64,
+      64
+    ],
+    "down_left/neutral/MBP": [
+      64,
+      384,
+      64,
+      64
+    ],
+    "down_left/neutral/AA": [
+      128,
+      384,
+      64,
+      64
+    ],
+    "down_left/neutral/EH": [
+      192,
+      384,
+      64,
+      64
+    ],
+    "down_left/neutral/EE": [
+      256,
+      384,
+      64,
+      64
+    ],
+    "down_left/neutral/OH": [
+      320,
+      384,
+      64,
+      64
+    ],
+    "down_left/neutral/OO": [
+      384,
+      384,
+      64,
+      64
+    ],
+    "down_left/neutral/NEUTRAL": [
+      448,
+      384,
+      64,
+      64
+    ],
+    "down_left/neutral/FV": [
+      512,
+      384,
+      64,
+      64
+    ],
+    "down_left/neutral/TH": [
+      576,
+      384,
+      64,
+      64
+    ],
+    "down_left/neutral/L": [
+      640,
+      384,
+      64,
+      64
+    ],
+    "down_left/neutral/RSH": [
+      704,
+      384,
+      64,
+      64
+    ],
+    "down_left/wink_left/REST": [
+      768,
+      384,
+      64,
+      64
+    ],
+    "down_left/wink_left/MBP": [
+      832,
+      384,
+      64,
+      64
+    ],
+    "down_left/wink_left/AA": [
+      896,
+      384,
+      64,
+      64
+    ],
+    "down_left/wink_left/EH": [
+      960,
+      384,
+      64,
+      64
+    ],
+    "down_left/wink_left/EE": [
+      1024,
+      384,
+      64,
+      64
+    ],
+    "down_left/wink_left/OH": [
+      1088,
+      384,
+      64,
+      64
+    ],
+    "down_left/wink_left/OO": [
+      1152,
+      384,
+      64,
+      64
+    ],
+    "down_left/wink_left/NEUTRAL": [
+      1216,
+      384,
+      64,
+      64
+    ],
+    "down_left/wink_left/FV": [
+      1280,
+      384,
+      64,
+      64
+    ],
+    "down_left/wink_left/TH": [
+      1344,
+      384,
+      64,
+      64
+    ],
+    "down_left/wink_left/L": [
+      1408,
+      384,
+      64,
+      64
+    ],
+    "down_left/wink_left/RSH": [
+      1472,
+      384,
+      64,
+      64
+    ],
+    "down_left/wink_right/REST": [
+      1536,
+      384,
+      64,
+      64
+    ],
+    "down_left/wink_right/MBP": [
+      1600,
+      384,
+      64,
+      64
+    ],
+    "down_left/wink_right/AA": [
+      1664,
+      384,
+      64,
+      64
+    ],
+    "down_left/wink_right/EH": [
+      1728,
+      384,
+      64,
+      64
+    ],
+    "down_left/wink_right/EE": [
+      1792,
+      384,
+      64,
+      64
+    ],
+    "down_left/wink_right/OH": [
+      1856,
+      384,
+      64,
+      64
+    ],
+    "down_left/wink_right/OO": [
+      1920,
+      384,
+      64,
+      64
+    ],
+    "down_left/wink_right/NEUTRAL": [
+      1984,
+      384,
+      64,
+      64
+    ],
+    "down_left/wink_right/FV": [
+      2048,
+      384,
+      64,
+      64
+    ],
+    "down_left/wink_right/TH": [
+      2112,
+      384,
+      64,
+      64
+    ],
+    "down_left/wink_right/L": [
+      2176,
+      384,
+      64,
+      64
+    ],
+    "down_left/wink_right/RSH": [
+      2240,
+      384,
+      64,
+      64
+    ],
+    "down_left/happy/REST": [
+      2304,
+      384,
+      64,
+      64
+    ],
+    "down_left/happy/MBP": [
+      2368,
+      384,
+      64,
+      64
+    ],
+    "down_left/happy/AA": [
+      2432,
+      384,
+      64,
+      64
+    ],
+    "down_left/happy/EH": [
+      2496,
+      384,
+      64,
+      64
+    ],
+    "down_left/happy/EE": [
+      2560,
+      384,
+      64,
+      64
+    ],
+    "down_left/happy/OH": [
+      2624,
+      384,
+      64,
+      64
+    ],
+    "down_left/happy/OO": [
+      2688,
+      384,
+      64,
+      64
+    ],
+    "down_left/happy/NEUTRAL": [
+      2752,
+      384,
+      64,
+      64
+    ],
+    "down_left/happy/FV": [
+      2816,
+      384,
+      64,
+      64
+    ],
+    "down_left/happy/TH": [
+      2880,
+      384,
+      64,
+      64
+    ],
+    "down_left/happy/L": [
+      2944,
+      384,
+      64,
+      64
+    ],
+    "down_left/happy/RSH": [
+      3008,
+      384,
+      64,
+      64
+    ],
+    "down_left/sad/REST": [
+      3072,
+      384,
+      64,
+      64
+    ],
+    "down_left/sad/MBP": [
+      3136,
+      384,
+      64,
+      64
+    ],
+    "down_left/sad/AA": [
+      3200,
+      384,
+      64,
+      64
+    ],
+    "down_left/sad/EH": [
+      3264,
+      384,
+      64,
+      64
+    ],
+    "down_left/sad/EE": [
+      3328,
+      384,
+      64,
+      64
+    ],
+    "down_left/sad/OH": [
+      3392,
+      384,
+      64,
+      64
+    ],
+    "down_left/sad/OO": [
+      3456,
+      384,
+      64,
+      64
+    ],
+    "down_left/sad/NEUTRAL": [
+      3520,
+      384,
+      64,
+      64
+    ],
+    "down_left/sad/FV": [
+      3584,
+      384,
+      64,
+      64
+    ],
+    "down_left/sad/TH": [
+      3648,
+      384,
+      64,
+      64
+    ],
+    "down_left/sad/L": [
+      3712,
+      384,
+      64,
+      64
+    ],
+    "down_left/sad/RSH": [
+      3776,
+      384,
+      64,
+      64
+    ],
+    "down_left/side_eye/REST": [
+      3840,
+      384,
+      64,
+      64
+    ],
+    "down_left/side_eye/MBP": [
+      3904,
+      384,
+      64,
+      64
+    ],
+    "down_left/side_eye/AA": [
+      3968,
+      384,
+      64,
+      64
+    ],
+    "down_left/side_eye/EH": [
+      4032,
+      384,
+      64,
+      64
+    ],
+    "down_left/side_eye/EE": [
+      4096,
+      384,
+      64,
+      64
+    ],
+    "down_left/side_eye/OH": [
+      4160,
+      384,
+      64,
+      64
+    ],
+    "down_left/side_eye/OO": [
+      4224,
+      384,
+      64,
+      64
+    ],
+    "down_left/side_eye/NEUTRAL": [
+      4288,
+      384,
+      64,
+      64
+    ],
+    "down_left/side_eye/FV": [
+      4352,
+      384,
+      64,
+      64
+    ],
+    "down_left/side_eye/TH": [
+      4416,
+      384,
+      64,
+      64
+    ],
+    "down_left/side_eye/L": [
+      4480,
+      384,
+      64,
+      64
+    ],
+    "down_left/side_eye/RSH": [
+      4544,
+      384,
+      64,
+      64
+    ],
+    "down_left/sulky/REST": [
+      4608,
+      384,
+      64,
+      64
+    ],
+    "down_left/sulky/MBP": [
+      4672,
+      384,
+      64,
+      64
+    ],
+    "down_left/sulky/AA": [
+      4736,
+      384,
+      64,
+      64
+    ],
+    "down_left/sulky/EH": [
+      4800,
+      384,
+      64,
+      64
+    ],
+    "down_left/sulky/EE": [
+      4864,
+      384,
+      64,
+      64
+    ],
+    "down_left/sulky/OH": [
+      4928,
+      384,
+      64,
+      64
+    ],
+    "down_left/sulky/OO": [
+      4992,
+      384,
+      64,
+      64
+    ],
+    "down_left/sulky/NEUTRAL": [
+      5056,
+      384,
+      64,
+      64
+    ],
+    "down_left/sulky/FV": [
+      5120,
+      384,
+      64,
+      64
+    ],
+    "down_left/sulky/TH": [
+      5184,
+      384,
+      64,
+      64
+    ],
+    "down_left/sulky/L": [
+      5248,
+      384,
+      64,
+      64
+    ],
+    "down_left/sulky/RSH": [
+      5312,
+      384,
+      64,
+      64
+    ],
+    "down_left/surprised/REST": [
+      5376,
+      384,
+      64,
+      64
+    ],
+    "down_left/surprised/MBP": [
+      5440,
+      384,
+      64,
+      64
+    ],
+    "down_left/surprised/AA": [
+      5504,
+      384,
+      64,
+      64
+    ],
+    "down_left/surprised/EH": [
+      5568,
+      384,
+      64,
+      64
+    ],
+    "down_left/surprised/EE": [
+      5632,
+      384,
+      64,
+      64
+    ],
+    "down_left/surprised/OH": [
+      5696,
+      384,
+      64,
+      64
+    ],
+    "down_left/surprised/OO": [
+      5760,
+      384,
+      64,
+      64
+    ],
+    "down_left/surprised/NEUTRAL": [
+      5824,
+      384,
+      64,
+      64
+    ],
+    "down_left/surprised/FV": [
+      5888,
+      384,
+      64,
+      64
+    ],
+    "down_left/surprised/TH": [
+      5952,
+      384,
+      64,
+      64
+    ],
+    "down_left/surprised/L": [
+      6016,
+      384,
+      64,
+      64
+    ],
+    "down_left/surprised/RSH": [
+      6080,
+      384,
+      64,
+      64
+    ],
+    "down_left/angry/REST": [
+      6144,
+      384,
+      64,
+      64
+    ],
+    "down_left/angry/MBP": [
+      6208,
+      384,
+      64,
+      64
+    ],
+    "down_left/angry/AA": [
+      6272,
+      384,
+      64,
+      64
+    ],
+    "down_left/angry/EH": [
+      6336,
+      384,
+      64,
+      64
+    ],
+    "down_left/angry/EE": [
+      6400,
+      384,
+      64,
+      64
+    ],
+    "down_left/angry/OH": [
+      6464,
+      384,
+      64,
+      64
+    ],
+    "down_left/angry/OO": [
+      6528,
+      384,
+      64,
+      64
+    ],
+    "down_left/angry/NEUTRAL": [
+      6592,
+      384,
+      64,
+      64
+    ],
+    "down_left/angry/FV": [
+      6656,
+      384,
+      64,
+      64
+    ],
+    "down_left/angry/TH": [
+      6720,
+      384,
+      64,
+      64
+    ],
+    "down_left/angry/L": [
+      6784,
+      384,
+      64,
+      64
+    ],
+    "down_left/angry/RSH": [
+      6848,
+      384,
+      64,
+      64
+    ],
+    "down_left/sleepy/REST": [
+      6912,
+      384,
+      64,
+      64
+    ],
+    "down_left/sleepy/MBP": [
+      6976,
+      384,
+      64,
+      64
+    ],
+    "down_left/sleepy/AA": [
+      7040,
+      384,
+      64,
+      64
+    ],
+    "down_left/sleepy/EH": [
+      7104,
+      384,
+      64,
+      64
+    ],
+    "down_left/sleepy/EE": [
+      7168,
+      384,
+      64,
+      64
+    ],
+    "down_left/sleepy/OH": [
+      7232,
+      384,
+      64,
+      64
+    ],
+    "down_left/sleepy/OO": [
+      7296,
+      384,
+      64,
+      64
+    ],
+    "down_left/sleepy/NEUTRAL": [
+      7360,
+      384,
+      64,
+      64
+    ],
+    "down_left/sleepy/FV": [
+      7424,
+      384,
+      64,
+      64
+    ],
+    "down_left/sleepy/TH": [
+      7488,
+      384,
+      64,
+      64
+    ],
+    "down_left/sleepy/L": [
+      7552,
+      384,
+      64,
+      64
+    ],
+    "down_left/sleepy/RSH": [
+      7616,
+      384,
+      64,
+      64
+    ],
+    "down/neutral/REST": [
+      0,
+      448,
+      64,
+      64
+    ],
+    "down/neutral/MBP": [
+      64,
+      448,
+      64,
+      64
+    ],
+    "down/neutral/AA": [
+      128,
+      448,
+      64,
+      64
+    ],
+    "down/neutral/EH": [
+      192,
+      448,
+      64,
+      64
+    ],
+    "down/neutral/EE": [
+      256,
+      448,
+      64,
+      64
+    ],
+    "down/neutral/OH": [
+      320,
+      448,
+      64,
+      64
+    ],
+    "down/neutral/OO": [
+      384,
+      448,
+      64,
+      64
+    ],
+    "down/neutral/NEUTRAL": [
+      448,
+      448,
+      64,
+      64
+    ],
+    "down/neutral/FV": [
+      512,
+      448,
+      64,
+      64
+    ],
+    "down/neutral/TH": [
+      576,
+      448,
+      64,
+      64
+    ],
+    "down/neutral/L": [
+      640,
+      448,
+      64,
+      64
+    ],
+    "down/neutral/RSH": [
+      704,
+      448,
+      64,
+      64
+    ],
+    "down/wink_left/REST": [
+      768,
+      448,
+      64,
+      64
+    ],
+    "down/wink_left/MBP": [
+      832,
+      448,
+      64,
+      64
+    ],
+    "down/wink_left/AA": [
+      896,
+      448,
+      64,
+      64
+    ],
+    "down/wink_left/EH": [
+      960,
+      448,
+      64,
+      64
+    ],
+    "down/wink_left/EE": [
+      1024,
+      448,
+      64,
+      64
+    ],
+    "down/wink_left/OH": [
+      1088,
+      448,
+      64,
+      64
+    ],
+    "down/wink_left/OO": [
+      1152,
+      448,
+      64,
+      64
+    ],
+    "down/wink_left/NEUTRAL": [
+      1216,
+      448,
+      64,
+      64
+    ],
+    "down/wink_left/FV": [
+      1280,
+      448,
+      64,
+      64
+    ],
+    "down/wink_left/TH": [
+      1344,
+      448,
+      64,
+      64
+    ],
+    "down/wink_left/L": [
+      1408,
+      448,
+      64,
+      64
+    ],
+    "down/wink_left/RSH": [
+      1472,
+      448,
+      64,
+      64
+    ],
+    "down/wink_right/REST": [
+      1536,
+      448,
+      64,
+      64
+    ],
+    "down/wink_right/MBP": [
+      1600,
+      448,
+      64,
+      64
+    ],
+    "down/wink_right/AA": [
+      1664,
+      448,
+      64,
+      64
+    ],
+    "down/wink_right/EH": [
+      1728,
+      448,
+      64,
+      64
+    ],
+    "down/wink_right/EE": [
+      1792,
+      448,
+      64,
+      64
+    ],
+    "down/wink_right/OH": [
+      1856,
+      448,
+      64,
+      64
+    ],
+    "down/wink_right/OO": [
+      1920,
+      448,
+      64,
+      64
+    ],
+    "down/wink_right/NEUTRAL": [
+      1984,
+      448,
+      64,
+      64
+    ],
+    "down/wink_right/FV": [
+      2048,
+      448,
+      64,
+      64
+    ],
+    "down/wink_right/TH": [
+      2112,
+      448,
+      64,
+      64
+    ],
+    "down/wink_right/L": [
+      2176,
+      448,
+      64,
+      64
+    ],
+    "down/wink_right/RSH": [
+      2240,
+      448,
+      64,
+      64
+    ],
+    "down/happy/REST": [
+      2304,
+      448,
+      64,
+      64
+    ],
+    "down/happy/MBP": [
+      2368,
+      448,
+      64,
+      64
+    ],
+    "down/happy/AA": [
+      2432,
+      448,
+      64,
+      64
+    ],
+    "down/happy/EH": [
+      2496,
+      448,
+      64,
+      64
+    ],
+    "down/happy/EE": [
+      2560,
+      448,
+      64,
+      64
+    ],
+    "down/happy/OH": [
+      2624,
+      448,
+      64,
+      64
+    ],
+    "down/happy/OO": [
+      2688,
+      448,
+      64,
+      64
+    ],
+    "down/happy/NEUTRAL": [
+      2752,
+      448,
+      64,
+      64
+    ],
+    "down/happy/FV": [
+      2816,
+      448,
+      64,
+      64
+    ],
+    "down/happy/TH": [
+      2880,
+      448,
+      64,
+      64
+    ],
+    "down/happy/L": [
+      2944,
+      448,
+      64,
+      64
+    ],
+    "down/happy/RSH": [
+      3008,
+      448,
+      64,
+      64
+    ],
+    "down/sad/REST": [
+      3072,
+      448,
+      64,
+      64
+    ],
+    "down/sad/MBP": [
+      3136,
+      448,
+      64,
+      64
+    ],
+    "down/sad/AA": [
+      3200,
+      448,
+      64,
+      64
+    ],
+    "down/sad/EH": [
+      3264,
+      448,
+      64,
+      64
+    ],
+    "down/sad/EE": [
+      3328,
+      448,
+      64,
+      64
+    ],
+    "down/sad/OH": [
+      3392,
+      448,
+      64,
+      64
+    ],
+    "down/sad/OO": [
+      3456,
+      448,
+      64,
+      64
+    ],
+    "down/sad/NEUTRAL": [
+      3520,
+      448,
+      64,
+      64
+    ],
+    "down/sad/FV": [
+      3584,
+      448,
+      64,
+      64
+    ],
+    "down/sad/TH": [
+      3648,
+      448,
+      64,
+      64
+    ],
+    "down/sad/L": [
+      3712,
+      448,
+      64,
+      64
+    ],
+    "down/sad/RSH": [
+      3776,
+      448,
+      64,
+      64
+    ],
+    "down/side_eye/REST": [
+      3840,
+      448,
+      64,
+      64
+    ],
+    "down/side_eye/MBP": [
+      3904,
+      448,
+      64,
+      64
+    ],
+    "down/side_eye/AA": [
+      3968,
+      448,
+      64,
+      64
+    ],
+    "down/side_eye/EH": [
+      4032,
+      448,
+      64,
+      64
+    ],
+    "down/side_eye/EE": [
+      4096,
+      448,
+      64,
+      64
+    ],
+    "down/side_eye/OH": [
+      4160,
+      448,
+      64,
+      64
+    ],
+    "down/side_eye/OO": [
+      4224,
+      448,
+      64,
+      64
+    ],
+    "down/side_eye/NEUTRAL": [
+      4288,
+      448,
+      64,
+      64
+    ],
+    "down/side_eye/FV": [
+      4352,
+      448,
+      64,
+      64
+    ],
+    "down/side_eye/TH": [
+      4416,
+      448,
+      64,
+      64
+    ],
+    "down/side_eye/L": [
+      4480,
+      448,
+      64,
+      64
+    ],
+    "down/side_eye/RSH": [
+      4544,
+      448,
+      64,
+      64
+    ],
+    "down/sulky/REST": [
+      4608,
+      448,
+      64,
+      64
+    ],
+    "down/sulky/MBP": [
+      4672,
+      448,
+      64,
+      64
+    ],
+    "down/sulky/AA": [
+      4736,
+      448,
+      64,
+      64
+    ],
+    "down/sulky/EH": [
+      4800,
+      448,
+      64,
+      64
+    ],
+    "down/sulky/EE": [
+      4864,
+      448,
+      64,
+      64
+    ],
+    "down/sulky/OH": [
+      4928,
+      448,
+      64,
+      64
+    ],
+    "down/sulky/OO": [
+      4992,
+      448,
+      64,
+      64
+    ],
+    "down/sulky/NEUTRAL": [
+      5056,
+      448,
+      64,
+      64
+    ],
+    "down/sulky/FV": [
+      5120,
+      448,
+      64,
+      64
+    ],
+    "down/sulky/TH": [
+      5184,
+      448,
+      64,
+      64
+    ],
+    "down/sulky/L": [
+      5248,
+      448,
+      64,
+      64
+    ],
+    "down/sulky/RSH": [
+      5312,
+      448,
+      64,
+      64
+    ],
+    "down/surprised/REST": [
+      5376,
+      448,
+      64,
+      64
+    ],
+    "down/surprised/MBP": [
+      5440,
+      448,
+      64,
+      64
+    ],
+    "down/surprised/AA": [
+      5504,
+      448,
+      64,
+      64
+    ],
+    "down/surprised/EH": [
+      5568,
+      448,
+      64,
+      64
+    ],
+    "down/surprised/EE": [
+      5632,
+      448,
+      64,
+      64
+    ],
+    "down/surprised/OH": [
+      5696,
+      448,
+      64,
+      64
+    ],
+    "down/surprised/OO": [
+      5760,
+      448,
+      64,
+      64
+    ],
+    "down/surprised/NEUTRAL": [
+      5824,
+      448,
+      64,
+      64
+    ],
+    "down/surprised/FV": [
+      5888,
+      448,
+      64,
+      64
+    ],
+    "down/surprised/TH": [
+      5952,
+      448,
+      64,
+      64
+    ],
+    "down/surprised/L": [
+      6016,
+      448,
+      64,
+      64
+    ],
+    "down/surprised/RSH": [
+      6080,
+      448,
+      64,
+      64
+    ],
+    "down/angry/REST": [
+      6144,
+      448,
+      64,
+      64
+    ],
+    "down/angry/MBP": [
+      6208,
+      448,
+      64,
+      64
+    ],
+    "down/angry/AA": [
+      6272,
+      448,
+      64,
+      64
+    ],
+    "down/angry/EH": [
+      6336,
+      448,
+      64,
+      64
+    ],
+    "down/angry/EE": [
+      6400,
+      448,
+      64,
+      64
+    ],
+    "down/angry/OH": [
+      6464,
+      448,
+      64,
+      64
+    ],
+    "down/angry/OO": [
+      6528,
+      448,
+      64,
+      64
+    ],
+    "down/angry/NEUTRAL": [
+      6592,
+      448,
+      64,
+      64
+    ],
+    "down/angry/FV": [
+      6656,
+      448,
+      64,
+      64
+    ],
+    "down/angry/TH": [
+      6720,
+      448,
+      64,
+      64
+    ],
+    "down/angry/L": [
+      6784,
+      448,
+      64,
+      64
+    ],
+    "down/angry/RSH": [
+      6848,
+      448,
+      64,
+      64
+    ],
+    "down/sleepy/REST": [
+      6912,
+      448,
+      64,
+      64
+    ],
+    "down/sleepy/MBP": [
+      6976,
+      448,
+      64,
+      64
+    ],
+    "down/sleepy/AA": [
+      7040,
+      448,
+      64,
+      64
+    ],
+    "down/sleepy/EH": [
+      7104,
+      448,
+      64,
+      64
+    ],
+    "down/sleepy/EE": [
+      7168,
+      448,
+      64,
+      64
+    ],
+    "down/sleepy/OH": [
+      7232,
+      448,
+      64,
+      64
+    ],
+    "down/sleepy/OO": [
+      7296,
+      448,
+      64,
+      64
+    ],
+    "down/sleepy/NEUTRAL": [
+      7360,
+      448,
+      64,
+      64
+    ],
+    "down/sleepy/FV": [
+      7424,
+      448,
+      64,
+      64
+    ],
+    "down/sleepy/TH": [
+      7488,
+      448,
+      64,
+      64
+    ],
+    "down/sleepy/L": [
+      7552,
+      448,
+      64,
+      64
+    ],
+    "down/sleepy/RSH": [
+      7616,
+      448,
+      64,
+      64
+    ],
+    "down_right/neutral/REST": [
+      0,
+      512,
+      64,
+      64
+    ],
+    "down_right/neutral/MBP": [
+      64,
+      512,
+      64,
+      64
+    ],
+    "down_right/neutral/AA": [
+      128,
+      512,
+      64,
+      64
+    ],
+    "down_right/neutral/EH": [
+      192,
+      512,
+      64,
+      64
+    ],
+    "down_right/neutral/EE": [
+      256,
+      512,
+      64,
+      64
+    ],
+    "down_right/neutral/OH": [
+      320,
+      512,
+      64,
+      64
+    ],
+    "down_right/neutral/OO": [
+      384,
+      512,
+      64,
+      64
+    ],
+    "down_right/neutral/NEUTRAL": [
+      448,
+      512,
+      64,
+      64
+    ],
+    "down_right/neutral/FV": [
+      512,
+      512,
+      64,
+      64
+    ],
+    "down_right/neutral/TH": [
+      576,
+      512,
+      64,
+      64
+    ],
+    "down_right/neutral/L": [
+      640,
+      512,
+      64,
+      64
+    ],
+    "down_right/neutral/RSH": [
+      704,
+      512,
+      64,
+      64
+    ],
+    "down_right/wink_left/REST": [
+      768,
+      512,
+      64,
+      64
+    ],
+    "down_right/wink_left/MBP": [
+      832,
+      512,
+      64,
+      64
+    ],
+    "down_right/wink_left/AA": [
+      896,
+      512,
+      64,
+      64
+    ],
+    "down_right/wink_left/EH": [
+      960,
+      512,
+      64,
+      64
+    ],
+    "down_right/wink_left/EE": [
+      1024,
+      512,
+      64,
+      64
+    ],
+    "down_right/wink_left/OH": [
+      1088,
+      512,
+      64,
+      64
+    ],
+    "down_right/wink_left/OO": [
+      1152,
+      512,
+      64,
+      64
+    ],
+    "down_right/wink_left/NEUTRAL": [
+      1216,
+      512,
+      64,
+      64
+    ],
+    "down_right/wink_left/FV": [
+      1280,
+      512,
+      64,
+      64
+    ],
+    "down_right/wink_left/TH": [
+      1344,
+      512,
+      64,
+      64
+    ],
+    "down_right/wink_left/L": [
+      1408,
+      512,
+      64,
+      64
+    ],
+    "down_right/wink_left/RSH": [
+      1472,
+      512,
+      64,
+      64
+    ],
+    "down_right/wink_right/REST": [
+      1536,
+      512,
+      64,
+      64
+    ],
+    "down_right/wink_right/MBP": [
+      1600,
+      512,
+      64,
+      64
+    ],
+    "down_right/wink_right/AA": [
+      1664,
+      512,
+      64,
+      64
+    ],
+    "down_right/wink_right/EH": [
+      1728,
+      512,
+      64,
+      64
+    ],
+    "down_right/wink_right/EE": [
+      1792,
+      512,
+      64,
+      64
+    ],
+    "down_right/wink_right/OH": [
+      1856,
+      512,
+      64,
+      64
+    ],
+    "down_right/wink_right/OO": [
+      1920,
+      512,
+      64,
+      64
+    ],
+    "down_right/wink_right/NEUTRAL": [
+      1984,
+      512,
+      64,
+      64
+    ],
+    "down_right/wink_right/FV": [
+      2048,
+      512,
+      64,
+      64
+    ],
+    "down_right/wink_right/TH": [
+      2112,
+      512,
+      64,
+      64
+    ],
+    "down_right/wink_right/L": [
+      2176,
+      512,
+      64,
+      64
+    ],
+    "down_right/wink_right/RSH": [
+      2240,
+      512,
+      64,
+      64
+    ],
+    "down_right/happy/REST": [
+      2304,
+      512,
+      64,
+      64
+    ],
+    "down_right/happy/MBP": [
+      2368,
+      512,
+      64,
+      64
+    ],
+    "down_right/happy/AA": [
+      2432,
+      512,
+      64,
+      64
+    ],
+    "down_right/happy/EH": [
+      2496,
+      512,
+      64,
+      64
+    ],
+    "down_right/happy/EE": [
+      2560,
+      512,
+      64,
+      64
+    ],
+    "down_right/happy/OH": [
+      2624,
+      512,
+      64,
+      64
+    ],
+    "down_right/happy/OO": [
+      2688,
+      512,
+      64,
+      64
+    ],
+    "down_right/happy/NEUTRAL": [
+      2752,
+      512,
+      64,
+      64
+    ],
+    "down_right/happy/FV": [
+      2816,
+      512,
+      64,
+      64
+    ],
+    "down_right/happy/TH": [
+      2880,
+      512,
+      64,
+      64
+    ],
+    "down_right/happy/L": [
+      2944,
+      512,
+      64,
+      64
+    ],
+    "down_right/happy/RSH": [
+      3008,
+      512,
+      64,
+      64
+    ],
+    "down_right/sad/REST": [
+      3072,
+      512,
+      64,
+      64
+    ],
+    "down_right/sad/MBP": [
+      3136,
+      512,
+      64,
+      64
+    ],
+    "down_right/sad/AA": [
+      3200,
+      512,
+      64,
+      64
+    ],
+    "down_right/sad/EH": [
+      3264,
+      512,
+      64,
+      64
+    ],
+    "down_right/sad/EE": [
+      3328,
+      512,
+      64,
+      64
+    ],
+    "down_right/sad/OH": [
+      3392,
+      512,
+      64,
+      64
+    ],
+    "down_right/sad/OO": [
+      3456,
+      512,
+      64,
+      64
+    ],
+    "down_right/sad/NEUTRAL": [
+      3520,
+      512,
+      64,
+      64
+    ],
+    "down_right/sad/FV": [
+      3584,
+      512,
+      64,
+      64
+    ],
+    "down_right/sad/TH": [
+      3648,
+      512,
+      64,
+      64
+    ],
+    "down_right/sad/L": [
+      3712,
+      512,
+      64,
+      64
+    ],
+    "down_right/sad/RSH": [
+      3776,
+      512,
+      64,
+      64
+    ],
+    "down_right/side_eye/REST": [
+      3840,
+      512,
+      64,
+      64
+    ],
+    "down_right/side_eye/MBP": [
+      3904,
+      512,
+      64,
+      64
+    ],
+    "down_right/side_eye/AA": [
+      3968,
+      512,
+      64,
+      64
+    ],
+    "down_right/side_eye/EH": [
+      4032,
+      512,
+      64,
+      64
+    ],
+    "down_right/side_eye/EE": [
+      4096,
+      512,
+      64,
+      64
+    ],
+    "down_right/side_eye/OH": [
+      4160,
+      512,
+      64,
+      64
+    ],
+    "down_right/side_eye/OO": [
+      4224,
+      512,
+      64,
+      64
+    ],
+    "down_right/side_eye/NEUTRAL": [
+      4288,
+      512,
+      64,
+      64
+    ],
+    "down_right/side_eye/FV": [
+      4352,
+      512,
+      64,
+      64
+    ],
+    "down_right/side_eye/TH": [
+      4416,
+      512,
+      64,
+      64
+    ],
+    "down_right/side_eye/L": [
+      4480,
+      512,
+      64,
+      64
+    ],
+    "down_right/side_eye/RSH": [
+      4544,
+      512,
+      64,
+      64
+    ],
+    "down_right/sulky/REST": [
+      4608,
+      512,
+      64,
+      64
+    ],
+    "down_right/sulky/MBP": [
+      4672,
+      512,
+      64,
+      64
+    ],
+    "down_right/sulky/AA": [
+      4736,
+      512,
+      64,
+      64
+    ],
+    "down_right/sulky/EH": [
+      4800,
+      512,
+      64,
+      64
+    ],
+    "down_right/sulky/EE": [
+      4864,
+      512,
+      64,
+      64
+    ],
+    "down_right/sulky/OH": [
+      4928,
+      512,
+      64,
+      64
+    ],
+    "down_right/sulky/OO": [
+      4992,
+      512,
+      64,
+      64
+    ],
+    "down_right/sulky/NEUTRAL": [
+      5056,
+      512,
+      64,
+      64
+    ],
+    "down_right/sulky/FV": [
+      5120,
+      512,
+      64,
+      64
+    ],
+    "down_right/sulky/TH": [
+      5184,
+      512,
+      64,
+      64
+    ],
+    "down_right/sulky/L": [
+      5248,
+      512,
+      64,
+      64
+    ],
+    "down_right/sulky/RSH": [
+      5312,
+      512,
+      64,
+      64
+    ],
+    "down_right/surprised/REST": [
+      5376,
+      512,
+      64,
+      64
+    ],
+    "down_right/surprised/MBP": [
+      5440,
+      512,
+      64,
+      64
+    ],
+    "down_right/surprised/AA": [
+      5504,
+      512,
+      64,
+      64
+    ],
+    "down_right/surprised/EH": [
+      5568,
+      512,
+      64,
+      64
+    ],
+    "down_right/surprised/EE": [
+      5632,
+      512,
+      64,
+      64
+    ],
+    "down_right/surprised/OH": [
+      5696,
+      512,
+      64,
+      64
+    ],
+    "down_right/surprised/OO": [
+      5760,
+      512,
+      64,
+      64
+    ],
+    "down_right/surprised/NEUTRAL": [
+      5824,
+      512,
+      64,
+      64
+    ],
+    "down_right/surprised/FV": [
+      5888,
+      512,
+      64,
+      64
+    ],
+    "down_right/surprised/TH": [
+      5952,
+      512,
+      64,
+      64
+    ],
+    "down_right/surprised/L": [
+      6016,
+      512,
+      64,
+      64
+    ],
+    "down_right/surprised/RSH": [
+      6080,
+      512,
+      64,
+      64
+    ],
+    "down_right/angry/REST": [
+      6144,
+      512,
+      64,
+      64
+    ],
+    "down_right/angry/MBP": [
+      6208,
+      512,
+      64,
+      64
+    ],
+    "down_right/angry/AA": [
+      6272,
+      512,
+      64,
+      64
+    ],
+    "down_right/angry/EH": [
+      6336,
+      512,
+      64,
+      64
+    ],
+    "down_right/angry/EE": [
+      6400,
+      512,
+      64,
+      64
+    ],
+    "down_right/angry/OH": [
+      6464,
+      512,
+      64,
+      64
+    ],
+    "down_right/angry/OO": [
+      6528,
+      512,
+      64,
+      64
+    ],
+    "down_right/angry/NEUTRAL": [
+      6592,
+      512,
+      64,
+      64
+    ],
+    "down_right/angry/FV": [
+      6656,
+      512,
+      64,
+      64
+    ],
+    "down_right/angry/TH": [
+      6720,
+      512,
+      64,
+      64
+    ],
+    "down_right/angry/L": [
+      6784,
+      512,
+      64,
+      64
+    ],
+    "down_right/angry/RSH": [
+      6848,
+      512,
+      64,
+      64
+    ],
+    "down_right/sleepy/REST": [
+      6912,
+      512,
+      64,
+      64
+    ],
+    "down_right/sleepy/MBP": [
+      6976,
+      512,
+      64,
+      64
+    ],
+    "down_right/sleepy/AA": [
+      7040,
+      512,
+      64,
+      64
+    ],
+    "down_right/sleepy/EH": [
+      7104,
+      512,
+      64,
+      64
+    ],
+    "down_right/sleepy/EE": [
+      7168,
+      512,
+      64,
+      64
+    ],
+    "down_right/sleepy/OH": [
+      7232,
+      512,
+      64,
+      64
+    ],
+    "down_right/sleepy/OO": [
+      7296,
+      512,
+      64,
+      64
+    ],
+    "down_right/sleepy/NEUTRAL": [
+      7360,
+      512,
+      64,
+      64
+    ],
+    "down_right/sleepy/FV": [
+      7424,
+      512,
+      64,
+      64
+    ],
+    "down_right/sleepy/TH": [
+      7488,
+      512,
+      64,
+      64
+    ],
+    "down_right/sleepy/L": [
+      7552,
+      512,
+      64,
+      64
+    ],
+    "down_right/sleepy/RSH": [
+      7616,
+      512,
+      64,
+      64
+    ]
+  },
+  "rest_behavior": "Emotion-specific resting mouth. Speech visemes keep the original v6 mouth while expression eyes stay active."
+}

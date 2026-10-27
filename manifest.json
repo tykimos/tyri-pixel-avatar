@@ -2110,5 +2110,11 @@
         35
       ]
     ]
+  },
+  "emotion_extension": {
+    "manifest": "emotions.json",
+    "preview": "emotion_preview.html",
+    "atlas": "emotion_atlas.png",
+    "frames": 1080
   }
 }

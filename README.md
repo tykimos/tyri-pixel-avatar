@@ -109,3 +109,27 @@ Regenerate with `python make_review_previews.py --font /path/to/CJK-font.otf` (P
 ## Centered UP base (v6)
 
 The UP pose now uses a dedicated frontal, upward-pitched source with centered nose, glasses and mouth landmarks. Other eight directions are unchanged. See `previews/up_before_after.png`. The pitch is stylized, not a calibrated 3D angle.
+
+## Emotions and winks
+
+Open `emotion_preview.html` to choose direction, emotion and mouth independently.
+The neutral + 9 new expressions are: wink_left, wink_right, happy, sad,
+side_eye, sulky, surprised, angry and sleepy. Wink sides are the character's
+anatomical sides (left is viewer right).
+
+`emotion_atlas.png` contains 1,080 frames: 9 directions × 10 expressions ×
+12 visemes. Every frame is 64×64. `emotions.json` maps
+`direction/emotion/viseme` to `[x, y, width, height]`.
+At REST, emotions use matching resting mouths; while speaking, original v6
+visemes remain available and the eyes keep the selected expression.
+The original 324-frame atlas and API remain available.
+
+![Emotion contact sheet](previews/emotions_contact.png)
+![Emotion animation](previews/emotions_9directions.gif)
+![Winks](previews/winks_9directions.gif)
+
+Regenerate with `python build_emotions.py --font /path/to/CJK-font.otf` (Pillow and numpy).
+Omit `--font` for English labels.
+`emotion_tests.json` records alpha and exact glasses-rim preservation plus
+expression/viseme distinctions. These are stylized expressions, and previews
+are silent/manual-timing demonstrations, not tested real-audio lip sync.
