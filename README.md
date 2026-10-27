@@ -110,26 +110,40 @@ Regenerate with `python make_review_previews.py --font /path/to/CJK-font.otf` (P
 
 The UP pose now uses a dedicated frontal, upward-pitched source with centered nose, glasses and mouth landmarks. Other eight directions are unchanged. See `previews/up_before_after.png`. The pitch is stylized, not a calibrated 3D angle.
 
-## Emotions and winks
+## Emotions and winks (v2)
 
-Open `emotion_preview.html` to choose direction, emotion and mouth independently.
-The neutral + 9 new expressions are: wink_left, wink_right, happy, sad,
-side_eye, sulky, surprised, angry and sleepy. Wink sides are the character's
-anatomical sides (left is viewer right).
+Open `emotion_preview.html` to select direction, emotion and mouth independently.
+24 expressions × 9 directions × 12 mouth shapes = **2,592 frames**.
 
-`emotion_atlas.png` contains 1,080 frames: 9 directions × 10 expressions ×
-12 visemes. Every frame is 64×64. `emotions.json` maps
-`direction/emotion/viseme` to `[x, y, width, height]`.
-At REST, emotions use matching resting mouths; while speaking, original v6
-visemes remain available and the eyes keep the selected expression.
-The original 324-frame atlas and API remain available.
+Neutral; left/right wink; happy; sad; side-eye; sulky; surprised; angry; sleepy;
+laughing; crying; sobbing; pleading; heart eyes; star eyes; thinking; confused;
+embarrassed; smug; unimpressed; scared; dizzy; relieved.
+Wink sides refer to the character's anatomical side (left appears viewer right).
 
-![Emotion contact sheet](previews/emotions_contact.png)
+The entire lens interior is cleared with sampled cheek skin before drawing eyes.
+Each direction uses its own eye centers, lens width, pitch compression and
+near/far eye width. Closed-eye curves are drawn on the final pixel grid.
+The original glasses rims and bridge remain intact. All 216 direction/expression
+pairs are checked for distinct resting expressions and unchanged alpha/rims.
+
+![All expressions](previews/emotions_contact.png)
+![Happy eyes in all directions](previews/happy_9directions.png)
 ![Emotion animation](previews/emotions_9directions.gif)
 ![Winks](previews/winks_9directions.gif)
 
-Regenerate with `python build_emotions.py --font /path/to/CJK-font.otf` (Pillow and numpy).
-Omit `--font` for English labels.
-`emotion_tests.json` records alpha and exact glasses-rim preservation plus
-expression/viseme distinctions. These are stylized expressions, and previews
-are silent/manual-timing demonstrations, not tested real-audio lip sync.
+### Integration
+
+`emotions.json` version 2 provides all frame rectangles keyed by
+`direction/emotion/viseme`. Always use these rectangles: v2 has a compact
+**12-column layout**, with row = direction_index × 24 + emotion_index.
+`emotion_atlas.png` is 768×13,824; each frame is 64×64. `emotion_bases.png`
+contains mouth-free bases (24 columns × 9 rows).
+
+REST uses an emotion-specific mouth. Speech retains the original v6 visemes
+with the selected eye expression. The original atlas and manifest frame
+rectangles remain compatible and unchanged.
+
+Regenerate with `python build_emotions.py --font /path/to/CJK-font.otf`
+(Pillow and numpy). Omit the font option for English GIF labels.
+`emotion_tests.json` records automated checks. GIFs are silent demonstrations;
+real-audio lip sync and perceptual emotion recognition are not validated.

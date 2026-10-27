@@ -1,8 +1,10 @@
 {
-  "frames": 1080,
+  "frames": 2592,
   "alpha_preserved": true,
   "glasses_rims_and_bridge_exactly_preserved": true,
-  "ten_distinct_rest_expressions_per_direction": true,
+  "expression_count": 24,
+  "distinct_rest_expressions_per_direction": true,
+  "lens_interiors_fully_cleared": true,
   "eleven_distinct_speech_visemes_per_expression": true,
   "actual_audio_sync_tested": false
 }

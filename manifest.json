@@ -2115,6 +2115,7 @@
     "manifest": "emotions.json",
     "preview": "emotion_preview.html",
     "atlas": "emotion_atlas.png",
-    "frames": 1080
+    "frames": 2592,
+    "version": 2
   }
 }
