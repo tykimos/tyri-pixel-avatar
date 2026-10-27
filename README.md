@@ -44,9 +44,9 @@ Look up, down, left, right, and between. Keep talking.
 
 ## Hand gestures, separate from the face
 
-Wave, write, V, shush, two-hand heart, finger heart, thumbs up, OK, point, clap, thanks and cheer. **12 gestures · 32 px transparent layers · 9 direction placements.**
+Wave, write, V, shush, two-hand heart, finger heart, thumbs up, OK, point, clap, thanks and cheer. **12 gestures · small face-adjacent layers · left/right hands · palm/back views.**
 
-[Hand sprite guide](HANDS.md) · [Interactive preview (download and open)](hands_preview.html) · [9-direction animation](previews/hands_9directions.gif) · [Download hand pack](tyri-hands-v1.zip)
+[Hand sprite guide](HANDS.md) · [Interactive preview (download and open)](hands_preview.html) · [9-direction animation](previews/hands_9directions.gif) · [Download hand pack](tyri-hands-v2.zip)
 
 ## Get started
 

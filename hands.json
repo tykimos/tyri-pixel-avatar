@@ -1,907 +1,4007 @@
 {
-  "version": 1,
+  "version": 2,
   "atlas": "hands_atlas.png",
   "frame_size": [
-    32,
-    32
+    24,
+    24
   ],
   "duration_ms": 150,
   "canvas_size": [
-    96,
-    96
+    80,
+    80
   ],
   "face_offset": [
-    16,
-    8
+    8,
+    4
   ],
-  "layer": "foreground",
+  "handedness": "anatomical: character right appears viewer-left in front view",
+  "surface": "palm = palm visible to viewer; back = back of hand visible to viewer",
+  "palette": [
+    [
+      74,
+      37,
+      28
+    ],
+    [
+      140,
+      69,
+      45
+    ],
+    [
+      196,
+      104,
+      66
+    ],
+    [
+      237,
+      151,
+      111
+    ],
+    [
+      255,
+      191,
+      153
+    ],
+    [
+      255,
+      218,
+      178
+    ],
+    [
+      255,
+      236,
+      202
+    ],
+    [
+      230,
+      173,
+      56
+    ],
+    [
+      125,
+      92,
+      35
+    ],
+    [
+      247,
+      237,
+      215
+    ],
+    [
+      218,
+      83,
+      92
+    ],
+    [
+      78,
+      61,
+      49
+    ]
+  ],
   "gestures": {
     "wave": {
       "label_ko": "손흔들기",
-      "frames": [
-        [
-          0,
-          0,
-          32,
-          32
-        ],
-        [
-          32,
-          0,
-          32,
-          32
-        ],
-        [
-          64,
-          0,
-          32,
-          32
-        ],
-        [
-          96,
-          0,
-          32,
-          32
-        ]
-      ],
-      "anchor": [
-        16,
-        16
-      ],
-      "loop": true
+      "variants": {
+        "right_palm": {
+          "hand": "right",
+          "surface": "palm",
+          "frames": [
+            [
+              0,
+              0,
+              24,
+              24
+            ],
+            [
+              24,
+              0,
+              24,
+              24
+            ],
+            [
+              48,
+              0,
+              24,
+              24
+            ],
+            [
+              72,
+              0,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        },
+        "right_back": {
+          "hand": "right",
+          "surface": "back",
+          "frames": [
+            [
+              0,
+              24,
+              24,
+              24
+            ],
+            [
+              24,
+              24,
+              24,
+              24
+            ],
+            [
+              48,
+              24,
+              24,
+              24
+            ],
+            [
+              72,
+              24,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        },
+        "left_palm": {
+          "hand": "left",
+          "surface": "palm",
+          "frames": [
+            [
+              0,
+              48,
+              24,
+              24
+            ],
+            [
+              24,
+              48,
+              24,
+              24
+            ],
+            [
+              48,
+              48,
+              24,
+              24
+            ],
+            [
+              72,
+              48,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        },
+        "left_back": {
+          "hand": "left",
+          "surface": "back",
+          "frames": [
+            [
+              0,
+              72,
+              24,
+              24
+            ],
+            [
+              24,
+              72,
+              24,
+              24
+            ],
+            [
+              48,
+              72,
+              24,
+              24
+            ],
+            [
+              72,
+              72,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        }
+      },
+      "default": "right_palm"
     },
     "write": {
       "label_ko": "글씨 쓰기",
-      "frames": [
-        [
-          0,
-          32,
-          32,
-          32
-        ],
-        [
-          32,
-          32,
-          32,
-          32
-        ],
-        [
-          64,
-          32,
-          32,
-          32
-        ],
-        [
-          96,
-          32,
-          32,
-          32
-        ]
-      ],
-      "anchor": [
-        16,
-        16
-      ],
-      "loop": true
+      "variants": {
+        "right_prop": {
+          "hand": "right",
+          "surface": "prop grip",
+          "frames": [
+            [
+              0,
+              96,
+              24,
+              24
+            ],
+            [
+              24,
+              96,
+              24,
+              24
+            ],
+            [
+              48,
+              96,
+              24,
+              24
+            ],
+            [
+              72,
+              96,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        },
+        "left_prop": {
+          "hand": "left",
+          "surface": "prop grip",
+          "frames": [
+            [
+              0,
+              120,
+              24,
+              24
+            ],
+            [
+              24,
+              120,
+              24,
+              24
+            ],
+            [
+              48,
+              120,
+              24,
+              24
+            ],
+            [
+              72,
+              120,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        }
+      },
+      "default": "right_prop"
     },
     "peace": {
       "label_ko": "V",
-      "frames": [
-        [
-          0,
-          64,
-          32,
-          32
-        ],
-        [
-          32,
-          64,
-          32,
-          32
-        ],
-        [
-          64,
-          64,
-          32,
-          32
-        ],
-        [
-          96,
-          64,
-          32,
-          32
-        ]
-      ],
-      "anchor": [
-        16,
-        16
-      ],
-      "loop": true
+      "variants": {
+        "right_palm": {
+          "hand": "right",
+          "surface": "palm",
+          "frames": [
+            [
+              0,
+              144,
+              24,
+              24
+            ],
+            [
+              24,
+              144,
+              24,
+              24
+            ],
+            [
+              48,
+              144,
+              24,
+              24
+            ],
+            [
+              72,
+              144,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        },
+        "right_back": {
+          "hand": "right",
+          "surface": "back",
+          "frames": [
+            [
+              0,
+              168,
+              24,
+              24
+            ],
+            [
+              24,
+              168,
+              24,
+              24
+            ],
+            [
+              48,
+              168,
+              24,
+              24
+            ],
+            [
+              72,
+              168,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        },
+        "left_palm": {
+          "hand": "left",
+          "surface": "palm",
+          "frames": [
+            [
+              0,
+              192,
+              24,
+              24
+            ],
+            [
+              24,
+              192,
+              24,
+              24
+            ],
+            [
+              48,
+              192,
+              24,
+              24
+            ],
+            [
+              72,
+              192,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        },
+        "left_back": {
+          "hand": "left",
+          "surface": "back",
+          "frames": [
+            [
+              0,
+              216,
+              24,
+              24
+            ],
+            [
+              24,
+              216,
+              24,
+              24
+            ],
+            [
+              48,
+              216,
+              24,
+              24
+            ],
+            [
+              72,
+              216,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        }
+      },
+      "default": "right_palm"
     },
     "shush": {
       "label_ko": "쉿",
-      "frames": [
-        [
-          0,
-          96,
-          32,
-          32
-        ],
-        [
-          32,
-          96,
-          32,
-          32
-        ],
-        [
-          64,
-          96,
-          32,
-          32
-        ],
-        [
-          96,
-          96,
-          32,
-          32
-        ]
-      ],
-      "anchor": [
-        16,
-        3
-      ],
-      "loop": true
+      "variants": {
+        "right_palm": {
+          "hand": "right",
+          "surface": "palm",
+          "frames": [
+            [
+              0,
+              240,
+              24,
+              24
+            ],
+            [
+              24,
+              240,
+              24,
+              24
+            ],
+            [
+              48,
+              240,
+              24,
+              24
+            ],
+            [
+              72,
+              240,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            11,
+            4
+          ]
+        },
+        "right_back": {
+          "hand": "right",
+          "surface": "back",
+          "frames": [
+            [
+              0,
+              264,
+              24,
+              24
+            ],
+            [
+              24,
+              264,
+              24,
+              24
+            ],
+            [
+              48,
+              264,
+              24,
+              24
+            ],
+            [
+              72,
+              264,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            4
+          ]
+        },
+        "left_palm": {
+          "hand": "left",
+          "surface": "palm",
+          "frames": [
+            [
+              0,
+              288,
+              24,
+              24
+            ],
+            [
+              24,
+              288,
+              24,
+              24
+            ],
+            [
+              48,
+              288,
+              24,
+              24
+            ],
+            [
+              72,
+              288,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            11,
+            4
+          ]
+        },
+        "left_back": {
+          "hand": "left",
+          "surface": "back",
+          "frames": [
+            [
+              0,
+              312,
+              24,
+              24
+            ],
+            [
+              24,
+              312,
+              24,
+              24
+            ],
+            [
+              48,
+              312,
+              24,
+              24
+            ],
+            [
+              72,
+              312,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            9,
+            4
+          ]
+        }
+      },
+      "default": "right_palm"
     },
     "heart": {
       "label_ko": "양손 하트",
-      "frames": [
-        [
-          0,
-          128,
-          32,
-          32
-        ],
-        [
-          32,
-          128,
-          32,
-          32
-        ],
-        [
-          64,
-          128,
-          32,
-          32
-        ],
-        [
-          96,
-          128,
-          32,
-          32
-        ]
-      ],
-      "anchor": [
-        16,
-        16
-      ],
-      "loop": true
+      "variants": {
+        "pair": {
+          "hand": "both",
+          "surface": "paired gesture",
+          "frames": [
+            [
+              0,
+              336,
+              24,
+              24
+            ],
+            [
+              24,
+              336,
+              24,
+              24
+            ],
+            [
+              48,
+              336,
+              24,
+              24
+            ],
+            [
+              72,
+              336,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        }
+      },
+      "default": "pair"
     },
     "finger_heart": {
       "label_ko": "손가락 하트",
-      "frames": [
-        [
-          0,
-          160,
-          32,
-          32
-        ],
-        [
-          32,
-          160,
-          32,
-          32
-        ],
-        [
-          64,
-          160,
-          32,
-          32
-        ],
-        [
-          96,
-          160,
-          32,
-          32
-        ]
-      ],
-      "anchor": [
-        16,
-        16
-      ],
-      "loop": true
+      "variants": {
+        "right_palm": {
+          "hand": "right",
+          "surface": "palm",
+          "frames": [
+            [
+              0,
+              360,
+              24,
+              24
+            ],
+            [
+              24,
+              360,
+              24,
+              24
+            ],
+            [
+              48,
+              360,
+              24,
+              24
+            ],
+            [
+              72,
+              360,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        },
+        "right_back": {
+          "hand": "right",
+          "surface": "back",
+          "frames": [
+            [
+              0,
+              384,
+              24,
+              24
+            ],
+            [
+              24,
+              384,
+              24,
+              24
+            ],
+            [
+              48,
+              384,
+              24,
+              24
+            ],
+            [
+              72,
+              384,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        },
+        "left_palm": {
+          "hand": "left",
+          "surface": "palm",
+          "frames": [
+            [
+              0,
+              408,
+              24,
+              24
+            ],
+            [
+              24,
+              408,
+              24,
+              24
+            ],
+            [
+              48,
+              408,
+              24,
+              24
+            ],
+            [
+              72,
+              408,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        },
+        "left_back": {
+          "hand": "left",
+          "surface": "back",
+          "frames": [
+            [
+              0,
+              432,
+              24,
+              24
+            ],
+            [
+              24,
+              432,
+              24,
+              24
+            ],
+            [
+              48,
+              432,
+              24,
+              24
+            ],
+            [
+              72,
+              432,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        }
+      },
+      "default": "right_palm"
     },
     "thumbs_up": {
       "label_ko": "최고",
-      "frames": [
-        [
-          0,
-          192,
-          32,
-          32
-        ],
-        [
-          32,
-          192,
-          32,
-          32
-        ],
-        [
-          64,
-          192,
-          32,
-          32
-        ],
-        [
-          96,
-          192,
-          32,
-          32
-        ]
-      ],
-      "anchor": [
-        16,
-        16
-      ],
-      "loop": true
+      "variants": {
+        "right_palm": {
+          "hand": "right",
+          "surface": "palm",
+          "frames": [
+            [
+              0,
+              456,
+              24,
+              24
+            ],
+            [
+              24,
+              456,
+              24,
+              24
+            ],
+            [
+              48,
+              456,
+              24,
+              24
+            ],
+            [
+              72,
+              456,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        },
+        "right_back": {
+          "hand": "right",
+          "surface": "back",
+          "frames": [
+            [
+              0,
+              480,
+              24,
+              24
+            ],
+            [
+              24,
+              480,
+              24,
+              24
+            ],
+            [
+              48,
+              480,
+              24,
+              24
+            ],
+            [
+              72,
+              480,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        },
+        "left_palm": {
+          "hand": "left",
+          "surface": "palm",
+          "frames": [
+            [
+              0,
+              504,
+              24,
+              24
+            ],
+            [
+              24,
+              504,
+              24,
+              24
+            ],
+            [
+              48,
+              504,
+              24,
+              24
+            ],
+            [
+              72,
+              504,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        },
+        "left_back": {
+          "hand": "left",
+          "surface": "back",
+          "frames": [
+            [
+              0,
+              528,
+              24,
+              24
+            ],
+            [
+              24,
+              528,
+              24,
+              24
+            ],
+            [
+              48,
+              528,
+              24,
+              24
+            ],
+            [
+              72,
+              528,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        }
+      },
+      "default": "right_palm"
     },
     "ok": {
       "label_ko": "OK",
-      "frames": [
-        [
-          0,
-          224,
-          32,
-          32
-        ],
-        [
-          32,
-          224,
-          32,
-          32
-        ],
-        [
-          64,
-          224,
-          32,
-          32
-        ],
-        [
-          96,
-          224,
-          32,
-          32
-        ]
-      ],
-      "anchor": [
-        16,
-        16
-      ],
-      "loop": true
+      "variants": {
+        "right_palm": {
+          "hand": "right",
+          "surface": "palm",
+          "frames": [
+            [
+              0,
+              552,
+              24,
+              24
+            ],
+            [
+              24,
+              552,
+              24,
+              24
+            ],
+            [
+              48,
+              552,
+              24,
+              24
+            ],
+            [
+              72,
+              552,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        },
+        "right_back": {
+          "hand": "right",
+          "surface": "back",
+          "frames": [
+            [
+              0,
+              576,
+              24,
+              24
+            ],
+            [
+              24,
+              576,
+              24,
+              24
+            ],
+            [
+              48,
+              576,
+              24,
+              24
+            ],
+            [
+              72,
+              576,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        },
+        "left_palm": {
+          "hand": "left",
+          "surface": "palm",
+          "frames": [
+            [
+              0,
+              600,
+              24,
+              24
+            ],
+            [
+              24,
+              600,
+              24,
+              24
+            ],
+            [
+              48,
+              600,
+              24,
+              24
+            ],
+            [
+              72,
+              600,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        },
+        "left_back": {
+          "hand": "left",
+          "surface": "back",
+          "frames": [
+            [
+              0,
+              624,
+              24,
+              24
+            ],
+            [
+              24,
+              624,
+              24,
+              24
+            ],
+            [
+              48,
+              624,
+              24,
+              24
+            ],
+            [
+              72,
+              624,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        }
+      },
+      "default": "right_palm"
     },
     "point": {
       "label_ko": "가리키기",
-      "frames": [
-        [
-          0,
-          256,
-          32,
-          32
-        ],
-        [
-          32,
-          256,
-          32,
-          32
-        ],
-        [
-          64,
-          256,
-          32,
-          32
-        ],
-        [
-          96,
-          256,
-          32,
-          32
-        ]
-      ],
-      "anchor": [
-        16,
-        16
-      ],
-      "loop": true
+      "variants": {
+        "right_palm": {
+          "hand": "right",
+          "surface": "palm",
+          "frames": [
+            [
+              0,
+              648,
+              24,
+              24
+            ],
+            [
+              24,
+              648,
+              24,
+              24
+            ],
+            [
+              48,
+              648,
+              24,
+              24
+            ],
+            [
+              72,
+              648,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        },
+        "right_back": {
+          "hand": "right",
+          "surface": "back",
+          "frames": [
+            [
+              0,
+              672,
+              24,
+              24
+            ],
+            [
+              24,
+              672,
+              24,
+              24
+            ],
+            [
+              48,
+              672,
+              24,
+              24
+            ],
+            [
+              72,
+              672,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        },
+        "left_palm": {
+          "hand": "left",
+          "surface": "palm",
+          "frames": [
+            [
+              0,
+              696,
+              24,
+              24
+            ],
+            [
+              24,
+              696,
+              24,
+              24
+            ],
+            [
+              48,
+              696,
+              24,
+              24
+            ],
+            [
+              72,
+              696,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        },
+        "left_back": {
+          "hand": "left",
+          "surface": "back",
+          "frames": [
+            [
+              0,
+              720,
+              24,
+              24
+            ],
+            [
+              24,
+              720,
+              24,
+              24
+            ],
+            [
+              48,
+              720,
+              24,
+              24
+            ],
+            [
+              72,
+              720,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        }
+      },
+      "default": "right_palm"
     },
     "clap": {
       "label_ko": "박수",
-      "frames": [
-        [
-          0,
-          288,
-          32,
-          32
-        ],
-        [
-          32,
-          288,
-          32,
-          32
-        ],
-        [
-          64,
-          288,
-          32,
-          32
-        ],
-        [
-          96,
-          288,
-          32,
-          32
-        ]
-      ],
-      "anchor": [
-        16,
-        16
-      ],
-      "loop": true
+      "variants": {
+        "pair": {
+          "hand": "both",
+          "surface": "paired gesture",
+          "frames": [
+            [
+              0,
+              744,
+              24,
+              24
+            ],
+            [
+              24,
+              744,
+              24,
+              24
+            ],
+            [
+              48,
+              744,
+              24,
+              24
+            ],
+            [
+              72,
+              744,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        }
+      },
+      "default": "pair"
     },
     "thanks": {
       "label_ko": "감사",
-      "frames": [
-        [
-          0,
-          320,
-          32,
-          32
-        ],
-        [
-          32,
-          320,
-          32,
-          32
-        ],
-        [
-          64,
-          320,
-          32,
-          32
-        ],
-        [
-          96,
-          320,
-          32,
-          32
-        ]
-      ],
-      "anchor": [
-        16,
-        16
-      ],
-      "loop": true
+      "variants": {
+        "pair": {
+          "hand": "both",
+          "surface": "paired gesture",
+          "frames": [
+            [
+              0,
+              768,
+              24,
+              24
+            ],
+            [
+              24,
+              768,
+              24,
+              24
+            ],
+            [
+              48,
+              768,
+              24,
+              24
+            ],
+            [
+              72,
+              768,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        }
+      },
+      "default": "pair"
     },
     "cheer": {
       "label_ko": "응원",
-      "frames": [
-        [
-          0,
-          352,
-          32,
-          32
-        ],
-        [
-          32,
-          352,
-          32,
-          32
-        ],
-        [
-          64,
-          352,
-          32,
-          32
-        ],
-        [
-          96,
-          352,
-          32,
-          32
-        ]
-      ],
-      "anchor": [
-        16,
-        16
-      ],
-      "loop": true
+      "variants": {
+        "right_palm": {
+          "hand": "right",
+          "surface": "palm",
+          "frames": [
+            [
+              0,
+              792,
+              24,
+              24
+            ],
+            [
+              24,
+              792,
+              24,
+              24
+            ],
+            [
+              48,
+              792,
+              24,
+              24
+            ],
+            [
+              72,
+              792,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        },
+        "right_back": {
+          "hand": "right",
+          "surface": "back",
+          "frames": [
+            [
+              0,
+              816,
+              24,
+              24
+            ],
+            [
+              24,
+              816,
+              24,
+              24
+            ],
+            [
+              48,
+              816,
+              24,
+              24
+            ],
+            [
+              72,
+              816,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        },
+        "left_palm": {
+          "hand": "left",
+          "surface": "palm",
+          "frames": [
+            [
+              0,
+              840,
+              24,
+              24
+            ],
+            [
+              24,
+              840,
+              24,
+              24
+            ],
+            [
+              48,
+              840,
+              24,
+              24
+            ],
+            [
+              72,
+              840,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        },
+        "left_back": {
+          "hand": "left",
+          "surface": "back",
+          "frames": [
+            [
+              0,
+              864,
+              24,
+              24
+            ],
+            [
+              24,
+              864,
+              24,
+              24
+            ],
+            [
+              48,
+              864,
+              24,
+              24
+            ],
+            [
+              72,
+              864,
+              24,
+              24
+            ]
+          ],
+          "anchor": [
+            12,
+            12
+          ]
+        }
+      },
+      "default": "right_palm"
     }
   },
   "directions": {
     "up_left": {
-      "positions": {
-        "wave": [
-          20,
-          54
-        ],
-        "write": [
-          48,
-          72
-        ],
-        "peace": [
-          20,
-          54
-        ],
-        "shush": [
-          41,
-          49
-        ],
-        "heart": [
-          48,
-          72
-        ],
-        "finger_heart": [
-          20,
-          54
-        ],
-        "thumbs_up": [
-          20,
-          54
-        ],
-        "ok": [
-          20,
-          54
-        ],
-        "point": [
-          20,
-          54
-        ],
-        "clap": [
-          48,
-          72
-        ],
-        "thanks": [
-          48,
-          72
-        ],
-        "cheer": [
-          20,
-          54
-        ]
+      "placements": {
+        "wave": {
+          "right_palm": {
+            "position": [
+              20,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              20,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              46,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              46,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "write": {
+          "right_prop": {
+            "position": [
+              33,
+              55
+            ],
+            "layer": "foreground"
+          },
+          "left_prop": {
+            "position": [
+              33,
+              55
+            ],
+            "layer": "foreground"
+          }
+        },
+        "peace": {
+          "right_palm": {
+            "position": [
+              20,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              20,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              46,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              46,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "shush": {
+          "right_palm": {
+            "position": [
+              33,
+              46
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              33,
+              46
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              33,
+              46
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              33,
+              46
+            ],
+            "layer": "foreground"
+          }
+        },
+        "heart": {
+          "pair": {
+            "position": [
+              33,
+              55
+            ],
+            "layer": "foreground"
+          }
+        },
+        "finger_heart": {
+          "right_palm": {
+            "position": [
+              20,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              20,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              46,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              46,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "thumbs_up": {
+          "right_palm": {
+            "position": [
+              20,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              20,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              46,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              46,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "ok": {
+          "right_palm": {
+            "position": [
+              20,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              20,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              46,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              46,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "point": {
+          "right_palm": {
+            "position": [
+              20,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              20,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              46,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              46,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "clap": {
+          "pair": {
+            "position": [
+              33,
+              55
+            ],
+            "layer": "foreground"
+          }
+        },
+        "thanks": {
+          "pair": {
+            "position": [
+              33,
+              55
+            ],
+            "layer": "foreground"
+          }
+        },
+        "cheer": {
+          "right_palm": {
+            "position": [
+              20,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              20,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              46,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              46,
+              48
+            ],
+            "layer": "foreground"
+          }
+        }
       },
-      "projection": "screen-facing hand; direction-specific placement"
+      "default_hand": "right"
     },
     "up": {
-      "positions": {
-        "wave": [
-          76,
-          54
-        ],
-        "write": [
-          48,
-          72
-        ],
-        "peace": [
-          76,
-          54
-        ],
-        "shush": [
-          47,
-          48
-        ],
-        "heart": [
-          48,
-          72
-        ],
-        "finger_heart": [
-          76,
-          54
-        ],
-        "thumbs_up": [
-          76,
-          54
-        ],
-        "ok": [
-          76,
-          54
-        ],
-        "point": [
-          76,
-          54
-        ],
-        "clap": [
-          48,
-          72
-        ],
-        "thanks": [
-          48,
-          72
-        ],
-        "cheer": [
-          76,
-          54
-        ]
+      "placements": {
+        "wave": {
+          "right_palm": {
+            "position": [
+              26,
+              47
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              26,
+              47
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              52,
+              47
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              52,
+              47
+            ],
+            "layer": "foreground"
+          }
+        },
+        "write": {
+          "right_prop": {
+            "position": [
+              39,
+              54
+            ],
+            "layer": "foreground"
+          },
+          "left_prop": {
+            "position": [
+              39,
+              54
+            ],
+            "layer": "foreground"
+          }
+        },
+        "peace": {
+          "right_palm": {
+            "position": [
+              26,
+              47
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              26,
+              47
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              52,
+              47
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              52,
+              47
+            ],
+            "layer": "foreground"
+          }
+        },
+        "shush": {
+          "right_palm": {
+            "position": [
+              39,
+              45
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              39,
+              45
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              39,
+              45
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              39,
+              45
+            ],
+            "layer": "foreground"
+          }
+        },
+        "heart": {
+          "pair": {
+            "position": [
+              39,
+              54
+            ],
+            "layer": "foreground"
+          }
+        },
+        "finger_heart": {
+          "right_palm": {
+            "position": [
+              26,
+              47
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              26,
+              47
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              52,
+              47
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              52,
+              47
+            ],
+            "layer": "foreground"
+          }
+        },
+        "thumbs_up": {
+          "right_palm": {
+            "position": [
+              26,
+              47
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              26,
+              47
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              52,
+              47
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              52,
+              47
+            ],
+            "layer": "foreground"
+          }
+        },
+        "ok": {
+          "right_palm": {
+            "position": [
+              26,
+              47
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              26,
+              47
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              52,
+              47
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              52,
+              47
+            ],
+            "layer": "foreground"
+          }
+        },
+        "point": {
+          "right_palm": {
+            "position": [
+              26,
+              47
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              26,
+              47
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              52,
+              47
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              52,
+              47
+            ],
+            "layer": "foreground"
+          }
+        },
+        "clap": {
+          "pair": {
+            "position": [
+              39,
+              54
+            ],
+            "layer": "foreground"
+          }
+        },
+        "thanks": {
+          "pair": {
+            "position": [
+              39,
+              54
+            ],
+            "layer": "foreground"
+          }
+        },
+        "cheer": {
+          "right_palm": {
+            "position": [
+              26,
+              47
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              26,
+              47
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              52,
+              47
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              52,
+              47
+            ],
+            "layer": "foreground"
+          }
+        }
       },
-      "projection": "screen-facing hand; direction-specific placement"
+      "default_hand": "right"
     },
     "up_right": {
-      "positions": {
-        "wave": [
-          76,
-          54
-        ],
-        "write": [
-          48,
-          72
-        ],
-        "peace": [
-          76,
-          54
-        ],
-        "shush": [
-          54,
-          49
-        ],
-        "heart": [
-          48,
-          72
-        ],
-        "finger_heart": [
-          76,
-          54
-        ],
-        "thumbs_up": [
-          76,
-          54
-        ],
-        "ok": [
-          76,
-          54
-        ],
-        "point": [
-          76,
-          54
-        ],
-        "clap": [
-          48,
-          72
-        ],
-        "thanks": [
-          48,
-          72
-        ],
-        "cheer": [
-          76,
-          54
-        ]
+      "placements": {
+        "wave": {
+          "right_palm": {
+            "position": [
+              33,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              33,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              59,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              59,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "write": {
+          "right_prop": {
+            "position": [
+              46,
+              55
+            ],
+            "layer": "foreground"
+          },
+          "left_prop": {
+            "position": [
+              46,
+              55
+            ],
+            "layer": "foreground"
+          }
+        },
+        "peace": {
+          "right_palm": {
+            "position": [
+              33,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              33,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              59,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              59,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "shush": {
+          "right_palm": {
+            "position": [
+              46,
+              46
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              46,
+              46
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              46,
+              46
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              46,
+              46
+            ],
+            "layer": "foreground"
+          }
+        },
+        "heart": {
+          "pair": {
+            "position": [
+              46,
+              55
+            ],
+            "layer": "foreground"
+          }
+        },
+        "finger_heart": {
+          "right_palm": {
+            "position": [
+              33,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              33,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              59,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              59,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "thumbs_up": {
+          "right_palm": {
+            "position": [
+              33,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              33,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              59,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              59,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "ok": {
+          "right_palm": {
+            "position": [
+              33,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              33,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              59,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              59,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "point": {
+          "right_palm": {
+            "position": [
+              33,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              33,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              59,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              59,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "clap": {
+          "pair": {
+            "position": [
+              46,
+              55
+            ],
+            "layer": "foreground"
+          }
+        },
+        "thanks": {
+          "pair": {
+            "position": [
+              46,
+              55
+            ],
+            "layer": "foreground"
+          }
+        },
+        "cheer": {
+          "right_palm": {
+            "position": [
+              33,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              33,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              59,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              59,
+              48
+            ],
+            "layer": "foreground"
+          }
+        }
       },
-      "projection": "screen-facing hand; direction-specific placement"
+      "default_hand": "left"
     },
     "left": {
-      "positions": {
-        "wave": [
-          20,
-          54
-        ],
-        "write": [
-          48,
-          72
-        ],
-        "peace": [
-          20,
-          54
-        ],
-        "shush": [
-          38,
-          49
-        ],
-        "heart": [
-          48,
-          72
-        ],
-        "finger_heart": [
-          20,
-          54
-        ],
-        "thumbs_up": [
-          20,
-          54
-        ],
-        "ok": [
-          20,
-          54
-        ],
-        "point": [
-          20,
-          54
-        ],
-        "clap": [
-          48,
-          72
-        ],
-        "thanks": [
-          48,
-          72
-        ],
-        "cheer": [
-          20,
-          54
-        ]
+      "placements": {
+        "wave": {
+          "right_palm": {
+            "position": [
+              17,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              17,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              43,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              43,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "write": {
+          "right_prop": {
+            "position": [
+              30,
+              55
+            ],
+            "layer": "foreground"
+          },
+          "left_prop": {
+            "position": [
+              30,
+              55
+            ],
+            "layer": "foreground"
+          }
+        },
+        "peace": {
+          "right_palm": {
+            "position": [
+              17,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              17,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              43,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              43,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "shush": {
+          "right_palm": {
+            "position": [
+              30,
+              46
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              30,
+              46
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              30,
+              46
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              30,
+              46
+            ],
+            "layer": "foreground"
+          }
+        },
+        "heart": {
+          "pair": {
+            "position": [
+              30,
+              55
+            ],
+            "layer": "foreground"
+          }
+        },
+        "finger_heart": {
+          "right_palm": {
+            "position": [
+              17,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              17,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              43,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              43,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "thumbs_up": {
+          "right_palm": {
+            "position": [
+              17,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              17,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              43,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              43,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "ok": {
+          "right_palm": {
+            "position": [
+              17,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              17,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              43,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              43,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "point": {
+          "right_palm": {
+            "position": [
+              17,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              17,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              43,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              43,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "clap": {
+          "pair": {
+            "position": [
+              30,
+              55
+            ],
+            "layer": "foreground"
+          }
+        },
+        "thanks": {
+          "pair": {
+            "position": [
+              30,
+              55
+            ],
+            "layer": "foreground"
+          }
+        },
+        "cheer": {
+          "right_palm": {
+            "position": [
+              17,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              17,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              43,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              43,
+              48
+            ],
+            "layer": "foreground"
+          }
+        }
       },
-      "projection": "screen-facing hand; direction-specific placement"
+      "default_hand": "right"
     },
     "front": {
-      "positions": {
-        "wave": [
-          76,
-          54
-        ],
-        "write": [
-          48,
-          72
-        ],
-        "peace": [
-          76,
-          54
-        ],
-        "shush": [
-          47,
-          49
-        ],
-        "heart": [
-          48,
-          72
-        ],
-        "finger_heart": [
-          76,
-          54
-        ],
-        "thumbs_up": [
-          76,
-          54
-        ],
-        "ok": [
-          76,
-          54
-        ],
-        "point": [
-          76,
-          54
-        ],
-        "clap": [
-          48,
-          72
-        ],
-        "thanks": [
-          48,
-          72
-        ],
-        "cheer": [
-          76,
-          54
-        ]
+      "placements": {
+        "wave": {
+          "right_palm": {
+            "position": [
+              26,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              26,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              52,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              52,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "write": {
+          "right_prop": {
+            "position": [
+              39,
+              55
+            ],
+            "layer": "foreground"
+          },
+          "left_prop": {
+            "position": [
+              39,
+              55
+            ],
+            "layer": "foreground"
+          }
+        },
+        "peace": {
+          "right_palm": {
+            "position": [
+              26,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              26,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              52,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              52,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "shush": {
+          "right_palm": {
+            "position": [
+              39,
+              46
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              39,
+              46
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              39,
+              46
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              39,
+              46
+            ],
+            "layer": "foreground"
+          }
+        },
+        "heart": {
+          "pair": {
+            "position": [
+              39,
+              55
+            ],
+            "layer": "foreground"
+          }
+        },
+        "finger_heart": {
+          "right_palm": {
+            "position": [
+              26,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              26,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              52,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              52,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "thumbs_up": {
+          "right_palm": {
+            "position": [
+              26,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              26,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              52,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              52,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "ok": {
+          "right_palm": {
+            "position": [
+              26,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              26,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              52,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              52,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "point": {
+          "right_palm": {
+            "position": [
+              26,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              26,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              52,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              52,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "clap": {
+          "pair": {
+            "position": [
+              39,
+              55
+            ],
+            "layer": "foreground"
+          }
+        },
+        "thanks": {
+          "pair": {
+            "position": [
+              39,
+              55
+            ],
+            "layer": "foreground"
+          }
+        },
+        "cheer": {
+          "right_palm": {
+            "position": [
+              26,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              26,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              52,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              52,
+              48
+            ],
+            "layer": "foreground"
+          }
+        }
       },
-      "projection": "screen-facing hand; direction-specific placement"
+      "default_hand": "right"
     },
     "right": {
-      "positions": {
-        "wave": [
-          76,
-          54
-        ],
-        "write": [
-          48,
-          72
-        ],
-        "peace": [
-          76,
-          54
-        ],
-        "shush": [
-          57,
-          49
-        ],
-        "heart": [
-          48,
-          72
-        ],
-        "finger_heart": [
-          76,
-          54
-        ],
-        "thumbs_up": [
-          76,
-          54
-        ],
-        "ok": [
-          76,
-          54
-        ],
-        "point": [
-          76,
-          54
-        ],
-        "clap": [
-          48,
-          72
-        ],
-        "thanks": [
-          48,
-          72
-        ],
-        "cheer": [
-          76,
-          54
-        ]
+      "placements": {
+        "wave": {
+          "right_palm": {
+            "position": [
+              36,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              36,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              62,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              62,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "write": {
+          "right_prop": {
+            "position": [
+              49,
+              55
+            ],
+            "layer": "foreground"
+          },
+          "left_prop": {
+            "position": [
+              49,
+              55
+            ],
+            "layer": "foreground"
+          }
+        },
+        "peace": {
+          "right_palm": {
+            "position": [
+              36,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              36,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              62,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              62,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "shush": {
+          "right_palm": {
+            "position": [
+              49,
+              46
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              49,
+              46
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              49,
+              46
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              49,
+              46
+            ],
+            "layer": "foreground"
+          }
+        },
+        "heart": {
+          "pair": {
+            "position": [
+              49,
+              55
+            ],
+            "layer": "foreground"
+          }
+        },
+        "finger_heart": {
+          "right_palm": {
+            "position": [
+              36,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              36,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              62,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              62,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "thumbs_up": {
+          "right_palm": {
+            "position": [
+              36,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              36,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              62,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              62,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "ok": {
+          "right_palm": {
+            "position": [
+              36,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              36,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              62,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              62,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "point": {
+          "right_palm": {
+            "position": [
+              36,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              36,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              62,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              62,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "clap": {
+          "pair": {
+            "position": [
+              49,
+              55
+            ],
+            "layer": "foreground"
+          }
+        },
+        "thanks": {
+          "pair": {
+            "position": [
+              49,
+              55
+            ],
+            "layer": "foreground"
+          }
+        },
+        "cheer": {
+          "right_palm": {
+            "position": [
+              36,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              36,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              62,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              62,
+              48
+            ],
+            "layer": "foreground"
+          }
+        }
       },
-      "projection": "screen-facing hand; direction-specific placement"
+      "default_hand": "left"
     },
     "down_left": {
-      "positions": {
-        "wave": [
-          20,
-          54
-        ],
-        "write": [
-          48,
-          72
-        ],
-        "peace": [
-          20,
-          54
-        ],
-        "shush": [
-          39,
-          49
-        ],
-        "heart": [
-          48,
-          72
-        ],
-        "finger_heart": [
-          20,
-          54
-        ],
-        "thumbs_up": [
-          20,
-          54
-        ],
-        "ok": [
-          20,
-          54
-        ],
-        "point": [
-          20,
-          54
-        ],
-        "clap": [
-          48,
-          72
-        ],
-        "thanks": [
-          48,
-          72
-        ],
-        "cheer": [
-          20,
-          54
-        ]
+      "placements": {
+        "wave": {
+          "right_palm": {
+            "position": [
+              18,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              18,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              44,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              44,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "write": {
+          "right_prop": {
+            "position": [
+              31,
+              55
+            ],
+            "layer": "foreground"
+          },
+          "left_prop": {
+            "position": [
+              31,
+              55
+            ],
+            "layer": "foreground"
+          }
+        },
+        "peace": {
+          "right_palm": {
+            "position": [
+              18,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              18,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              44,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              44,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "shush": {
+          "right_palm": {
+            "position": [
+              31,
+              46
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              31,
+              46
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              31,
+              46
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              31,
+              46
+            ],
+            "layer": "foreground"
+          }
+        },
+        "heart": {
+          "pair": {
+            "position": [
+              31,
+              55
+            ],
+            "layer": "foreground"
+          }
+        },
+        "finger_heart": {
+          "right_palm": {
+            "position": [
+              18,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              18,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              44,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              44,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "thumbs_up": {
+          "right_palm": {
+            "position": [
+              18,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              18,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              44,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              44,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "ok": {
+          "right_palm": {
+            "position": [
+              18,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              18,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              44,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              44,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "point": {
+          "right_palm": {
+            "position": [
+              18,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              18,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              44,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              44,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "clap": {
+          "pair": {
+            "position": [
+              31,
+              55
+            ],
+            "layer": "foreground"
+          }
+        },
+        "thanks": {
+          "pair": {
+            "position": [
+              31,
+              55
+            ],
+            "layer": "foreground"
+          }
+        },
+        "cheer": {
+          "right_palm": {
+            "position": [
+              18,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              18,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              44,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              44,
+              48
+            ],
+            "layer": "foreground"
+          }
+        }
       },
-      "projection": "screen-facing hand; direction-specific placement"
+      "default_hand": "right"
     },
     "down": {
-      "positions": {
-        "wave": [
-          76,
-          54
-        ],
-        "write": [
-          48,
-          72
-        ],
-        "peace": [
-          76,
-          54
-        ],
-        "shush": [
-          47,
-          51
-        ],
-        "heart": [
-          48,
-          72
-        ],
-        "finger_heart": [
-          76,
-          54
-        ],
-        "thumbs_up": [
-          76,
-          54
-        ],
-        "ok": [
-          76,
-          54
-        ],
-        "point": [
-          76,
-          54
-        ],
-        "clap": [
-          48,
-          72
-        ],
-        "thanks": [
-          48,
-          72
-        ],
-        "cheer": [
-          76,
-          54
-        ]
+      "placements": {
+        "wave": {
+          "right_palm": {
+            "position": [
+              26,
+              50
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              26,
+              50
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              52,
+              50
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              52,
+              50
+            ],
+            "layer": "foreground"
+          }
+        },
+        "write": {
+          "right_prop": {
+            "position": [
+              39,
+              57
+            ],
+            "layer": "foreground"
+          },
+          "left_prop": {
+            "position": [
+              39,
+              57
+            ],
+            "layer": "foreground"
+          }
+        },
+        "peace": {
+          "right_palm": {
+            "position": [
+              26,
+              50
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              26,
+              50
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              52,
+              50
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              52,
+              50
+            ],
+            "layer": "foreground"
+          }
+        },
+        "shush": {
+          "right_palm": {
+            "position": [
+              39,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              39,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              39,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              39,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "heart": {
+          "pair": {
+            "position": [
+              39,
+              57
+            ],
+            "layer": "foreground"
+          }
+        },
+        "finger_heart": {
+          "right_palm": {
+            "position": [
+              26,
+              50
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              26,
+              50
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              52,
+              50
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              52,
+              50
+            ],
+            "layer": "foreground"
+          }
+        },
+        "thumbs_up": {
+          "right_palm": {
+            "position": [
+              26,
+              50
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              26,
+              50
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              52,
+              50
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              52,
+              50
+            ],
+            "layer": "foreground"
+          }
+        },
+        "ok": {
+          "right_palm": {
+            "position": [
+              26,
+              50
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              26,
+              50
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              52,
+              50
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              52,
+              50
+            ],
+            "layer": "foreground"
+          }
+        },
+        "point": {
+          "right_palm": {
+            "position": [
+              26,
+              50
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              26,
+              50
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              52,
+              50
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              52,
+              50
+            ],
+            "layer": "foreground"
+          }
+        },
+        "clap": {
+          "pair": {
+            "position": [
+              39,
+              57
+            ],
+            "layer": "foreground"
+          }
+        },
+        "thanks": {
+          "pair": {
+            "position": [
+              39,
+              57
+            ],
+            "layer": "foreground"
+          }
+        },
+        "cheer": {
+          "right_palm": {
+            "position": [
+              26,
+              50
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              26,
+              50
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              52,
+              50
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              52,
+              50
+            ],
+            "layer": "foreground"
+          }
+        }
       },
-      "projection": "screen-facing hand; direction-specific placement"
+      "default_hand": "right"
     },
     "down_right": {
-      "positions": {
-        "wave": [
-          76,
-          54
-        ],
-        "write": [
-          48,
-          72
-        ],
-        "peace": [
-          76,
-          54
-        ],
-        "shush": [
-          56,
-          49
-        ],
-        "heart": [
-          48,
-          72
-        ],
-        "finger_heart": [
-          76,
-          54
-        ],
-        "thumbs_up": [
-          76,
-          54
-        ],
-        "ok": [
-          76,
-          54
-        ],
-        "point": [
-          76,
-          54
-        ],
-        "clap": [
-          48,
-          72
-        ],
-        "thanks": [
-          48,
-          72
-        ],
-        "cheer": [
-          76,
-          54
-        ]
+      "placements": {
+        "wave": {
+          "right_palm": {
+            "position": [
+              35,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              35,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              61,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              61,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "write": {
+          "right_prop": {
+            "position": [
+              48,
+              55
+            ],
+            "layer": "foreground"
+          },
+          "left_prop": {
+            "position": [
+              48,
+              55
+            ],
+            "layer": "foreground"
+          }
+        },
+        "peace": {
+          "right_palm": {
+            "position": [
+              35,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              35,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              61,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              61,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "shush": {
+          "right_palm": {
+            "position": [
+              48,
+              46
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              48,
+              46
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              48,
+              46
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              48,
+              46
+            ],
+            "layer": "foreground"
+          }
+        },
+        "heart": {
+          "pair": {
+            "position": [
+              48,
+              55
+            ],
+            "layer": "foreground"
+          }
+        },
+        "finger_heart": {
+          "right_palm": {
+            "position": [
+              35,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              35,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              61,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              61,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "thumbs_up": {
+          "right_palm": {
+            "position": [
+              35,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              35,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              61,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              61,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "ok": {
+          "right_palm": {
+            "position": [
+              35,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              35,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              61,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              61,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "point": {
+          "right_palm": {
+            "position": [
+              35,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              35,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              61,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              61,
+              48
+            ],
+            "layer": "foreground"
+          }
+        },
+        "clap": {
+          "pair": {
+            "position": [
+              48,
+              55
+            ],
+            "layer": "foreground"
+          }
+        },
+        "thanks": {
+          "pair": {
+            "position": [
+              48,
+              55
+            ],
+            "layer": "foreground"
+          }
+        },
+        "cheer": {
+          "right_palm": {
+            "position": [
+              35,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "right_back": {
+            "position": [
+              35,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_palm": {
+            "position": [
+              61,
+              48
+            ],
+            "layer": "foreground"
+          },
+          "left_back": {
+            "position": [
+              61,
+              48
+            ],
+            "layer": "foreground"
+          }
+        }
       },
-      "projection": "screen-facing hand; direction-specific placement"
+      "default_hand": "left"
     }
   }
 }

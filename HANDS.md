@@ -1,38 +1,49 @@
-# 타이리 (Tyri) — independent hand sprites
+# 타이리 (Tyri) — face-adjacent hands v2
+
+Hands are independent transparent layers. This revision replaces oversized, distant v1 hands with smaller hands next to the cheeks, lips and chin, using a shared warm 12-color palette.
 
 12 gestures: wave, write, peace, shush, heart, finger_heart, thumbs_up, ok, point, clap, thanks, cheer.
 
-Open `hands_preview.html` locally to select a direction and gesture. No server is required. See `previews/hands_9directions.gif` and `previews/hands_contact.png` for previews.
+Open `hands_preview.html` locally. Select head direction, gesture, and hand/surface. Previews: `previews/hands_contact.png`, `previews/hands_orientation.png`, and `previews/hands_9directions.gif`.
 
-## Integration
+## Hand and surface conventions
 
-- `hands_atlas.png`: 128 × 384 transparent atlas; each cell 32 × 32.
-- `hands.json`: four animation slots per gesture, 150 ms per slot; 9 direction placements.
-- Draw the existing 64 × 64 face at (16, 8) on a 96 × 96 logical canvas, then draw the hand on top.
-- Destination top-left = `directions[direction].positions[gesture] - gestures[gesture].anchor`.
-- `shush` uses a fingertip anchor matched to each face's mouth. It is intentionally a held pose.
-- Face expression, mouth viseme and hand gesture are independent. Use REST for shushing, or choose any existing emotion/viseme for other gestures.
-- Disable image smoothing and display at integer scales.
+- **right / left** always means the character's anatomical right / left. In the front view, the character's right hand is on the viewer's left.
+- **palm** means the palm is visible to the viewer; **back** means the back of the hand is visible. These are separately drawn source images, not a mirrored palm pretending to be a back view.
+- Eight single-hand gestures have `right_palm`, `right_back`, `left_palm`, `left_back` variants. Left hands are mirrored from the corresponding right-hand surface.
+- Writing has `right_prop` and `left_prop` (dominant writing hand).
+- Heart, clap and thanks use `pair`, representing both hands. These deliberately have no misleading single-hand selector.
+- This provides two surface views, not a full 3D hand rotation for every head direction. Placement follows each direction's face anchors.
+
+## Integration — v2 schema
+
+- `hands_atlas.png`: 96 × 888 atlas; cells are **24 × 24**. 37 variants × 4 timing slots = 148 slots. Held poses can repeat.
+- Single hands occupy at most 12 × 16 pixels before the small wave rotation. Paired gestures occupy at most 19 × 14 pixels.
+- Draw the existing 64 × 64 face at **(8, 4)** on an **80 × 80** canvas, then draw the hand layer.
+- The default anchor is the cell center; shush uses the fingertip, one pixel above the direction-specific mouth anchor.
+- All hand positions are close to the face. Do not reuse v1 canvas offsets or 32-pixel source rectangles.
 
 ```js
-const g = hands.gestures[gesture];
-const p = hands.directions[direction].positions[gesture];
-const frame = Math.floor(timeMs / hands.duration_ms) % g.frames.length;
+const v = hands.gestures[gesture].variants[variant];
+const p = hands.directions[direction].placements[gesture][variant].position;
+const f = Math.floor(timeMs / hands.duration_ms) % v.frames.length;
 ctx.imageSmoothingEnabled = false;
-ctx.drawImage(handAtlas, ...g.frames[frame],
-  p[0] - g.anchor[0], p[1] - g.anchor[1], 32, 32);
+ctx.drawImage(handAtlas, ...v.frames[f],
+  p[0] - v.anchor[0], p[1] - v.anchor[1], 24, 24);
 ```
 
-Hands use a shared screen-facing view with direction-specific positions, not nine independently drawn hand perspectives. Animations use small pixel-grid rotations, translations and squash; the writing gesture is a pencil-motion loop rather than dynamically rendered text. The clap is a stylized squash loop. The face source pixels are unchanged.
+Face expression, speech viseme and hand gesture remain independent. Shush is a held pose; REST is recommended. Writing is a small pencil-motion loop, not dynamically rendered text; clap is a stylized squash loop.
 
-## Rebuild and validation
+## Rebuild and checks
 
-Install Pillow, then run `python build_hands.py`. This extracts a 4 × 3 generated sheet from `sources/hands_source.png`, thresholds alpha, samples to a 32 px grid, quantizes each gesture, and exports individual PNGs under `hands/`, the atlas, JSON, HTML and previews. The release ZIP includes all 48 individual PNG slots. `hands_tests.json` records alpha and canvas-bounds checks for 432 combinations. Visual previews are reviewed separately; this does not validate live speech synchronization.
+Install Pillow, then run `python build_hands.py`. The build uses `sources/hands_source.png` for paired gestures and writing, and `sources/hands_orientation_source.png` for single-hand surfaces. It exports `hands_v2/` with 148 individual PNG slots, an atlas, JSON, self-contained preview HTML and GIF/contact sheets. The v2 ZIP contains these files. The old v1 package is retained as an older release.
+
+`hands_tests.json` checks canvas bounds for 1,332 compositions and binary transparency. These numerical checks do not prove anatomical correctness or visual quality. The front contact sheet and three-gesture hand/surface comparison were visually inspected. No live speech synchronization is tested here.
 
 ## Artwork provenance
 
-Source generated with the built-in image generation tool. Prompt specification: transparent 4-column × 3-row sheet of hands only; warm peach skin, reddish-brown pixel outline; 12 gestures in the order above; clean five-finger anatomy; no face/body/text; chunky limited-palette pixel art. Generated source then sampled to the final native pixel grid.
+The source sheet was generated with the built-in image generation tool. Final prompt specification: 4 × 4 transparent grid; eight right-hand gestures, each with separate palm/back drawings; palm thumb on viewer-left and back thumb on viewer-right where applicable; visible back fingernails; five-finger anatomy; small peach pixel art, brown outline; no decorations, arms, body or text. Left hands are mirrored only within the same surface. The source is sampled to native pixels and mapped to the shared palette.
 
 ## Usage conditions
 
-The repository LICENSE applies. Personal and noncommercial research use only. Preserve the official character name **타이리 / Tyri** and include **타이리 (Tyri)** with the required attribution. Do not rename the character.
+The repository LICENSE applies: personal and noncommercial research only. Preserve **타이리 / Tyri** and include **타이리 (Tyri)** with the required attribution. Do not rename the character.
