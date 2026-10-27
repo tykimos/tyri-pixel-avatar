@@ -34,3 +34,5 @@ The UP pose now uses a dedicated frontal, upward-pitched source with centered no
 
 The lens interiors are fully cleared before drawing, preventing leftover irises.
 These GIFs are silent and use manual timing.
+
+`eye_repair_check.png` compares original open eyes, repaired closed lids, sleepy and wink states across all nine directions.
