@@ -18,6 +18,8 @@ for r,direction in enumerate(dirs):
   im=base.copy();draw=ImageDraw.Draw(im)
   for i,(ex,ey) in enumerate(eye):
    close=(state=='wink_left' and i==1) or (state=='wink_right' and i==0)
+   if state=='neutral' or (state in ['wink_left','wink_right'] and not close):
+    continue  # Retain approved original open eyes rather than redrawing them.
    # Clear the WHOLE lens before drawing, including the old lashes. Skin
    # is sampled at the mouth-free cheek, never from a lens rim or iris.
    rad=7 if r in [1,4,7] else 6
@@ -82,6 +84,9 @@ for r,direction in enumerate(dirs):
    draw=ImageDraw.Draw(im)
    # Draw closed-eye curves directly on the final pixel grid: downsampling
    # thin diagonal lines can otherwise turn a smile into disconnected dots.
+   if state=='sleepy':
+    draw.rectangle((ex-4,ey-3,ex+4,ey+2),fill=tone)
+    draw.line([(ex-3,ey),(ex-1,ey+1),(ex+1,ey+1),(ex+3,ey)],fill=ink,width=1)
    if close or state=='happy':
     draw.rectangle((ex-4,ey-3,ex+4,ey+2),fill=tone)
     draw.line([(ex-3,ey),(ex-2,ey-1),(ex,ey-2),(ex+2,ey-1),(ex+3,ey)],fill=ink,width=1)

@@ -2018,7 +2018,7 @@
     ]
   },
   "direction_mouth_projection": "horizontal compression; down-view mouths also reduced vertically",
-  "revision": "centered-up-base-v6",
+  "revision": "clean-blinks-v7",
   "eye_centers": {
     "up_left": [
       [

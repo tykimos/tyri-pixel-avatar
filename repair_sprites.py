@@ -45,11 +45,19 @@ for r,base in enumerate(raw):
   clean=base.copy()
   if e:
    draw=ImageDraw.Draw(clean)
-   # Eyelid changes are confined to lens interiors; rim/bridge pixels stay fixed.
+   # Sample actual cheek skin, not the lower rim (which may be dark brown).
+   samples=basearr[cy-2:cy+2,cx-2:cx+3,:3].reshape(-1,3).astype(int)
+   good=samples[(samples[:,0]>samples[:,1])&(samples[:,1]>samples[:,2])&(samples[:,1]>110)]
+   tone=tuple(map(int,np.median(good,axis=0))) if len(good) else (247,177,143)
+   rad=7 if r in [1,4,7] else 6
    for ex,ey in eyes[r]:
-    tone=tuple(basearr[min(ey+4,63),ex,:3]);draw.rectangle((ex-3,ey-3,ex+3,ey+2),fill=tone)
-    if e==1:draw.line((ex-2,ey,ex+2,ey),fill='#673b2c',width=1);draw.point((ex,ey+1),fill='#673b2c')
-    else:draw.line((ex-2,ey+1,ex+2,ey+1),fill='#673b2c',width=1)
+    # Clear the entire iris/lash bed before painting the final native pixels.
+    draw.rectangle((ex-rad+1,ey-5,ex+rad-1,ey+4),fill=tone)
+    if e==1:
+     draw.line((ex-3,ey,ex+3,ey),fill='#673b2c',width=1)
+     draw.rectangle((ex,ey+1,ex+1,ey+2),fill='#673b2c')
+    else:
+     draw.line([(ex-3,ey),(ex-1,ey+1),(ex+1,ey+1),(ex+3,ey)],fill='#673b2c',width=1)
   # Reinforce generated gold rims on the final pixel grid so downsampling
   # cannot erase them. Bridge and lens centres also define the mouth axis.
   draw=ImageDraw.Draw(clean)
@@ -73,7 +81,7 @@ for r,base in enumerate(raw):
    key=f'{names[r]}/e{e}_{vis[m]}';im.save(P/(key+'.png'));atlas.paste(im,((e*12+m)*64,r*64));frames[r,e,m]=im
    assert np.array_equal(np.array(im)[:,:,3],basearr[:,:,3])
    checks.append({'frame':key,'mouth_pixels':int((la[:,:,3]>0).sum()),'clipped_pixels':before-int((la[:,:,3]>0).sum())})
-atlas.save(P/'atlas.png');meta['mouth_anchors']=dict(zip(names,anchors));meta['revision']='centered-up-base-v6';meta['direction_mouth_projection']='horizontal compression; down-view mouths also reduced vertically';meta['eye_centers']=dict(zip(names,eyes));(P/'manifest.json').write_text(json.dumps(meta,indent=2))
+atlas.save(P/'atlas.png');meta['mouth_anchors']=dict(zip(names,anchors));meta['revision']='clean-blinks-v7';meta['direction_mouth_projection']='horizontal compression; down-view mouths also reduced vertically';meta['eye_centers']=dict(zip(names,eyes));(P/'manifest.json').write_text(json.dumps(meta,indent=2))
 rgba=np.array(atlas);colors=sorted({tuple(p[:3]) for p in rgba.reshape(-1,4) if p[3]});(P/'palette.json').write_text(json.dumps({'colors':['#%02x%02x%02x'%c for c in colors],'transparency':'alpha=0'},indent=2))
 html=(P/'preview.html').read_text();html=re.sub(r'data:image/png;base64,[A-Za-z0-9+/=]+','data:image/png;base64,'+base64.b64encode((P/'atlas.png').read_bytes()).decode(),html);(P/'preview.html').write_text(html)
 def gif(name,seq):
@@ -95,5 +103,12 @@ for r in range(9):
  for e in range(3):
   if len({frames[r,e,m].tobytes() for m in range(12)})!=12:duplicates.append((r,e))
 assert not duplicates,duplicates
-tests={'frames':324,'all_12_visemes_distinct_per_direction_and_eye':True,'mouth_changes_preserve_alpha':True,'mouth_pixels_restricted_to_interior_skin':True,'max_clipped_pixels':max(c['clipped_pixels'] for c in checks),'real_speech_sync_tested':False}
+closed_counts=[]
+for r,name in enumerate(names):
+ closed=np.array(Image.open(P/name/'base_e2.png'))
+ for ex,ey in eyes[r]:
+  region=closed[ey-3:ey+3,ex-3:ex+4,:3]
+  dark=(region[:,:,0]<150)&(region[:,:,1]<115)&(region[:,:,2]<100)
+  count=int(dark.sum());assert count<=9,(name,ex,ey,count);closed_counts.append(count)
+tests={'closed_eye_dark_pixels_max':max(closed_counts),'closed_eye_dark_pixels_limit':9,'closed_eye_lenses_checked':len(closed_counts),'frames':324,'all_12_visemes_distinct_per_direction_and_eye':True,'mouth_changes_preserve_alpha':True,'mouth_pixels_restricted_to_interior_skin':True,'max_clipped_pixels':max(c['clipped_pixels'] for c in checks),'real_speech_sync_tested':False}
 (P/'test_results.json').write_text(json.dumps(tests,indent=2));(P/'previews/mouth_boundary_checks.json').write_text(json.dumps(checks,indent=2));print(tests)

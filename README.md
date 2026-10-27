@@ -147,3 +147,7 @@ Regenerate with `python build_emotions.py --font /path/to/CJK-font.otf`
 (Pillow and numpy). Omit the font option for English GIF labels.
 `emotion_tests.json` records automated checks. GIFs are silent demonstrations;
 real-audio lip sync and perceptual emotion recognition are not validated.
+
+## Blink repair v7
+
+The original e1/e2 frames and the emotion extension both clear the full eye bed using cheek skin. Closed lids are native one-pixel curves; neutral and open wink eyes preserve the approved original eyes. All 18 closed-eye interiors are checked to contain at most 9 dark pixels, preventing filled brown blocks. See `previews/eye_repair_check.png`. Replace both the original atlas/direction PNGs and emotion assets when updating an app; old cached sprites still contain the defect.
