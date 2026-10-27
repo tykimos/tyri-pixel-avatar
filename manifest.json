@@ -1985,8 +1985,8 @@
       43
     ],
     "up": [
-      25,
-      43
+      31,
+      42
     ],
     "up_right": [
       38,
@@ -2018,7 +2018,7 @@
     ]
   },
   "direction_mouth_projection": "horizontal compression; down-view mouths also reduced vertically",
-  "revision": "aligned-mouths-visible-glasses-v5",
+  "revision": "centered-up-base-v6",
   "eye_centers": {
     "up_left": [
       [
@@ -2032,12 +2032,12 @@
     ],
     "up": [
       [
-        18,
-        34
+        23,
+        33
       ],
       [
-        32,
-        35
+        39,
+        33
       ]
     ],
     "up_right": [

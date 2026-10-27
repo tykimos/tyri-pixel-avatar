@@ -70,7 +70,7 @@ Attribution: **Tyri Pixel Avatar by Taeyoung Kim (tykimos)**.
 
 ## Multilingual greeting review
 
-These silent GIFs show the **repaired v5 sprites** in all nine directions.
+These silent GIFs show the **repaired v6 sprites** in all nine directions.
 Mouth timing is manually approximated from phonetic sequences, not generated from
 TTS or aligned to recorded speech. English reads “Hi, I’m Tyri. Nice to meet you!”;
 Japanese reads “こんにちは、タイリだよ。よろしくね。” Korean reads “안녕, 난 타이리야, 반가워”.
@@ -105,3 +105,7 @@ Regenerate with `python make_review_previews.py --font /path/to/CJK-font.otf` (P
 - `previews/mouth_boundary_checks.json` records clipping per frame; clipping is
   intentional to keep lips inside the face. These checks do not measure perceived
   likeness, pose accuracy, or real-audio lip synchronization.
+
+## Centered UP base (v6)
+
+The UP pose now uses a dedicated frontal, upward-pitched source with centered nose, glasses and mouth landmarks. Other eight directions are unchanged. See `previews/up_before_after.png`. The pitch is stylized, not a calibrated 3D angle.

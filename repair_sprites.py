@@ -18,8 +18,8 @@ assert len(raw)==9
 # Match left and right pitch precisely with explicit mirrored counterparts.
 for right,left in [(2,0),(5,3),(8,6)]:raw[right]=raw[left].transpose(Image.Transpose.FLIP_LEFT_RIGHT)
 # Face landmarks are defined on the final 64px images, not the source canvas.
-anchors=[(25,43),(25,43),(38,43),(22,43),(31,43),(41,43),(23,43),(31,45),(40,43)]
-eyes=[[(18,34),(32,36)],[(18,34),(32,35)],[(31,36),(45,34)],[(15,34),(29,36)],[(22,35),(40,35)],[(34,36),(48,34)],[(16,35),(30,38)],[(22,37),(40,37)],[(33,38),(47,35)]]
+anchors=[(25,43),(31,42),(38,43),(22,43),(31,43),(41,43),(23,43),(31,45),(40,43)]
+eyes=[[(18,34),(32,36)],[(23,33),(39,33)],[(31,36),(45,34)],[(15,34),(29,36)],[(22,35),(40,35)],[(34,36),(48,34)],[(16,35),(30,38)],[(22,37),(40,37)],[(33,38),(47,35)]]
 meta=json.loads((P/'manifest.json').read_text());names=meta['directions'];vis=meta['visemes']
 mouths=[Image.open(P/'mouths'/f'{v}.png').convert('RGBA') for v in vis]
 allrgb=np.concatenate([np.array(im)[:,:,:3][np.array(im)[:,:,3]>0] for im in raw])
@@ -27,6 +27,13 @@ q=Image.fromarray(allrgb.reshape(1,-1,3)).quantize(colors=32,method=Image.Quanti
 def quant(im):
  alpha=im.getchannel('A');out=im.convert('RGB').quantize(palette=q,dither=Image.Dither.NONE).convert('RGBA');out.putalpha(alpha);return out
 raw=[quant(im) for im in raw]
+# Correct UP yaw using a dedicated frontal, upward-pitched source. Preserve
+# the shared original quantizer so all other directional pixels stay unchanged.
+up=Image.open(P/'sources/up_head.png').convert('RGBA')
+up.putalpha(up.getchannel('A').point(lambda v:255 if v>=128 else 0))
+up=up.crop(up.getbbox());up.thumbnail((56,56),Image.Resampling.NEAREST)
+canvas=Image.new('RGBA',(64,64));canvas.paste(up,((64-up.width)//2,(64-up.height)//2))
+raw[1]=quant(canvas)
 atlas=Image.new('RGBA',(2304,576));frames={};checks=[]
 for r,base in enumerate(raw):
  cx,cy=anchors[r];basearr=np.array(base)
@@ -47,10 +54,10 @@ for r,base in enumerate(raw):
   # cannot erase them. Bridge and lens centres also define the mouth axis.
   draw=ImageDraw.Draw(clean)
   for ex,ey in eyes[r]:
-   rx=7 if r in [4,7] else 6
+   rx=7 if r in [1,4,7] else 6
    draw.ellipse((ex-rx,ey-5,ex+rx,ey+5),outline='#956327',width=1)
    draw.line((ex-2,ey+5,ex+2,ey+5),fill='#e6b65a',width=1)
-  (lx,ly),(rx,ry)=eyes[r];rad=7 if r in [4,7] else 6
+  (lx,ly),(rx,ry)=eyes[r];rad=7 if r in [1,4,7] else 6
   draw.line((lx+rad,ly-1,rx-rad,ry-1),fill='#956327',width=1)
   clean.save(P/names[r]/f'base_e{e}.png')
   for m,mouth in enumerate(mouths):
@@ -66,7 +73,7 @@ for r,base in enumerate(raw):
    key=f'{names[r]}/e{e}_{vis[m]}';im.save(P/(key+'.png'));atlas.paste(im,((e*12+m)*64,r*64));frames[r,e,m]=im
    assert np.array_equal(np.array(im)[:,:,3],basearr[:,:,3])
    checks.append({'frame':key,'mouth_pixels':int((la[:,:,3]>0).sum()),'clipped_pixels':before-int((la[:,:,3]>0).sum())})
-atlas.save(P/'atlas.png');meta['mouth_anchors']=dict(zip(names,anchors));meta['revision']='aligned-mouths-visible-glasses-v5';meta['direction_mouth_projection']='horizontal compression; down-view mouths also reduced vertically';meta['eye_centers']=dict(zip(names,eyes));(P/'manifest.json').write_text(json.dumps(meta,indent=2))
+atlas.save(P/'atlas.png');meta['mouth_anchors']=dict(zip(names,anchors));meta['revision']='centered-up-base-v6';meta['direction_mouth_projection']='horizontal compression; down-view mouths also reduced vertically';meta['eye_centers']=dict(zip(names,eyes));(P/'manifest.json').write_text(json.dumps(meta,indent=2))
 rgba=np.array(atlas);colors=sorted({tuple(p[:3]) for p in rgba.reshape(-1,4) if p[3]});(P/'palette.json').write_text(json.dumps({'colors':['#%02x%02x%02x'%c for c in colors],'transparency':'alpha=0'},indent=2))
 html=(P/'preview.html').read_text();html=re.sub(r'data:image/png;base64,[A-Za-z0-9+/=]+','data:image/png;base64,'+base64.b64encode((P/'atlas.png').read_bytes()).decode(),html);(P/'preview.html').write_text(html)
 def gif(name,seq):

@@ -54,7 +54,7 @@ for code,(language,text,phrases) in specs.items():
     draw.text((x,y+128),n,font=small,fill='#b9cadb')
    draw.text((16,535),text,font=font,fill='white')
    draw.text((16,565),caption+'   ['+mouth+']',font=small,fill='#f6c67b')
-   draw.text((16,588),'SILENT / MANUAL TIMING / REPAIRED V5',font=small,fill='#aab7c5')
+   draw.text((16,588),'SILENT / MANUAL TIMING / CENTERED UP V6',font=small,fill='#aab7c5')
    rendered.append(bg);durations.append(step);remaining-=step;t+=step
   timeline.append({'end_ms':t,'viseme':mouth,'phrase':caption})
  # Quantize all frames against one palette; never independent per-frame colors.
