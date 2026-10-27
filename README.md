@@ -1,153 +1,101 @@
+<div align="center">
+
 # Tyri Pixel Avatar
 
-A face-only pixel avatar sprite kit for multilingual conversational interfaces.
+### Small pixels. Big personality.
 
-**Personal and noncommercial research use only. Commercial use is prohibited
-without separate written permission.** See [LICENSE](LICENSE).
+A tiny, expressive face for conversational interfaces, virtual companions, and creative experiments.
 
-![12 mouth shapes](viseme_contact.png)
+**9 directions · 24 expressions · 12 mouth shapes · 64 × 64 pixels**
 
-## Quick start
+[Get started](#get-started) · [Sprite guide](GUIDE.md) · [Animation gallery](previews/README.md) · [License](LICENSE)
 
-Download this repository and open `preview.html` in a browser. Select a direction
-and mouth shape, or cycle through all 12 mouth shapes. The preview works offline.
-To follow speech, load an audio file and its matching timestamp JSON.
+![Tyri talking, reacting and looking around](previews/showcase_hero.gif)
 
-## Included
+**말하고, 웃고, 윙크하고, 고개를 돌리는 픽셀 캐릭터.**
 
-- 324 frames: 9 directions × 3 eye states × 12 mouth shapes, each 64×64 RGBA.
-- `atlas.png` and `manifest.json`: 36 columns × 9 rows and frame coordinates.
-- Direction folders: complete frames and mouth-free `base_e*.png` layers.
-- `mouths/`: isolated mouth components; anchors are in `manifest.json`.
-- `phoneme_map.json`: approximate English, Japanese and Korean sound groups.
-- `sample_timing.json`: synthetic articulation timing example.
-- GIF previews, palette metadata, source artwork and automated check results.
+Personal & noncommercial research use only.
 
-Use nearest-neighbor scaling. Frame coordinates are `[x, y, width, height]`.
+</div>
 
-## Speech timing
+## One face, many ways to react
 
-```json
-{"units":"seconds","cues":[
-  {"start":0.0,"end":0.12,"viseme":"MBP"},
-  {"start":0.12,"end":0.35,"viseme":"AA"},
-  {"start":0.35,"end":0.50,"viseme":"REST"}
-]}
+<table>
+<tr>
+<td align="center" width="50%">
+<img src="previews/showcase_emotions.gif" width="456" alt="Tyri cycles through joy, winks, love, surprise, side-eye and sleep while moving her mouth">
+<br><strong>A little more personality.</strong><br>
+Joy, tears, winks, heart eyes, a little attitude—and more.
+</td>
+<td align="center" width="50%">
+<img src="previews/showcase_directions.gif" width="456" alt="Tyri turns through nine directional poses while talking and blinking">
+<br><strong>A different point of view.</strong><br>
+Look up, down, left, right, and between. Keep talking.
+</td>
+</tr>
+</table>
+
+- **Mix expression and speech.** Select a mood and a mouth shape independently.
+- **Keep the pixels crisp.** Transparent 64 × 64 frames, shown above at integer scale.
+- **Start small, build your own.** PNG atlases, JSON coordinates, source artwork, and offline HTML previews.
+- **Explore three languages.** Approximate mouth mappings and sample greetings for Korean, English, and Japanese.
+
+*GIFs are silent, scripted demonstrations. Speech recognition, TTS, and a conversation model are not included; real-audio lip sync has not been validated.*
+
+## Get started
+
+```bash
+git clone https://github.com/tykimos/tyri-pixel-avatar.git
+cd tyri-pixel-avatar
 ```
 
-Cues must be ordered, non-overlapping and use one of: REST, MBP, AA, EH, EE,
-OH, OO, NEUTRAL, FV, TH, L, RSH. The preview uses audio playback time, including
-after seeking. Use TTS phoneme/viseme events or forced alignment to create real
-cues. A text-to-phoneme converter, speech engine and conversation model are not
-included. The sample is not aligned to a recorded sentence.
+Open either file locally in your browser—no build step required:
 
-## Limits and validation
+| Preview | Try it |
+| --- | --- |
+| `emotion_preview.html` | Choose a direction, expression, and mouth; cycle expressions or test mouth animation. |
+| `preview.html` | Test blinking and mouth shapes, or load an audio file with matching cue JSON. |
 
-AI-assisted source artwork has been reduced and assembled into pixel assets.
-Side-view mouths use horizontal compression rather than independently drawn
-perspective. The phoneme mapping is approximate and context-dependent. Small
-teeth and tongue differences are limited by the resolution.
+You can also download the repository with **Code → Download ZIP**, unzip it, and open the same files.
 
-Automated checks cover 324 frames, 12 distinct mouth images for each direction
-and eye state, stable alpha within each mouth sequence, GIF decoding and ZIP
-integrity. Real English, Japanese and Korean speech synchronization has **not**
-been validated. GIF previews are silent.
+## Build with Tyri
 
-## 이용 조건 요약
+Choose the atlas that fits your prototype:
 
-- 허용: 개인의 비상업적 프로젝트·학습·실험, 비상업적 과학·학술 연구와 결과 발표.
-- 금지: 판매, 유료·광고 수익 서비스, 고객 납품, 사업 홍보, 기업 내부 업무,
-  상업 제품·서비스 개발을 위한 연구. 무료 제공이어도 상업 목적이면 금지됩니다.
-- 수정·재배포: 출처·라이선스 유지, 변경 표시, 동일 조건으로 무료 배포.
-- 일반 연구비·연구자 급여·통상적인 논문 게재료만으로 상업적 연구가 되지는 않습니다.
-- 별도 상업 이용 허가는 GitHub `tykimos`에 요청하세요.
+| Kit | Frames | Files |
+| --- | ---: | --- |
+| **Core** · 9 directions × 3 eye states × 12 mouths | 324 | [`atlas.png`](atlas.png) + [`manifest.json`](manifest.json) |
+| **Expressions** · 9 directions × 24 expressions × 12 mouths | 2,592 | [`emotion_atlas.png`](emotion_atlas.png) + [`emotions.json`](emotions.json) |
 
-이 요약보다 영문 [LICENSE](LICENSE) 본문이 우선합니다. 사용 분야 제한이 있는
-소스 공개 프로젝트이며, OSI 기준의 오픈소스 라이선스는 아닙니다.
+Use the JSON frame rectangles instead of hard-coded offsets. For example:
 
-Attribution: **Tyri Pixel Avatar by Taeyoung Kim (tykimos)**.
+```js
+// Load emotions.json and emotion_atlas.png first.
+const [x, y, w, h] = emotions.frames["front/wink_left/AA"];
+ctx.imageSmoothingEnabled = false;
+ctx.drawImage(atlasImage, x, y, w, h, 0, 0, w * 4, h * 4);
+```
 
+**[Read the integration guide →](GUIDE.md)** for cue timing, frame layout, regeneration commands, and limitations.
 
-## Multilingual greeting review
-
-These silent GIFs show the **repaired v6 sprites** in all nine directions.
-Mouth timing is manually approximated from phonetic sequences, not generated from
-TTS or aligned to recorded speech. English reads “Hi, I’m Tyri. Nice to meet you!”;
-Japanese reads “こんにちは、タイリだよ。よろしくね。” Korean reads “안녕, 난 타이리야, 반가워”.
-
-![Entire 324-frame sheet, reduced](previews/full_sheet_small.png)
-
-### 한국어
-![Korean greeting](previews/greeting_ko_9directions.gif)
-
-### English
-![English greeting](previews/greeting_en_9directions.gif)
-
-### 日本語
-![Japanese greeting](previews/greeting_ja_9directions.gif)
-
-Revision v5 aligns mouths to face landmarks, shrinks down-view mouths, restricts
-mouth pixels to interior skin, and reinforces gold eyeglass rims at native resolution.
-See `previews/timing_and_checks.json` for manual cues and GIF decode checks.
-Regenerate with `python make_review_previews.py --font /path/to/CJK-font.otf` (Pillow required).
+<details>
+<summary><strong>Explore all expressions and validation previews</strong></summary>
 
 
-## Mouth and glasses repair (v5)
+[24-expression contact sheet](previews/emotions_contact.png) · [All-direction emotion GIF](previews/emotions_9directions.gif) · [Wink GIF](previews/winks_9directions.gif) · [Eye checks](previews/eye_repair_check.png)
 
-![Repaired nine-direction faces](previews/repaired_9directions.png)
+[한국어 greeting](previews/greeting_ko_9directions.gif) · [English greeting](previews/greeting_en_9directions.gif) · [日本語 greeting](previews/greeting_ja_9directions.gif)
 
-- Mouth anchors follow the face/glasses axis rather than the head image box.
-- Down-view mouths are smaller; mouth pixels are constrained to interior skin.
-- Gold lens rims and bridges are reinforced on the 64px pixel grid for every pose.
-- Opposite side poses use mirrored matching heads. View angles remain stylized and approximate.
-- All 324 frames and greeting GIFs have been regenerated. `repair_sprites.py`
-  reproduces the atlas from `sources/glasses_head_sheet.png` and `mouths/`.
-- `previews/mouth_boundary_checks.json` records clipping per frame; clipping is
-  intentional to keep lips inside the face. These checks do not measure perceived
-  likeness, pose accuracy, or real-audio lip synchronization.
+Automated checks cover frame consistency, alpha preservation, distinct mouth states, and eye/glasses regressions. Direction angles and mouth projections are stylized approximations. See [`test_results.json`](test_results.json), [`emotion_tests.json`](emotion_tests.json), and the [guide](GUIDE.md).
 
-## Centered UP base (v6)
+</details>
 
-The UP pose now uses a dedicated frontal, upward-pitched source with centered nose, glasses and mouth landmarks. Other eight directions are unchanged. See `previews/up_before_after.png`. The pitch is stylized, not a calibrated 3D angle.
+## License & credit
 
-## Emotions and winks (v2)
+**Personal and noncommercial research use only. Commercial use requires separate written permission.** This is a source-available project with a custom license, not an OSI-approved open-source license. See [LICENSE](LICENSE) for the full terms.
 
-Open `emotion_preview.html` to select direction, emotion and mouth independently.
-24 expressions × 9 directions × 12 mouth shapes = **2,592 frames**.
+개인 비상업적 프로젝트·학습·실험 및 비상업적 학술 연구에 사용할 수 있습니다. 상용 서비스·고객 납품·기업 내부 업무 등은 별도 허가가 필요합니다.
 
-Neutral; left/right wink; happy; sad; side-eye; sulky; surprised; angry; sleepy;
-laughing; crying; sobbing; pleading; heart eyes; star eyes; thinking; confused;
-embarrassed; smug; unimpressed; scared; dizzy; relieved.
-Wink sides refer to the character's anatomical side (left appears viewer right).
+Created by **[Taeyoung Kim · tykimos](https://github.com/tykimos)**. AI-assisted source artwork, assembled into programmable pixel sprites.
 
-The entire lens interior is cleared with sampled cheek skin before drawing eyes.
-Each direction uses its own eye centers, lens width, pitch compression and
-near/far eye width. Closed-eye curves are drawn on the final pixel grid.
-The original glasses rims and bridge remain intact. All 216 direction/expression
-pairs are checked for distinct resting expressions and unchanged alpha/rims.
-
-![All expressions](previews/emotions_contact.png)
-![Happy eyes in all directions](previews/happy_9directions.png)
-![Emotion animation](previews/emotions_9directions.gif)
-![Winks](previews/winks_9directions.gif)
-
-### Integration
-
-`emotions.json` version 2 provides all frame rectangles keyed by
-`direction/emotion/viseme`. Always use these rectangles: v2 has a compact
-**12-column layout**, with row = direction_index × 24 + emotion_index.
-`emotion_atlas.png` is 768×13,824; each frame is 64×64. `emotion_bases.png`
-contains mouth-free bases (24 columns × 9 rows).
-
-REST uses an emotion-specific mouth. Speech retains the original v6 visemes
-with the selected eye expression. The original atlas and manifest frame
-rectangles remain compatible and unchanged.
-
-Regenerate with `python build_emotions.py --font /path/to/CJK-font.otf`
-(Pillow and numpy). Omit the font option for English GIF labels.
-`emotion_tests.json` records automated checks. GIFs are silent demonstrations;
-real-audio lip sync and perceptual emotion recognition are not validated.
-
-## Blink repair v7
-
-The original e1/e2 frames and the emotion extension both clear the full eye bed using cheek skin. Closed lids are native one-pixel curves; neutral and open wink eyes preserve the approved original eyes. All 18 closed-eye interiors are checked to contain at most 9 dark pixels, preventing filled brown blocks. See `previews/eye_repair_check.png`. Replace both the original atlas/direction PNGs and emotion assets when updating an app; old cached sprites still contain the defect.
+If Tyri helps your experiment, a star or a short demo in an issue is welcome.
