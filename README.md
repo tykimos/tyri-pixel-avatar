@@ -14,7 +14,7 @@ A tiny, expressive face for conversational interfaces, virtual companions, and c
 
 **말하고, 웃고, 윙크하고, 고개를 돌리는 픽셀 캐릭터.**
 
-Personal & noncommercial research use only.
+Personal & noncommercial research use only. Keep the character name **타이리 / Tyri**.
 
 </div>
 
@@ -91,6 +91,16 @@ Automated checks cover frame consistency, alpha preservation, distinct mouth sta
 </details>
 
 ## License & credit
+
+**Keep her name: 타이리 / Tyri.** The character must retain these official names,
+including in modified and redistributed versions. Do not rename her.
+Use the language-appropriate name in your interface and include **타이리 (Tyri)**
+in your credits, README, documentation, or about screen. See LICENSE §4.1.
+
+**이름 유지 필수:** 캐릭터의 이름은 한국어 **“타이리”**, 영어 **“Tyri”**로 유지해야 합니다.
+수정·재배포 버전에서도 다른 캐릭터 이름으로 바꿀 수 없습니다.
+크레딧·README·문서·소개 화면 등에 **“타이리 (Tyri)”**를 함께 표기해 주세요.
+앱이나 프로젝트의 이름은 별도로 정할 수 있습니다.
 
 **Personal and noncommercial research use only. Commercial use requires separate written permission.** This is a source-available project with a custom license, not an OSI-approved open-source license. See [LICENSE](LICENSE) for the full terms.
 
