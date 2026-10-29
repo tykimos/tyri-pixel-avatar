@@ -1,0 +1,4488 @@
+{
+  "version": 4,
+  "character": "타이리 / Tyri",
+  "status": "high-resolution composed animation studies",
+  "default": "idle",
+  "sources": {
+    "approved": {
+      "path": "assets/sheets/approved.png",
+      "width": 1536,
+      "height": 1024,
+      "grid": [
+        3,
+        2
+      ],
+      "sha256": "e14d203f2064c269835d783507e3de165904bf87cb1897f5a7bde0c71c7de472",
+      "pixel_sha256": "73da4acab95ecae994cdbffaba55acf94b923ac649da57f1c23298de4b668874",
+      "parts": [
+        {
+          "path": "assets/tiles/approved/approved-r1-c1a.png",
+          "rect": [
+            0,
+            0,
+            256,
+            512
+          ],
+          "sha256": "19cc24ef1a493017338568a485f07f83cd7571617e625ebfcab836537ae1ed19"
+        },
+        {
+          "path": "assets/tiles/approved/approved-r1-c1b.png",
+          "rect": [
+            256,
+            0,
+            256,
+            512
+          ],
+          "sha256": "be5dc0c418929ced739fdf2d547652911c9d74b5da1e1f5cd4f3dc1b3329488f"
+        },
+        {
+          "path": "assets/tiles/approved/approved-r1-c2a.png",
+          "rect": [
+            512,
+            0,
+            256,
+            512
+          ],
+          "sha256": "e4459730bc413c57f26811f48c3c6aa908a4fc7f630a3a23d44e7966fb513e20"
+        },
+        {
+          "path": "assets/tiles/approved/approved-r1-c2b.png",
+          "rect": [
+            768,
+            0,
+            256,
+            512
+          ],
+          "sha256": "676cf1cf22a4b2b4e6f1f6cbbd1adbe1f01c2a95c3b50478edc6a08b9014e3cf"
+        },
+        {
+          "path": "assets/tiles/approved/approved-r1-c3a.png",
+          "rect": [
+            1024,
+            0,
+            256,
+            512
+          ],
+          "sha256": "73c76b95d0da9f4e0b98f6e9a70065507563fdd36515b1fecf18fb3fbf9f5bb9"
+        },
+        {
+          "path": "assets/tiles/approved/approved-r1-c3b.png",
+          "rect": [
+            1280,
+            0,
+            256,
+            512
+          ],
+          "sha256": "cc7ad55a3e3113bad411ffcd6ad937b68cc04c1b1f0015329d3dede8133c6bf4"
+        },
+        {
+          "path": "assets/tiles/approved/approved-r2-c1a.png",
+          "rect": [
+            0,
+            512,
+            256,
+            512
+          ],
+          "sha256": "6042ef59a61e42b8109d7dd43e51af2287bb21ee34027ee2e85c420a9deb7b09"
+        },
+        {
+          "path": "assets/tiles/approved/approved-r2-c1b.png",
+          "rect": [
+            256,
+            512,
+            256,
+            512
+          ],
+          "sha256": "0a680163b1f4e7a9edf15769c2f913df385107012da8807fab82b5a0669e781c"
+        },
+        {
+          "path": "assets/tiles/approved/approved-r2-c2a.png",
+          "rect": [
+            512,
+            512,
+            256,
+            512
+          ],
+          "sha256": "a720a7c123acb4a5d8d9a91c952782b989f7fcf29f3d44981c9568880f7db5bd"
+        },
+        {
+          "path": "assets/tiles/approved/approved-r2-c2b.png",
+          "rect": [
+            768,
+            512,
+            256,
+            512
+          ],
+          "sha256": "8fbf844293e7b15e00d0c7bb7992692a1cdf5f4fbf503c8fc2877ec3bcf02436"
+        },
+        {
+          "path": "assets/tiles/approved/approved-r2-c3a.png",
+          "rect": [
+            1024,
+            512,
+            256,
+            512
+          ],
+          "sha256": "2360f6f0eb7b721d5a1008d2ec6abba06f2fc095783fefd74e723775a0658e8b"
+        },
+        {
+          "path": "assets/tiles/approved/approved-r2-c3b.png",
+          "rect": [
+            1280,
+            512,
+            256,
+            512
+          ],
+          "sha256": "6b30761987af73a446721ded996fb66074c718143c1557ec9b22f98e09853d6b"
+        }
+      ]
+    },
+    "hands": {
+      "path": "assets/sheets/hands.png",
+      "width": 1024,
+      "height": 1536,
+      "grid": [
+        4,
+        6
+      ],
+      "sha256": "80fa034c97637be0d14052f513341e21890af2981ce62587e12a5d2d9ea7e9e0",
+      "pixel_sha256": "c6d38a24792450b0c7196b9a377f6375609322327bda9bd922bd044fe00be456",
+      "parts": [
+        {
+          "path": "assets/tiles/hands/hands-r1-c1.png",
+          "rect": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "sha256": "6a3e06a562bfa5f819a60ad5804928851e59ce8603bb80fab86939a8e769f2b5"
+        },
+        {
+          "path": "assets/tiles/hands/hands-r1-c2.png",
+          "rect": [
+            256,
+            0,
+            256,
+            256
+          ],
+          "sha256": "9f5b76f5753dd5654e1110f561eed1cca8bb8a4dbacdf384e70bdb153bbb77b1"
+        },
+        {
+          "path": "assets/tiles/hands/hands-r1-c3.png",
+          "rect": [
+            512,
+            0,
+            256,
+            256
+          ],
+          "sha256": "a08201dea9c096291293211de669d7ce437fcf037e203081520d77a56bd30f1f"
+        },
+        {
+          "path": "assets/tiles/hands/hands-r1-c4.png",
+          "rect": [
+            768,
+            0,
+            256,
+            256
+          ],
+          "sha256": "a3b7469304861c16fb29100ddd71d81eab87303be588e893174e52187003202f"
+        },
+        {
+          "path": "assets/tiles/hands/hands-r2-c1.png",
+          "rect": [
+            0,
+            256,
+            256,
+            256
+          ],
+          "sha256": "25ae0a83f97d8fb2395d040bb631725483b9958f4c2c09f7ec2b85a4172f9a37"
+        },
+        {
+          "path": "assets/tiles/hands/hands-r2-c2.png",
+          "rect": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "sha256": "b87c93addf594b659b6904f4e8b914c7727f354336046646cf7edb20c6ba602e"
+        },
+        {
+          "path": "assets/tiles/hands/hands-r2-c3.png",
+          "rect": [
+            512,
+            256,
+            256,
+            256
+          ],
+          "sha256": "c3a0dbc1c050d99d7e75ef1b18aa649950239af9d295b0b6fd13e1052a18fced"
+        },
+        {
+          "path": "assets/tiles/hands/hands-r2-c4.png",
+          "rect": [
+            768,
+            256,
+            256,
+            256
+          ],
+          "sha256": "798ab16f31222dcfcea1f3e804e87fd9f7bdf7ceb08018f57cc65cfe22dce40e"
+        },
+        {
+          "path": "assets/tiles/hands/hands-r3-c1.png",
+          "rect": [
+            0,
+            512,
+            256,
+            256
+          ],
+          "sha256": "f29e14c8f7758c7708fee9f0cdacc1b1587f5bb62c736735f3a3f565e629e20a"
+        },
+        {
+          "path": "assets/tiles/hands/hands-r3-c2.png",
+          "rect": [
+            256,
+            512,
+            256,
+            256
+          ],
+          "sha256": "14a0d8c456ea6537a33a9a1c33c89f123f80ede8509a1cbd5849862da1f32948"
+        },
+        {
+          "path": "assets/tiles/hands/hands-r3-c3.png",
+          "rect": [
+            512,
+            512,
+            256,
+            256
+          ],
+          "sha256": "46896696bfb051281dc9fd979665b4b0b1e283dbdfe1fb263ced3b5c626d0188"
+        },
+        {
+          "path": "assets/tiles/hands/hands-r3-c4.png",
+          "rect": [
+            768,
+            512,
+            256,
+            256
+          ],
+          "sha256": "831cfe7f3b33b689423b0d03e5fb512433f093605eb450e5c760391a43487d39"
+        },
+        {
+          "path": "assets/tiles/hands/hands-r4-c1.png",
+          "rect": [
+            0,
+            768,
+            256,
+            256
+          ],
+          "sha256": "ef70a37990c9b4770f562ca593f77ba60f9b5dbe0e95f65aab5b26ebc2fd669d"
+        },
+        {
+          "path": "assets/tiles/hands/hands-r4-c2.png",
+          "rect": [
+            256,
+            768,
+            256,
+            256
+          ],
+          "sha256": "9fc9cd466ca9309b7381f2a2ebeafb0583372188f06460cce19b7105504975fc"
+        },
+        {
+          "path": "assets/tiles/hands/hands-r4-c3.png",
+          "rect": [
+            512,
+            768,
+            256,
+            256
+          ],
+          "sha256": "3b588ed46dc0bd877512d4749ce11a5eb5eeeaf463f239a6558905794eb8ff80"
+        },
+        {
+          "path": "assets/tiles/hands/hands-r4-c4.png",
+          "rect": [
+            768,
+            768,
+            256,
+            256
+          ],
+          "sha256": "16593a0b2717bea34bd6ffc113eb63dcbd0d9d0662380944190791a2e2a8e1e5"
+        },
+        {
+          "path": "assets/tiles/hands/hands-r5-c1.png",
+          "rect": [
+            0,
+            1024,
+            256,
+            256
+          ],
+          "sha256": "40543c6a95e64ab4fd232359225dfa35d1c5d2aeef18e9c15b9944e5ccf4593d"
+        },
+        {
+          "path": "assets/tiles/hands/hands-r5-c2.png",
+          "rect": [
+            256,
+            1024,
+            256,
+            256
+          ],
+          "sha256": "bb03f1acb529d015845df6050e2feb8c87c7b77d9a731689e7f2db0c16b6fa5e"
+        },
+        {
+          "path": "assets/tiles/hands/hands-r5-c3.png",
+          "rect": [
+            512,
+            1024,
+            256,
+            256
+          ],
+          "sha256": "7b825e771f64a5136e2a2c59e9d91f8aca1abeec08060a07840d706b26aef8a2"
+        },
+        {
+          "path": "assets/tiles/hands/hands-r5-c4.png",
+          "rect": [
+            768,
+            1024,
+            256,
+            256
+          ],
+          "sha256": "6cae285b2964fa9a96519d0958b11b1b30a700256ea06493c4362c4d7e068b1d"
+        },
+        {
+          "path": "assets/tiles/hands/hands-r6-c1.png",
+          "rect": [
+            0,
+            1280,
+            256,
+            256
+          ],
+          "sha256": "3a56043eb634cb61f429ccc17a58c821b7f263a8c082159a80b248fb9cc383b9"
+        },
+        {
+          "path": "assets/tiles/hands/hands-r6-c2.png",
+          "rect": [
+            256,
+            1280,
+            256,
+            256
+          ],
+          "sha256": "4a882ce495e356853e5afa1da3bb4616c6c72b0b833310d3f415f1514c52c337"
+        },
+        {
+          "path": "assets/tiles/hands/hands-r6-c3.png",
+          "rect": [
+            512,
+            1280,
+            256,
+            256
+          ],
+          "sha256": "a00593efd0a1fde56bf0fa823884807e87dbd9532403e4fb51a72fdc368c12ab"
+        },
+        {
+          "path": "assets/tiles/hands/hands-r6-c4.png",
+          "rect": [
+            768,
+            1280,
+            256,
+            256
+          ],
+          "sha256": "7e49ec4d488e0a5fcf3328782ff8cf950af76c047f9c6e1ca3da99cfe55f34b3"
+        }
+      ]
+    },
+    "write-think": {
+      "path": "assets/sheets/write-think.png",
+      "width": 1774,
+      "height": 887,
+      "grid": [
+        4,
+        2
+      ],
+      "sha256": "d6a886478e5da8d63c44e2930c77addec44fd452739a73e9a36619f5e4927594",
+      "pixel_sha256": "ab819b50d8ad971ed688fa03d3aac0063f01f9e1e4fca0f487a6e950a063d319",
+      "parts": [
+        {
+          "path": "assets/tiles/write-think/write-think-r1-c1a.png",
+          "rect": [
+            0,
+            0,
+            222,
+            444
+          ],
+          "sha256": "a3f30085ef80b5db62ba80260c62b490735d54e46788ca1c8ae3cd1ea9820613"
+        },
+        {
+          "path": "assets/tiles/write-think/write-think-r1-c1b.png",
+          "rect": [
+            222,
+            0,
+            222,
+            444
+          ],
+          "sha256": "dc4afb0810bb140f2aec3961bfe9ea89fea0e7cfbadcebef0877ac6199b83b7d"
+        },
+        {
+          "path": "assets/tiles/write-think/write-think-r1-c2a.png",
+          "rect": [
+            444,
+            0,
+            443,
+            222
+          ],
+          "sha256": "36d7ea5293f84638ebd72b4840c811be683d21e120c13c86d4505fc2589dcb51"
+        },
+        {
+          "path": "assets/tiles/write-think/write-think-r1-c2b.png",
+          "rect": [
+            444,
+            222,
+            443,
+            222
+          ],
+          "sha256": "c6178d8883e607ac7d33bba8a103f2989d94e4adafafb76f9adcc4bc0285ff3a"
+        },
+        {
+          "path": "assets/tiles/write-think/write-think-r1-c3a.png",
+          "rect": [
+            887,
+            0,
+            443,
+            222
+          ],
+          "sha256": "65135a13ec56f92f41ac68367218d44f7c392a5b5b749bf7c6f071dee453d786"
+        },
+        {
+          "path": "assets/tiles/write-think/write-think-r1-c3b.png",
+          "rect": [
+            887,
+            222,
+            443,
+            222
+          ],
+          "sha256": "ec4014e184c787f8b07c337655e7852e88622c6962fd88573abe7176c63d3896"
+        },
+        {
+          "path": "assets/tiles/write-think/write-think-r1-c4a.png",
+          "rect": [
+            1330,
+            0,
+            222,
+            444
+          ],
+          "sha256": "ff846b1ea56787b3f6f94830d1907c4ac40e33dbaffa7568f6306c33165a0638"
+        },
+        {
+          "path": "assets/tiles/write-think/write-think-r1-c4b.png",
+          "rect": [
+            1552,
+            0,
+            222,
+            444
+          ],
+          "sha256": "623794e836e1da5fcc55767f35bfa9e37334337f71c05b1c53f0bc2484e5f34e"
+        },
+        {
+          "path": "assets/tiles/write-think/write-think-r2-c1a.png",
+          "rect": [
+            0,
+            444,
+            222,
+            443
+          ],
+          "sha256": "749a559367d0c75c3d48d0158f84743e6ea5f794c37db2245a5e0e39c64d71bc"
+        },
+        {
+          "path": "assets/tiles/write-think/write-think-r2-c1b.png",
+          "rect": [
+            222,
+            444,
+            222,
+            443
+          ],
+          "sha256": "206f946a5cf9adb709d19e3da188fc8dc3c231b565f0f8e77531873f3f827935"
+        },
+        {
+          "path": "assets/tiles/write-think/write-think-r2-c2a.png",
+          "rect": [
+            444,
+            444,
+            221,
+            443
+          ],
+          "sha256": "cf5ee35ffc5387a975afd97c64f2c75dd11dab1351cd79c60aa0b07cb1023095"
+        },
+        {
+          "path": "assets/tiles/write-think/write-think-r2-c2b.png",
+          "rect": [
+            665,
+            444,
+            222,
+            443
+          ],
+          "sha256": "83aeb88ccf2eed0fdfbb3e0959e627abbc581811da9daf5e88e0c95173e69901"
+        },
+        {
+          "path": "assets/tiles/write-think/write-think-r2-c3a.png",
+          "rect": [
+            887,
+            444,
+            221,
+            443
+          ],
+          "sha256": "6391658c37689f702eda305adb68e5bbf235044129fd38d6dee3c859883aa5e6"
+        },
+        {
+          "path": "assets/tiles/write-think/write-think-r2-c3b.png",
+          "rect": [
+            1108,
+            444,
+            222,
+            443
+          ],
+          "sha256": "3a15880e6aa0561d83c41fa2b76a77eaf2fc99af4342a8f6745f76201f5d4ffc"
+        },
+        {
+          "path": "assets/tiles/write-think/write-think-r2-c4a.png",
+          "rect": [
+            1330,
+            444,
+            222,
+            443
+          ],
+          "sha256": "71d58839812ee4205f9a40a70a56520e25f9c9c36f16dd1c8e8765ab8526d899"
+        },
+        {
+          "path": "assets/tiles/write-think/write-think-r2-c4b.png",
+          "rect": [
+            1552,
+            444,
+            222,
+            443
+          ],
+          "sha256": "af02fc6eebdfb8a0f1a8b8d8ecced586e38d17938df93284648abb2f57f2e1ad"
+        }
+      ]
+    },
+    "reactions-core": {
+      "path": "assets/sheets/reactions-core.png",
+      "width": 1254,
+      "height": 1254,
+      "grid": [
+        4,
+        4
+      ],
+      "sha256": "e20534b84600be8fda94b1d45097cdd1a522085c07381283312cf15b205cd21b",
+      "pixel_sha256": "57bea465dd2e72b5611e02bf44bd3f683abc64031d1923f06f3fbada2616818b",
+      "parts": [
+        {
+          "path": "assets/tiles/reactions-core/reactions-core-r1-c1.png",
+          "rect": [
+            0,
+            0,
+            314,
+            314
+          ],
+          "sha256": "55a9a0b3d5df13e6b29db54770627c3a416f276d6b3b957941e2e44758ead2f3"
+        },
+        {
+          "path": "assets/tiles/reactions-core/reactions-core-r1-c2.png",
+          "rect": [
+            314,
+            0,
+            313,
+            314
+          ],
+          "sha256": "719b1d11a264d583e10c67d0b6ccae577cef6f3314cfb3191170745c79668f40"
+        },
+        {
+          "path": "assets/tiles/reactions-core/reactions-core-r1-c3.png",
+          "rect": [
+            627,
+            0,
+            313,
+            314
+          ],
+          "sha256": "9c031517631e35f968b9b02fba1d08c4975c7add73d1c22ae71a4b94cf92ade8"
+        },
+        {
+          "path": "assets/tiles/reactions-core/reactions-core-r1-c4.png",
+          "rect": [
+            940,
+            0,
+            314,
+            314
+          ],
+          "sha256": "e197ed5c3db17b5735de0b85c4659b4fec2c7622d2ebeb93a901c36fac84f255"
+        },
+        {
+          "path": "assets/tiles/reactions-core/reactions-core-r2-c1.png",
+          "rect": [
+            0,
+            314,
+            314,
+            313
+          ],
+          "sha256": "01b215f47151292c63f96c0abc8d24e9bf49c7b9641925dfd320a5cf8c0d9410"
+        },
+        {
+          "path": "assets/tiles/reactions-core/reactions-core-r2-c2.png",
+          "rect": [
+            314,
+            314,
+            313,
+            313
+          ],
+          "sha256": "553f75a66549c95a1c783b497bd239b05fd225cb14da7a13a256bdde0b6e1e04"
+        },
+        {
+          "path": "assets/tiles/reactions-core/reactions-core-r2-c3.png",
+          "rect": [
+            627,
+            314,
+            313,
+            313
+          ],
+          "sha256": "79123f3a6654c71b2d4143d837d5dad1896cf64fe3d4c4071f7f2b40b1bc903c"
+        },
+        {
+          "path": "assets/tiles/reactions-core/reactions-core-r2-c4.png",
+          "rect": [
+            940,
+            314,
+            314,
+            313
+          ],
+          "sha256": "ae0dc4a8a88efff5dce289e2ad513e7a5c15f64d773202d45df6e746d7f7d4e3"
+        },
+        {
+          "path": "assets/tiles/reactions-core/reactions-core-r3-c1.png",
+          "rect": [
+            0,
+            627,
+            314,
+            313
+          ],
+          "sha256": "d4752bf283e43275ad5ba32bea5f0bf9297b3f3e674b93d80190be5708fc4b6c"
+        },
+        {
+          "path": "assets/tiles/reactions-core/reactions-core-r3-c2.png",
+          "rect": [
+            314,
+            627,
+            313,
+            313
+          ],
+          "sha256": "2855e029ebfb6feadf5efa6a5d0bd7675de5fa4aca52376ac6c5fa835a79491f"
+        },
+        {
+          "path": "assets/tiles/reactions-core/reactions-core-r3-c3.png",
+          "rect": [
+            627,
+            627,
+            313,
+            313
+          ],
+          "sha256": "da9f1d9f183502819fa1272a3d545e01bf654a0a3d1edaa8392d3cf333c241ae"
+        },
+        {
+          "path": "assets/tiles/reactions-core/reactions-core-r3-c4.png",
+          "rect": [
+            940,
+            627,
+            314,
+            313
+          ],
+          "sha256": "bf1387ed037bb10ffc8e55900f6b4b9a7eecb530ed615d3358eb8708ab83110c"
+        },
+        {
+          "path": "assets/tiles/reactions-core/reactions-core-r4-c1.png",
+          "rect": [
+            0,
+            940,
+            314,
+            314
+          ],
+          "sha256": "b3203314e97410f352eed76ca37c9e35380b00a5426cff44e1954605e5313036"
+        },
+        {
+          "path": "assets/tiles/reactions-core/reactions-core-r4-c2.png",
+          "rect": [
+            314,
+            940,
+            313,
+            314
+          ],
+          "sha256": "4c7494a530ecd57c4bd8ceae79fc3746443312fe39caf6e1c5b25603001e02b4"
+        },
+        {
+          "path": "assets/tiles/reactions-core/reactions-core-r4-c3.png",
+          "rect": [
+            627,
+            940,
+            313,
+            314
+          ],
+          "sha256": "3dbaac134d176a4499ab9961f16d0ef92e6b2b185d429199d2c8cf93e4da6d17"
+        },
+        {
+          "path": "assets/tiles/reactions-core/reactions-core-r4-c4.png",
+          "rect": [
+            940,
+            940,
+            314,
+            314
+          ],
+          "sha256": "800e4879db7772f25dee56d1c04d98c42db0b798d0e71d878c7f06590cd63eb5"
+        }
+      ]
+    },
+    "reactions-calm": {
+      "path": "assets/sheets/reactions-calm.png",
+      "width": 1122,
+      "height": 1402,
+      "grid": [
+        4,
+        5
+      ],
+      "sha256": "0196058a5364f12d0d78a9a9ebf72e092fcdf744dc8be3d31b23bb05b9eb6d04",
+      "pixel_sha256": "ca360961bb4c0f4fd8eeec23bf1d2203d434670f9b02fc69b66baeb1b7823c16",
+      "parts": [
+        {
+          "path": "assets/tiles/reactions-calm/reactions-calm-r1-c1.png",
+          "rect": [
+            0,
+            0,
+            280,
+            280
+          ],
+          "sha256": "397c0788b383d9f640976d63f13d4846d0c015eca5f9218fc16c34c5dc618dc8"
+        },
+        {
+          "path": "assets/tiles/reactions-calm/reactions-calm-r1-c2.png",
+          "rect": [
+            280,
+            0,
+            281,
+            280
+          ],
+          "sha256": "a96683f51226a85ce4d839a92a23e609cadb70aa6d3ec6370885729ef4652e70"
+        },
+        {
+          "path": "assets/tiles/reactions-calm/reactions-calm-r1-c3.png",
+          "rect": [
+            561,
+            0,
+            281,
+            280
+          ],
+          "sha256": "3e8dc1fb2395a976d8318a33c02ebef2658eff1fb692d64b2d3d8a9c8e43e71a"
+        },
+        {
+          "path": "assets/tiles/reactions-calm/reactions-calm-r1-c4.png",
+          "rect": [
+            842,
+            0,
+            280,
+            280
+          ],
+          "sha256": "c2e04c376541ddc8ff53278790fba634ca8c525b8cba2cc389c35e5adc89b9f0"
+        },
+        {
+          "path": "assets/tiles/reactions-calm/reactions-calm-r2-c1.png",
+          "rect": [
+            0,
+            280,
+            280,
+            281
+          ],
+          "sha256": "cbdce862dccd03739653421e7a653fe0ea02af3aa50541f3a711aed8c4c37a88"
+        },
+        {
+          "path": "assets/tiles/reactions-calm/reactions-calm-r2-c2.png",
+          "rect": [
+            280,
+            280,
+            281,
+            281
+          ],
+          "sha256": "1ded693c073a934a8a1e7c619b10fd30900e6319afea78479df705ad1047925c"
+        },
+        {
+          "path": "assets/tiles/reactions-calm/reactions-calm-r2-c3.png",
+          "rect": [
+            561,
+            280,
+            281,
+            281
+          ],
+          "sha256": "e542e6b5257c049e27a6e2e3a54ed18341131d85b09a5a9d9085e9aa9183d594"
+        },
+        {
+          "path": "assets/tiles/reactions-calm/reactions-calm-r2-c4.png",
+          "rect": [
+            842,
+            280,
+            280,
+            281
+          ],
+          "sha256": "5cfe3d897b7ec6251605849c4b95d908692b49afc693728ce15e65eff9e4e1d0"
+        },
+        {
+          "path": "assets/tiles/reactions-calm/reactions-calm-r3-c1.png",
+          "rect": [
+            0,
+            561,
+            280,
+            280
+          ],
+          "sha256": "f1f70a7ff151f962e7cb7ebd5b8148ef75e8a2838d4f2c1098c3c6ce6ab202d7"
+        },
+        {
+          "path": "assets/tiles/reactions-calm/reactions-calm-r3-c2.png",
+          "rect": [
+            280,
+            561,
+            281,
+            280
+          ],
+          "sha256": "12a28adfd17a44a444e5b69246095f8b7ca73d179d9792094646a71f4f56c812"
+        },
+        {
+          "path": "assets/tiles/reactions-calm/reactions-calm-r3-c3.png",
+          "rect": [
+            561,
+            561,
+            281,
+            280
+          ],
+          "sha256": "0005261320bda1e72fd9a9b380f10b5600dfee84b3145b28f3634e2d436c8a6e"
+        },
+        {
+          "path": "assets/tiles/reactions-calm/reactions-calm-r3-c4.png",
+          "rect": [
+            842,
+            561,
+            280,
+            280
+          ],
+          "sha256": "822533c6f106db2ac724ae7fed3d3803cd822dad33057521f566cd093c6e8b30"
+        },
+        {
+          "path": "assets/tiles/reactions-calm/reactions-calm-r4-c1.png",
+          "rect": [
+            0,
+            841,
+            280,
+            281
+          ],
+          "sha256": "f8e71ffb42d50b7948f0f83355ab915c7d5aa5ad29c2ec127eb1f0b049101cb0"
+        },
+        {
+          "path": "assets/tiles/reactions-calm/reactions-calm-r4-c2.png",
+          "rect": [
+            280,
+            841,
+            281,
+            281
+          ],
+          "sha256": "f00294b93cbed29d80e0fa13394f7c40469b75d6d16497529f9dab75db6c8147"
+        },
+        {
+          "path": "assets/tiles/reactions-calm/reactions-calm-r4-c3.png",
+          "rect": [
+            561,
+            841,
+            281,
+            281
+          ],
+          "sha256": "275e36d67d916d2c2bb3555ecba5b11702fe339adadfe184e7f8d8a0f632a83d"
+        },
+        {
+          "path": "assets/tiles/reactions-calm/reactions-calm-r4-c4.png",
+          "rect": [
+            842,
+            841,
+            280,
+            281
+          ],
+          "sha256": "a858b8f8864df82db69d3c6063e9a15600e4ee9e19129899044ee72284780e4c"
+        },
+        {
+          "path": "assets/tiles/reactions-calm/reactions-calm-r5-c1.png",
+          "rect": [
+            0,
+            1122,
+            280,
+            280
+          ],
+          "sha256": "9d2bd2ea45c10bf5965b1ae0913c0c3867f85added2ce07c21ab7599c8a88df7"
+        },
+        {
+          "path": "assets/tiles/reactions-calm/reactions-calm-r5-c2.png",
+          "rect": [
+            280,
+            1122,
+            281,
+            280
+          ],
+          "sha256": "d0d0b532ebe38ac19c2017f1ee9f64b5de73a0eff10d27ca0f346acdb201a2cb"
+        },
+        {
+          "path": "assets/tiles/reactions-calm/reactions-calm-r5-c3.png",
+          "rect": [
+            561,
+            1122,
+            281,
+            280
+          ],
+          "sha256": "268042b5adfb1b73e7de260e5b713f747e677b5d268e7e8967ca4962b5bd6094"
+        },
+        {
+          "path": "assets/tiles/reactions-calm/reactions-calm-r5-c4.png",
+          "rect": [
+            842,
+            1122,
+            280,
+            280
+          ],
+          "sha256": "fb5e747171375c691b1bf3bbce2399da7055ee589d7d39d92a5fb1c0b9a95e68"
+        }
+      ]
+    },
+    "directions": {
+      "path": "assets/sheets/directions.png",
+      "width": 724,
+      "height": 2172,
+      "grid": [
+        3,
+        9
+      ],
+      "sha256": "472611c85fe74cb2d7a1dc5cc4ac7ca5e084accaea8a67cc79dbd66cfc5c3299",
+      "has_transparency": true,
+      "pixel_sha256": "15c6742dab9e2489a59873ea78201144de5ceae269efba859ea10feb58d047ed",
+      "parts": [
+        {
+          "path": "assets/tiles/directions/directions-up_left-open.png",
+          "rect": [
+            0,
+            0,
+            241,
+            241
+          ],
+          "sha256": "b3e785f515e2507a7b42a886f80f28a5e3dcc2bc82f3fb92e3bf6b215195e038"
+        },
+        {
+          "path": "assets/tiles/directions/directions-up_left-half.png",
+          "rect": [
+            241,
+            0,
+            242,
+            241
+          ],
+          "sha256": "02c823da905c7227f3ab4b97318e5a29a70c102f0778606e8dcb43f5167cd681"
+        },
+        {
+          "path": "assets/tiles/directions/directions-up_left-closed.png",
+          "rect": [
+            483,
+            0,
+            241,
+            241
+          ],
+          "sha256": "54d4967b436bd647de95390877dbb233abc82535f5166cb7f909c83682a3c122"
+        },
+        {
+          "path": "assets/tiles/directions/directions-up-open.png",
+          "rect": [
+            0,
+            241,
+            241,
+            242
+          ],
+          "sha256": "320755b9279f0cc1f752057a294af4d903aadf6b740b50a1f9841a9d3fc744b0"
+        },
+        {
+          "path": "assets/tiles/directions/directions-up-half.png",
+          "rect": [
+            241,
+            241,
+            242,
+            242
+          ],
+          "sha256": "796aba68cf097318dc56adbd0c954eacb17a038b18f72f415205d3a25b5188e3"
+        },
+        {
+          "path": "assets/tiles/directions/directions-up-closed.png",
+          "rect": [
+            483,
+            241,
+            241,
+            242
+          ],
+          "sha256": "4c9180dd90f58ea84b62535896297cac0ed499b5021c4181fb888b16e6bbae93"
+        },
+        {
+          "path": "assets/tiles/directions/directions-up_right-open.png",
+          "rect": [
+            0,
+            483,
+            241,
+            241
+          ],
+          "sha256": "156cb679901cdcc713ae9c53e583047c2d5731835d2871bc4fa083269a98942d"
+        },
+        {
+          "path": "assets/tiles/directions/directions-up_right-half.png",
+          "rect": [
+            241,
+            483,
+            242,
+            241
+          ],
+          "sha256": "bb43510a5a7dedb65517b3a66f9fcde2f4a5f9af8e6c36a80b6f1ce8ec2d7948"
+        },
+        {
+          "path": "assets/tiles/directions/directions-up_right-closed.png",
+          "rect": [
+            483,
+            483,
+            241,
+            241
+          ],
+          "sha256": "2c54d506846fc3b9e3634489259b481c5dbbacff8a76110733d5827f30ac4e1d"
+        },
+        {
+          "path": "assets/tiles/directions/directions-left-open.png",
+          "rect": [
+            0,
+            724,
+            241,
+            241
+          ],
+          "sha256": "85d6e02193cdbbcbeba68366508ff3cc887bf0ea8a32f53acfa60084170fad4e"
+        },
+        {
+          "path": "assets/tiles/directions/directions-left-half.png",
+          "rect": [
+            241,
+            724,
+            242,
+            241
+          ],
+          "sha256": "f098f51e05e79454561f988efb17945bcf053c50042a642459a9ab71779e3157"
+        },
+        {
+          "path": "assets/tiles/directions/directions-left-closed.png",
+          "rect": [
+            483,
+            724,
+            241,
+            241
+          ],
+          "sha256": "ad40e31c37325e03aaf42af6aac3209fc104ea66c16a3595922ff70a7eba7a05"
+        },
+        {
+          "path": "assets/tiles/directions/directions-front-open.png",
+          "rect": [
+            0,
+            965,
+            241,
+            242
+          ],
+          "sha256": "46d75b0e8e8f15b9111c5f8a419810ae14876c1882e2ecf35e756be26a1a3540"
+        },
+        {
+          "path": "assets/tiles/directions/directions-front-half.png",
+          "rect": [
+            241,
+            965,
+            242,
+            242
+          ],
+          "sha256": "d6d130eb3cd75767f973b2344adb676be0552ca736b29e17749e63803ba7ec59"
+        },
+        {
+          "path": "assets/tiles/directions/directions-front-closed.png",
+          "rect": [
+            483,
+            965,
+            241,
+            242
+          ],
+          "sha256": "a4f618d1a3c4b63db4687293d69e6014699a1d5872747e5bb618a638a6c0b07a"
+        },
+        {
+          "path": "assets/tiles/directions/directions-right-open.png",
+          "rect": [
+            0,
+            1207,
+            241,
+            241
+          ],
+          "sha256": "e47de0c845bcd1ed5cd0f9c5c6a4974876d26d8f5af7ca95f791d9e74e133658"
+        },
+        {
+          "path": "assets/tiles/directions/directions-right-half.png",
+          "rect": [
+            241,
+            1207,
+            242,
+            241
+          ],
+          "sha256": "5da74d74b93649622b31529868e530649c5c8d946f8808c5f0b1e96b27520464"
+        },
+        {
+          "path": "assets/tiles/directions/directions-right-closed.png",
+          "rect": [
+            483,
+            1207,
+            241,
+            241
+          ],
+          "sha256": "4dcc91d83d1eda1285ed0a31f4d0e4ebdc175d6710842c5e168611683fe5cdb7"
+        },
+        {
+          "path": "assets/tiles/directions/directions-down_left-open.png",
+          "rect": [
+            0,
+            1448,
+            241,
+            241
+          ],
+          "sha256": "ba975eeb044cc0c11b3c294bcf48d1f826f7e25739eb8fcf6735b8fbbc1e2a14"
+        },
+        {
+          "path": "assets/tiles/directions/directions-down_left-half.png",
+          "rect": [
+            241,
+            1448,
+            242,
+            241
+          ],
+          "sha256": "81aa327d37311628366cd99bc2010387cbd74f996e103d995553cc8ebdb68a0b"
+        },
+        {
+          "path": "assets/tiles/directions/directions-down_left-closed.png",
+          "rect": [
+            483,
+            1448,
+            241,
+            241
+          ],
+          "sha256": "3354c6c653a9a4362e41438e4b99baec3881d3e6d80851f1ec194a3db4c9c80a"
+        },
+        {
+          "path": "assets/tiles/directions/directions-down-open.png",
+          "rect": [
+            0,
+            1689,
+            241,
+            242
+          ],
+          "sha256": "da018e51e52a4c138b8aec7c7f2168bbe9ec227033afefe8c0aa58ef2e4d7dec"
+        },
+        {
+          "path": "assets/tiles/directions/directions-down-half.png",
+          "rect": [
+            241,
+            1689,
+            242,
+            242
+          ],
+          "sha256": "055718c518ff0e5313388e4949aa163b2bcf9b469108dd73817c5c663b937664"
+        },
+        {
+          "path": "assets/tiles/directions/directions-down-closed.png",
+          "rect": [
+            483,
+            1689,
+            241,
+            242
+          ],
+          "sha256": "01cf9da9f57a1f55a80e1602598f21112461974bf655bd70df5b048eb396230c"
+        },
+        {
+          "path": "assets/tiles/directions/directions-down_right-open.png",
+          "rect": [
+            0,
+            1931,
+            241,
+            241
+          ],
+          "sha256": "b0c926ca786183f61e223f7841b650e40d57ca47e61dac87c096714f91dd4d7d"
+        },
+        {
+          "path": "assets/tiles/directions/directions-down_right-half.png",
+          "rect": [
+            241,
+            1931,
+            242,
+            241
+          ],
+          "sha256": "226a908fc4f9c3dc929eacbc75715a5748b9d0b2baf3ab6d8fa5f50471d6c22c"
+        },
+        {
+          "path": "assets/tiles/directions/directions-down_right-closed.png",
+          "rect": [
+            483,
+            1931,
+            241,
+            241
+          ],
+          "sha256": "239438b1d9302c7697091939a96b7149dc5fc2d09f9e5877ca6c97bf6352fdbd"
+        }
+      ]
+    },
+    "expressions": {
+      "path": "assets/sheets/expressions.png",
+      "width": 1024,
+      "height": 1536,
+      "grid": [
+        4,
+        6
+      ],
+      "sha256": "50ed72d4b6ce6e0154906909fbd453d53455f973bd7e8267d3036979b0af8829",
+      "has_transparency": true,
+      "pixel_sha256": "8a794c8f61d0d5a50e664a6632b94e5e976f30c75815d204e5331e76c17dbcd2",
+      "parts": [
+        {
+          "path": "assets/tiles/expressions/expressions-neutral.png",
+          "rect": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "sha256": "2a37041ee55445961dfd50e22e0d9681ef41844f9956c57640c05ccdb46b3398"
+        },
+        {
+          "path": "assets/tiles/expressions/expressions-wink_left.png",
+          "rect": [
+            256,
+            0,
+            256,
+            256
+          ],
+          "sha256": "134eba6c416c5c6dc7fe8d58f00f230e86c1342d142d0cc10d1274e87e29171a"
+        },
+        {
+          "path": "assets/tiles/expressions/expressions-wink_right.png",
+          "rect": [
+            512,
+            0,
+            256,
+            256
+          ],
+          "sha256": "d2efb33fa37f58beac6357235d26d24380dde35d52367d8f4ff5f90548ed51ad"
+        },
+        {
+          "path": "assets/tiles/expressions/expressions-happy.png",
+          "rect": [
+            768,
+            0,
+            256,
+            256
+          ],
+          "sha256": "0cd12dc801d7e396607edb0d44665bbbc3e141447e65f37b90c2ccc9f630b188"
+        },
+        {
+          "path": "assets/tiles/expressions/expressions-sad.png",
+          "rect": [
+            0,
+            256,
+            256,
+            256
+          ],
+          "sha256": "50ce277b14221cb39752022d5095c0159c254bbd00894cf65edf46c45b90825a"
+        },
+        {
+          "path": "assets/tiles/expressions/expressions-side_eye.png",
+          "rect": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "sha256": "6d031bd667fb7751c5efd5ac0636be493c5e654100513d9d3f7af22a6829b2db"
+        },
+        {
+          "path": "assets/tiles/expressions/expressions-sulky.png",
+          "rect": [
+            512,
+            256,
+            256,
+            256
+          ],
+          "sha256": "a52aef03f0243d05d97adf14a30732e1c350c2f47f21781bb83199d2986dba67"
+        },
+        {
+          "path": "assets/tiles/expressions/expressions-surprised.png",
+          "rect": [
+            768,
+            256,
+            256,
+            256
+          ],
+          "sha256": "f3464b16ae423e3ef075d4a508affbd93e08a41256ab354137d0427a5c66e9a8"
+        },
+        {
+          "path": "assets/tiles/expressions/expressions-angry.png",
+          "rect": [
+            0,
+            512,
+            256,
+            256
+          ],
+          "sha256": "e03049d6e2f5bc8e1bca43649b476ae05d6a8795b4f96c71bc5bde55aab6b9b6"
+        },
+        {
+          "path": "assets/tiles/expressions/expressions-sleepy.png",
+          "rect": [
+            256,
+            512,
+            256,
+            256
+          ],
+          "sha256": "507dc4ef41416bae62293e137b9fbf0eb69607977c3bc7d3bfd37d24205938c3"
+        },
+        {
+          "path": "assets/tiles/expressions/expressions-laughing.png",
+          "rect": [
+            512,
+            512,
+            256,
+            256
+          ],
+          "sha256": "571eb17ba130222cff75e38d8917b9a6fff35376507334802fcd2556fb3cded9"
+        },
+        {
+          "path": "assets/tiles/expressions/expressions-crying.png",
+          "rect": [
+            768,
+            512,
+            256,
+            256
+          ],
+          "sha256": "23d044a43e43a501e0ed0076d5c36484e951549212dd7048b315a642c18c3eac"
+        },
+        {
+          "path": "assets/tiles/expressions/expressions-sobbing.png",
+          "rect": [
+            0,
+            768,
+            256,
+            256
+          ],
+          "sha256": "452d380d6a56a4d3770d4179e7bb5ead633cf6e3f12348408a6b29a601695e1c"
+        },
+        {
+          "path": "assets/tiles/expressions/expressions-pleading.png",
+          "rect": [
+            256,
+            768,
+            256,
+            256
+          ],
+          "sha256": "6693b85b746ab702dd0872c69adb4ceb28af23afb0ce5b1aa03b749af3a05ab1"
+        },
+        {
+          "path": "assets/tiles/expressions/expressions-love.png",
+          "rect": [
+            512,
+            768,
+            256,
+            256
+          ],
+          "sha256": "f250e349bb5f2115ce123e46b4653ff5eb9183b14a9f7f895e3551532d914482"
+        },
+        {
+          "path": "assets/tiles/expressions/expressions-star_eyes.png",
+          "rect": [
+            768,
+            768,
+            256,
+            256
+          ],
+          "sha256": "783d643d45141a19cb2f464e213e719135fb3b7ee678e3eda7be6d75cd3f3d1c"
+        },
+        {
+          "path": "assets/tiles/expressions/expressions-thinking.png",
+          "rect": [
+            0,
+            1024,
+            256,
+            256
+          ],
+          "sha256": "39943bb6cf6e743488893bd7954e2537eb71a7f27e8d9d367ae9a95a876d2b72"
+        },
+        {
+          "path": "assets/tiles/expressions/expressions-confused.png",
+          "rect": [
+            256,
+            1024,
+            256,
+            256
+          ],
+          "sha256": "a1fcb902dfc9d10e8f49a40e42ebf7b239c5be1c63a22d0b73e9d54945578ae4"
+        },
+        {
+          "path": "assets/tiles/expressions/expressions-embarrassed.png",
+          "rect": [
+            512,
+            1024,
+            256,
+            256
+          ],
+          "sha256": "b52fdcffe776c064162e6d484050794fab0bf6608d0923e42a3051b74395afd5"
+        },
+        {
+          "path": "assets/tiles/expressions/expressions-smug.png",
+          "rect": [
+            768,
+            1024,
+            256,
+            256
+          ],
+          "sha256": "4041898a8baf97d6426ecfd85ea3ace35bef1157e1c2ea2ae9dc51540cdc20da"
+        },
+        {
+          "path": "assets/tiles/expressions/expressions-unimpressed.png",
+          "rect": [
+            0,
+            1280,
+            256,
+            256
+          ],
+          "sha256": "8a23cf9beb681091b8e671639af995525485101c7033b70dde3bbfa0165c5b59"
+        },
+        {
+          "path": "assets/tiles/expressions/expressions-scared.png",
+          "rect": [
+            256,
+            1280,
+            256,
+            256
+          ],
+          "sha256": "f30be4cb41aebee018f897e59ac9a7a24dde46e215640d9601dcc6f6873bf3ce"
+        },
+        {
+          "path": "assets/tiles/expressions/expressions-dizzy.png",
+          "rect": [
+            512,
+            1280,
+            256,
+            256
+          ],
+          "sha256": "c31cbba5f06339e7584813ec75f0820ee5fa7e6bd9475ad1fb3b491a92b97a73"
+        },
+        {
+          "path": "assets/tiles/expressions/expressions-relieved.png",
+          "rect": [
+            768,
+            1280,
+            256,
+            256
+          ],
+          "sha256": "2a1ec4024af197c4036a237ad2fb404b7fe0d7d4ed37f0861758551e6ee6a195"
+        }
+      ]
+    },
+    "visemes": {
+      "path": "assets/sheets/visemes.png",
+      "width": 1448,
+      "height": 1086,
+      "grid": [
+        4,
+        3
+      ],
+      "sha256": "6c305b28e479af37cc60ae98274516ecc1f9273e56a0837200f712b3eb02e3b7",
+      "has_transparency": true,
+      "pixel_sha256": "fc115ba1523afdb65ba0f7524c794869f32b722a03e9317082dc3e0f79cdf469",
+      "parts": [
+        {
+          "path": "assets/tiles/visemes/visemes-REST.png",
+          "rect": [
+            0,
+            0,
+            362,
+            362
+          ],
+          "sha256": "fdf5aa7d85c2a670b05bdeeeef5740af44954e0a922af6ed5ed9016f3e496df8"
+        },
+        {
+          "path": "assets/tiles/visemes/visemes-NEUTRAL.png",
+          "rect": [
+            362,
+            0,
+            362,
+            362
+          ],
+          "sha256": "6b6a8fa108075e4eed4c6e43b6fe0f802ef01326aa0b16c8480b483822e735b0"
+        },
+        {
+          "path": "assets/tiles/visemes/visemes-AA.png",
+          "rect": [
+            724,
+            0,
+            362,
+            362
+          ],
+          "sha256": "6b54fbbb509e0277aea4ce7cdf49e2652e478ce6d003edcd0f19d07b1643de49"
+        },
+        {
+          "path": "assets/tiles/visemes/visemes-EE.png",
+          "rect": [
+            1086,
+            0,
+            362,
+            362
+          ],
+          "sha256": "9a08fa464db4471d57dd8dc69a56a32a93a97e01fa8a42f66d86fae07d233ba1"
+        },
+        {
+          "path": "assets/tiles/visemes/visemes-EH.png",
+          "rect": [
+            0,
+            362,
+            362,
+            362
+          ],
+          "sha256": "df6c4fb3284e003734331c0134b1fb6e0207a23105a841cc784d526e30efcddb"
+        },
+        {
+          "path": "assets/tiles/visemes/visemes-OH.png",
+          "rect": [
+            362,
+            362,
+            362,
+            362
+          ],
+          "sha256": "137b501cd13556ff06ced9a2ba3b0e26feb5494822fd15feb2b45af977a70964"
+        },
+        {
+          "path": "assets/tiles/visemes/visemes-OO.png",
+          "rect": [
+            724,
+            362,
+            362,
+            362
+          ],
+          "sha256": "7249d67a40278d44d9d7f9a75460b30bb3d02b8910a1d3fb00f7ac0630b92341"
+        },
+        {
+          "path": "assets/tiles/visemes/visemes-MBP.png",
+          "rect": [
+            1086,
+            362,
+            362,
+            362
+          ],
+          "sha256": "bf973a008517620837d5f03f80c8913d6286f4d40d822fae7aea02202ed73131"
+        },
+        {
+          "path": "assets/tiles/visemes/visemes-FV.png",
+          "rect": [
+            0,
+            724,
+            362,
+            362
+          ],
+          "sha256": "3f708ea68c1945061d3dc70e213b0bac78331df1010a036601f936266f73ae83"
+        },
+        {
+          "path": "assets/tiles/visemes/visemes-TH.png",
+          "rect": [
+            362,
+            724,
+            362,
+            362
+          ],
+          "sha256": "2e72dbcfb0cb4133f8d3fb43c1cbc00e278c0ce9d10749676e593ec835ea314a"
+        },
+        {
+          "path": "assets/tiles/visemes/visemes-L.png",
+          "rect": [
+            724,
+            724,
+            362,
+            362
+          ],
+          "sha256": "e35b00225b724b158c80890dd252d98bfa24e0af06c1403400822df6054f0607"
+        },
+        {
+          "path": "assets/tiles/visemes/visemes-RSH.png",
+          "rect": [
+            1086,
+            724,
+            362,
+            362
+          ],
+          "sha256": "3857e2cc375b666baab3766d5bb1e308928c548841b4062734c6467daad57ab0"
+        }
+      ]
+    },
+    "gestures": {
+      "path": "assets/sheets/gestures.png",
+      "width": 1448,
+      "height": 1086,
+      "grid": [
+        4,
+        3
+      ],
+      "sha256": "ff1b7978e0e2b047edd7a52b7d8068a53d3bf2690175428661a7b3e85d329482",
+      "has_transparency": false,
+      "pixel_sha256": "0925e8b5e34885e5c341df53dd1f26ef4fa7c7732563dcd8d038d88629439836",
+      "parts": [
+        {
+          "path": "assets/tiles/gestures/gestures-wave.png",
+          "rect": [
+            0,
+            0,
+            362,
+            362
+          ],
+          "sha256": "5d6015da5a696dde7a5213cb3c772a03dee1184175607ccd28ae9a219e6bbacb"
+        },
+        {
+          "path": "assets/tiles/gestures/gestures-write.png",
+          "rect": [
+            362,
+            0,
+            362,
+            362
+          ],
+          "sha256": "50a1b7e81478f4c9e4fdf2c7540d5b8239ff20522a40ddd53b98e623196b9b28"
+        },
+        {
+          "path": "assets/tiles/gestures/gestures-peace.png",
+          "rect": [
+            724,
+            0,
+            362,
+            362
+          ],
+          "sha256": "67a8fd43ffcc2158347c12ddb1eb36b310e4395b3f321256b5b25748ed0593ed"
+        },
+        {
+          "path": "assets/tiles/gestures/gestures-shush.png",
+          "rect": [
+            1086,
+            0,
+            362,
+            362
+          ],
+          "sha256": "e690ce861b131ff330cdfd70d338616041666e7c823ae117532e0dfb990d783d"
+        },
+        {
+          "path": "assets/tiles/gestures/gestures-heart.png",
+          "rect": [
+            0,
+            362,
+            362,
+            362
+          ],
+          "sha256": "134927447ec8d918a2ac55c93ea0ec3c5a88d81acb2df4e88b052bd6c42a8ff3"
+        },
+        {
+          "path": "assets/tiles/gestures/gestures-finger_heart.png",
+          "rect": [
+            362,
+            362,
+            362,
+            362
+          ],
+          "sha256": "36a736dad7d7ef5d7b46e9de687de49e2ccb33837a6b5a0750f564f582370999"
+        },
+        {
+          "path": "assets/tiles/gestures/gestures-thumbs_up.png",
+          "rect": [
+            724,
+            362,
+            362,
+            362
+          ],
+          "sha256": "cc5baf49088a88bafdfda4df8f8e27795461743d60627053ea1490f5025d1cb3"
+        },
+        {
+          "path": "assets/tiles/gestures/gestures-ok.png",
+          "rect": [
+            1086,
+            362,
+            362,
+            362
+          ],
+          "sha256": "e66241895df3a158d1fe84b8722c435299533587965fc0a299ffb62b3fc0e5d5"
+        },
+        {
+          "path": "assets/tiles/gestures/gestures-point.png",
+          "rect": [
+            0,
+            724,
+            362,
+            362
+          ],
+          "sha256": "eaea89cbd90ace684d7d2fd7f4ec4cf51033399ae1443530b76ae696bae2782f"
+        },
+        {
+          "path": "assets/tiles/gestures/gestures-clap.png",
+          "rect": [
+            362,
+            724,
+            362,
+            362
+          ],
+          "sha256": "cd14fbae6e32193fdabf37e16edda95e803f88aa99963563614956552602d393"
+        },
+        {
+          "path": "assets/tiles/gestures/gestures-thanks.png",
+          "rect": [
+            724,
+            724,
+            362,
+            362
+          ],
+          "sha256": "9309ac7baa470ea85a5d900293161a8dd377a88ca461656e1234b33eb0115a91"
+        },
+        {
+          "path": "assets/tiles/gestures/gestures-cheer.png",
+          "rect": [
+            1086,
+            724,
+            362,
+            362
+          ],
+          "sha256": "e0e78539d1c1bf425ee38214830dbace7d2943c470379c008a3405beed7a44ce"
+        }
+      ]
+    }
+  },
+  "regions": [
+    {
+      "id": "approved-r1-c1",
+      "source": "approved",
+      "rect": [
+        0,
+        0,
+        512,
+        512
+      ]
+    },
+    {
+      "id": "approved-r1-c2",
+      "source": "approved",
+      "rect": [
+        512,
+        0,
+        512,
+        512
+      ]
+    },
+    {
+      "id": "approved-r1-c3",
+      "source": "approved",
+      "rect": [
+        1024,
+        0,
+        512,
+        512
+      ]
+    },
+    {
+      "id": "approved-r2-c1",
+      "source": "approved",
+      "rect": [
+        0,
+        512,
+        512,
+        512
+      ]
+    },
+    {
+      "id": "approved-r2-c2",
+      "source": "approved",
+      "rect": [
+        512,
+        512,
+        512,
+        512
+      ]
+    },
+    {
+      "id": "approved-r2-c3",
+      "source": "approved",
+      "rect": [
+        1024,
+        512,
+        512,
+        512
+      ]
+    },
+    {
+      "id": "hands-r1-c1",
+      "source": "hands",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "hands-r1-c2",
+      "source": "hands",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "hands-r1-c3",
+      "source": "hands",
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "hands-r1-c4",
+      "source": "hands",
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "hands-r2-c1",
+      "source": "hands",
+      "rect": [
+        0,
+        256,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "hands-r2-c2",
+      "source": "hands",
+      "rect": [
+        256,
+        256,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "hands-r2-c3",
+      "source": "hands",
+      "rect": [
+        512,
+        256,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "hands-r2-c4",
+      "source": "hands",
+      "rect": [
+        768,
+        256,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "hands-r3-c1",
+      "source": "hands",
+      "rect": [
+        0,
+        512,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "hands-r3-c2",
+      "source": "hands",
+      "rect": [
+        256,
+        512,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "hands-r3-c3",
+      "source": "hands",
+      "rect": [
+        512,
+        512,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "hands-r3-c4",
+      "source": "hands",
+      "rect": [
+        768,
+        512,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "hands-r4-c1",
+      "source": "hands",
+      "rect": [
+        0,
+        768,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "hands-r4-c2",
+      "source": "hands",
+      "rect": [
+        256,
+        768,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "hands-r4-c3",
+      "source": "hands",
+      "rect": [
+        512,
+        768,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "hands-r4-c4",
+      "source": "hands",
+      "rect": [
+        768,
+        768,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "hands-r5-c1",
+      "source": "hands",
+      "rect": [
+        0,
+        1024,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "hands-r5-c2",
+      "source": "hands",
+      "rect": [
+        256,
+        1024,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "hands-r5-c3",
+      "source": "hands",
+      "rect": [
+        512,
+        1024,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "hands-r5-c4",
+      "source": "hands",
+      "rect": [
+        768,
+        1024,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "hands-r6-c1",
+      "source": "hands",
+      "rect": [
+        0,
+        1280,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "hands-r6-c2",
+      "source": "hands",
+      "rect": [
+        256,
+        1280,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "hands-r6-c3",
+      "source": "hands",
+      "rect": [
+        512,
+        1280,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "hands-r6-c4",
+      "source": "hands",
+      "rect": [
+        768,
+        1280,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "write-think-r1-c1",
+      "source": "write-think",
+      "rect": [
+        0,
+        0,
+        444,
+        444
+      ]
+    },
+    {
+      "id": "write-think-r1-c2",
+      "source": "write-think",
+      "rect": [
+        444,
+        0,
+        443,
+        444
+      ]
+    },
+    {
+      "id": "write-think-r1-c3",
+      "source": "write-think",
+      "rect": [
+        887,
+        0,
+        443,
+        444
+      ]
+    },
+    {
+      "id": "write-think-r1-c4",
+      "source": "write-think",
+      "rect": [
+        1330,
+        0,
+        444,
+        444
+      ]
+    },
+    {
+      "id": "write-think-r2-c1",
+      "source": "write-think",
+      "rect": [
+        0,
+        444,
+        444,
+        443
+      ]
+    },
+    {
+      "id": "write-think-r2-c2",
+      "source": "write-think",
+      "rect": [
+        444,
+        444,
+        443,
+        443
+      ]
+    },
+    {
+      "id": "write-think-r2-c3",
+      "source": "write-think",
+      "rect": [
+        887,
+        444,
+        443,
+        443
+      ]
+    },
+    {
+      "id": "write-think-r2-c4",
+      "source": "write-think",
+      "rect": [
+        1330,
+        444,
+        444,
+        443
+      ]
+    },
+    {
+      "id": "reactions-core-r1-c1",
+      "source": "reactions-core",
+      "rect": [
+        0,
+        0,
+        314,
+        314
+      ]
+    },
+    {
+      "id": "reactions-core-r1-c2",
+      "source": "reactions-core",
+      "rect": [
+        314,
+        0,
+        313,
+        314
+      ]
+    },
+    {
+      "id": "reactions-core-r1-c3",
+      "source": "reactions-core",
+      "rect": [
+        627,
+        0,
+        313,
+        314
+      ]
+    },
+    {
+      "id": "reactions-core-r1-c4",
+      "source": "reactions-core",
+      "rect": [
+        940,
+        0,
+        314,
+        314
+      ]
+    },
+    {
+      "id": "reactions-core-r2-c1",
+      "source": "reactions-core",
+      "rect": [
+        0,
+        314,
+        314,
+        313
+      ]
+    },
+    {
+      "id": "reactions-core-r2-c2",
+      "source": "reactions-core",
+      "rect": [
+        314,
+        314,
+        313,
+        313
+      ]
+    },
+    {
+      "id": "reactions-core-r2-c3",
+      "source": "reactions-core",
+      "rect": [
+        627,
+        314,
+        313,
+        313
+      ]
+    },
+    {
+      "id": "reactions-core-r2-c4",
+      "source": "reactions-core",
+      "rect": [
+        940,
+        314,
+        314,
+        313
+      ]
+    },
+    {
+      "id": "reactions-core-r3-c1",
+      "source": "reactions-core",
+      "rect": [
+        0,
+        627,
+        314,
+        313
+      ]
+    },
+    {
+      "id": "reactions-core-r3-c2",
+      "source": "reactions-core",
+      "rect": [
+        314,
+        627,
+        313,
+        313
+      ]
+    },
+    {
+      "id": "reactions-core-r3-c3",
+      "source": "reactions-core",
+      "rect": [
+        627,
+        627,
+        313,
+        313
+      ]
+    },
+    {
+      "id": "reactions-core-r3-c4",
+      "source": "reactions-core",
+      "rect": [
+        940,
+        627,
+        314,
+        313
+      ]
+    },
+    {
+      "id": "reactions-core-r4-c1",
+      "source": "reactions-core",
+      "rect": [
+        0,
+        940,
+        314,
+        314
+      ]
+    },
+    {
+      "id": "reactions-core-r4-c2",
+      "source": "reactions-core",
+      "rect": [
+        314,
+        940,
+        313,
+        314
+      ]
+    },
+    {
+      "id": "reactions-core-r4-c3",
+      "source": "reactions-core",
+      "rect": [
+        627,
+        940,
+        313,
+        314
+      ]
+    },
+    {
+      "id": "reactions-core-r4-c4",
+      "source": "reactions-core",
+      "rect": [
+        940,
+        940,
+        314,
+        314
+      ]
+    },
+    {
+      "id": "reactions-calm-r1-c1",
+      "source": "reactions-calm",
+      "rect": [
+        0,
+        0,
+        280,
+        280
+      ]
+    },
+    {
+      "id": "reactions-calm-r1-c2",
+      "source": "reactions-calm",
+      "rect": [
+        280,
+        0,
+        281,
+        280
+      ]
+    },
+    {
+      "id": "reactions-calm-r1-c3",
+      "source": "reactions-calm",
+      "rect": [
+        561,
+        0,
+        281,
+        280
+      ]
+    },
+    {
+      "id": "reactions-calm-r1-c4",
+      "source": "reactions-calm",
+      "rect": [
+        842,
+        0,
+        280,
+        280
+      ]
+    },
+    {
+      "id": "reactions-calm-r2-c1",
+      "source": "reactions-calm",
+      "rect": [
+        0,
+        280,
+        280,
+        281
+      ]
+    },
+    {
+      "id": "reactions-calm-r2-c2",
+      "source": "reactions-calm",
+      "rect": [
+        280,
+        280,
+        281,
+        281
+      ]
+    },
+    {
+      "id": "reactions-calm-r2-c3",
+      "source": "reactions-calm",
+      "rect": [
+        561,
+        280,
+        281,
+        281
+      ]
+    },
+    {
+      "id": "reactions-calm-r2-c4",
+      "source": "reactions-calm",
+      "rect": [
+        842,
+        280,
+        280,
+        281
+      ]
+    },
+    {
+      "id": "reactions-calm-r3-c1",
+      "source": "reactions-calm",
+      "rect": [
+        0,
+        561,
+        280,
+        280
+      ]
+    },
+    {
+      "id": "reactions-calm-r3-c2",
+      "source": "reactions-calm",
+      "rect": [
+        280,
+        561,
+        281,
+        280
+      ]
+    },
+    {
+      "id": "reactions-calm-r3-c3",
+      "source": "reactions-calm",
+      "rect": [
+        561,
+        561,
+        281,
+        280
+      ]
+    },
+    {
+      "id": "reactions-calm-r3-c4",
+      "source": "reactions-calm",
+      "rect": [
+        842,
+        561,
+        280,
+        280
+      ]
+    },
+    {
+      "id": "reactions-calm-r4-c1",
+      "source": "reactions-calm",
+      "rect": [
+        0,
+        841,
+        280,
+        281
+      ]
+    },
+    {
+      "id": "reactions-calm-r4-c2",
+      "source": "reactions-calm",
+      "rect": [
+        280,
+        841,
+        281,
+        281
+      ]
+    },
+    {
+      "id": "reactions-calm-r4-c3",
+      "source": "reactions-calm",
+      "rect": [
+        561,
+        841,
+        281,
+        281
+      ]
+    },
+    {
+      "id": "reactions-calm-r4-c4",
+      "source": "reactions-calm",
+      "rect": [
+        842,
+        841,
+        280,
+        281
+      ]
+    },
+    {
+      "id": "reactions-calm-r5-c1",
+      "source": "reactions-calm",
+      "rect": [
+        0,
+        1122,
+        280,
+        280
+      ]
+    },
+    {
+      "id": "reactions-calm-r5-c2",
+      "source": "reactions-calm",
+      "rect": [
+        280,
+        1122,
+        281,
+        280
+      ]
+    },
+    {
+      "id": "reactions-calm-r5-c3",
+      "source": "reactions-calm",
+      "rect": [
+        561,
+        1122,
+        281,
+        280
+      ]
+    },
+    {
+      "id": "reactions-calm-r5-c4",
+      "source": "reactions-calm",
+      "rect": [
+        842,
+        1122,
+        280,
+        280
+      ]
+    },
+    {
+      "id": "directions-up_left-open",
+      "source": "directions",
+      "rect": [
+        0,
+        0,
+        241,
+        241
+      ]
+    },
+    {
+      "id": "directions-up_left-half",
+      "source": "directions",
+      "rect": [
+        241,
+        0,
+        242,
+        241
+      ]
+    },
+    {
+      "id": "directions-up_left-closed",
+      "source": "directions",
+      "rect": [
+        483,
+        0,
+        241,
+        241
+      ]
+    },
+    {
+      "id": "directions-up-open",
+      "source": "directions",
+      "rect": [
+        0,
+        241,
+        241,
+        242
+      ]
+    },
+    {
+      "id": "directions-up-half",
+      "source": "directions",
+      "rect": [
+        241,
+        241,
+        242,
+        242
+      ]
+    },
+    {
+      "id": "directions-up-closed",
+      "source": "directions",
+      "rect": [
+        483,
+        241,
+        241,
+        242
+      ]
+    },
+    {
+      "id": "directions-up_right-open",
+      "source": "directions",
+      "rect": [
+        0,
+        483,
+        241,
+        241
+      ]
+    },
+    {
+      "id": "directions-up_right-half",
+      "source": "directions",
+      "rect": [
+        241,
+        483,
+        242,
+        241
+      ]
+    },
+    {
+      "id": "directions-up_right-closed",
+      "source": "directions",
+      "rect": [
+        483,
+        483,
+        241,
+        241
+      ]
+    },
+    {
+      "id": "directions-left-open",
+      "source": "directions",
+      "rect": [
+        0,
+        724,
+        241,
+        241
+      ]
+    },
+    {
+      "id": "directions-left-half",
+      "source": "directions",
+      "rect": [
+        241,
+        724,
+        242,
+        241
+      ]
+    },
+    {
+      "id": "directions-left-closed",
+      "source": "directions",
+      "rect": [
+        483,
+        724,
+        241,
+        241
+      ]
+    },
+    {
+      "id": "directions-front-open",
+      "source": "directions",
+      "rect": [
+        0,
+        965,
+        241,
+        242
+      ]
+    },
+    {
+      "id": "directions-front-half",
+      "source": "directions",
+      "rect": [
+        241,
+        965,
+        242,
+        242
+      ]
+    },
+    {
+      "id": "directions-front-closed",
+      "source": "directions",
+      "rect": [
+        483,
+        965,
+        241,
+        242
+      ]
+    },
+    {
+      "id": "directions-right-open",
+      "source": "directions",
+      "rect": [
+        0,
+        1207,
+        241,
+        241
+      ]
+    },
+    {
+      "id": "directions-right-half",
+      "source": "directions",
+      "rect": [
+        241,
+        1207,
+        242,
+        241
+      ]
+    },
+    {
+      "id": "directions-right-closed",
+      "source": "directions",
+      "rect": [
+        483,
+        1207,
+        241,
+        241
+      ]
+    },
+    {
+      "id": "directions-down_left-open",
+      "source": "directions",
+      "rect": [
+        0,
+        1448,
+        241,
+        241
+      ]
+    },
+    {
+      "id": "directions-down_left-half",
+      "source": "directions",
+      "rect": [
+        241,
+        1448,
+        242,
+        241
+      ]
+    },
+    {
+      "id": "directions-down_left-closed",
+      "source": "directions",
+      "rect": [
+        483,
+        1448,
+        241,
+        241
+      ]
+    },
+    {
+      "id": "directions-down-open",
+      "source": "directions",
+      "rect": [
+        0,
+        1689,
+        241,
+        242
+      ]
+    },
+    {
+      "id": "directions-down-half",
+      "source": "directions",
+      "rect": [
+        241,
+        1689,
+        242,
+        242
+      ]
+    },
+    {
+      "id": "directions-down-closed",
+      "source": "directions",
+      "rect": [
+        483,
+        1689,
+        241,
+        242
+      ]
+    },
+    {
+      "id": "directions-down_right-open",
+      "source": "directions",
+      "rect": [
+        0,
+        1931,
+        241,
+        241
+      ]
+    },
+    {
+      "id": "directions-down_right-half",
+      "source": "directions",
+      "rect": [
+        241,
+        1931,
+        242,
+        241
+      ]
+    },
+    {
+      "id": "directions-down_right-closed",
+      "source": "directions",
+      "rect": [
+        483,
+        1931,
+        241,
+        241
+      ]
+    },
+    {
+      "id": "expressions-neutral",
+      "source": "expressions",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "expressions-wink_left",
+      "source": "expressions",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "expressions-wink_right",
+      "source": "expressions",
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "expressions-happy",
+      "source": "expressions",
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "expressions-sad",
+      "source": "expressions",
+      "rect": [
+        0,
+        256,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "expressions-side_eye",
+      "source": "expressions",
+      "rect": [
+        256,
+        256,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "expressions-sulky",
+      "source": "expressions",
+      "rect": [
+        512,
+        256,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "expressions-surprised",
+      "source": "expressions",
+      "rect": [
+        768,
+        256,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "expressions-angry",
+      "source": "expressions",
+      "rect": [
+        0,
+        512,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "expressions-sleepy",
+      "source": "expressions",
+      "rect": [
+        256,
+        512,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "expressions-laughing",
+      "source": "expressions",
+      "rect": [
+        512,
+        512,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "expressions-crying",
+      "source": "expressions",
+      "rect": [
+        768,
+        512,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "expressions-sobbing",
+      "source": "expressions",
+      "rect": [
+        0,
+        768,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "expressions-pleading",
+      "source": "expressions",
+      "rect": [
+        256,
+        768,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "expressions-love",
+      "source": "expressions",
+      "rect": [
+        512,
+        768,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "expressions-star_eyes",
+      "source": "expressions",
+      "rect": [
+        768,
+        768,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "expressions-thinking",
+      "source": "expressions",
+      "rect": [
+        0,
+        1024,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "expressions-confused",
+      "source": "expressions",
+      "rect": [
+        256,
+        1024,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "expressions-embarrassed",
+      "source": "expressions",
+      "rect": [
+        512,
+        1024,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "expressions-smug",
+      "source": "expressions",
+      "rect": [
+        768,
+        1024,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "expressions-unimpressed",
+      "source": "expressions",
+      "rect": [
+        0,
+        1280,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "expressions-scared",
+      "source": "expressions",
+      "rect": [
+        256,
+        1280,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "expressions-dizzy",
+      "source": "expressions",
+      "rect": [
+        512,
+        1280,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "expressions-relieved",
+      "source": "expressions",
+      "rect": [
+        768,
+        1280,
+        256,
+        256
+      ]
+    },
+    {
+      "id": "visemes-REST",
+      "source": "visemes",
+      "rect": [
+        0,
+        0,
+        362,
+        362
+      ]
+    },
+    {
+      "id": "visemes-NEUTRAL",
+      "source": "visemes",
+      "rect": [
+        362,
+        0,
+        362,
+        362
+      ]
+    },
+    {
+      "id": "visemes-AA",
+      "source": "visemes",
+      "rect": [
+        724,
+        0,
+        362,
+        362
+      ]
+    },
+    {
+      "id": "visemes-EE",
+      "source": "visemes",
+      "rect": [
+        1086,
+        0,
+        362,
+        362
+      ]
+    },
+    {
+      "id": "visemes-EH",
+      "source": "visemes",
+      "rect": [
+        0,
+        362,
+        362,
+        362
+      ]
+    },
+    {
+      "id": "visemes-OH",
+      "source": "visemes",
+      "rect": [
+        362,
+        362,
+        362,
+        362
+      ]
+    },
+    {
+      "id": "visemes-OO",
+      "source": "visemes",
+      "rect": [
+        724,
+        362,
+        362,
+        362
+      ]
+    },
+    {
+      "id": "visemes-MBP",
+      "source": "visemes",
+      "rect": [
+        1086,
+        362,
+        362,
+        362
+      ]
+    },
+    {
+      "id": "visemes-FV",
+      "source": "visemes",
+      "rect": [
+        0,
+        724,
+        362,
+        362
+      ]
+    },
+    {
+      "id": "visemes-TH",
+      "source": "visemes",
+      "rect": [
+        362,
+        724,
+        362,
+        362
+      ]
+    },
+    {
+      "id": "visemes-L",
+      "source": "visemes",
+      "rect": [
+        724,
+        724,
+        362,
+        362
+      ]
+    },
+    {
+      "id": "visemes-RSH",
+      "source": "visemes",
+      "rect": [
+        1086,
+        724,
+        362,
+        362
+      ]
+    },
+    {
+      "id": "gestures-wave",
+      "source": "gestures",
+      "rect": [
+        0,
+        0,
+        362,
+        362
+      ]
+    },
+    {
+      "id": "gestures-write",
+      "source": "gestures",
+      "rect": [
+        362,
+        0,
+        362,
+        362
+      ]
+    },
+    {
+      "id": "gestures-peace",
+      "source": "gestures",
+      "rect": [
+        724,
+        0,
+        362,
+        362
+      ]
+    },
+    {
+      "id": "gestures-shush",
+      "source": "gestures",
+      "rect": [
+        1086,
+        0,
+        362,
+        362
+      ]
+    },
+    {
+      "id": "gestures-heart",
+      "source": "gestures",
+      "rect": [
+        0,
+        362,
+        362,
+        362
+      ]
+    },
+    {
+      "id": "gestures-finger_heart",
+      "source": "gestures",
+      "rect": [
+        362,
+        362,
+        362,
+        362
+      ]
+    },
+    {
+      "id": "gestures-thumbs_up",
+      "source": "gestures",
+      "rect": [
+        724,
+        362,
+        362,
+        362
+      ]
+    },
+    {
+      "id": "gestures-ok",
+      "source": "gestures",
+      "rect": [
+        1086,
+        362,
+        362,
+        362
+      ]
+    },
+    {
+      "id": "gestures-point",
+      "source": "gestures",
+      "rect": [
+        0,
+        724,
+        362,
+        362
+      ]
+    },
+    {
+      "id": "gestures-clap",
+      "source": "gestures",
+      "rect": [
+        362,
+        724,
+        362,
+        362
+      ]
+    },
+    {
+      "id": "gestures-thanks",
+      "source": "gestures",
+      "rect": [
+        724,
+        724,
+        362,
+        362
+      ]
+    },
+    {
+      "id": "gestures-cheer",
+      "source": "gestures",
+      "rect": [
+        1086,
+        724,
+        362,
+        362
+      ]
+    }
+  ],
+  "reactions": [
+    {
+      "id": "welcome",
+      "label": "환영",
+      "group": "튜터·비서",
+      "source": "reactions-core",
+      "frames": [
+        [
+          0,
+          0,
+          314,
+          300
+        ],
+        [
+          314,
+          0,
+          313,
+          300
+        ]
+      ],
+      "durations": [
+        700,
+        240
+      ],
+      "mode": "once",
+      "note": ""
+    },
+    {
+      "id": "listen",
+      "label": "경청",
+      "group": "튜터·비서",
+      "source": "reactions-core",
+      "frames": [
+        [
+          627,
+          0,
+          313,
+          300
+        ],
+        [
+          940,
+          0,
+          314,
+          300
+        ]
+      ],
+      "durations": [
+        700,
+        240
+      ],
+      "mode": "once",
+      "note": ""
+    },
+    {
+      "id": "explain",
+      "label": "설명",
+      "group": "튜터·비서",
+      "source": "reactions-core",
+      "frames": [
+        [
+          0,
+          312,
+          314,
+          300
+        ],
+        [
+          314,
+          312,
+          313,
+          300
+        ]
+      ],
+      "durations": [
+        700,
+        240
+      ],
+      "mode": "once",
+      "note": ""
+    },
+    {
+      "id": "praise",
+      "label": "칭찬",
+      "group": "튜터·비서",
+      "source": "reactions-core",
+      "frames": [
+        [
+          627,
+          312,
+          313,
+          300
+        ],
+        [
+          940,
+          312,
+          314,
+          300
+        ]
+      ],
+      "durations": [
+        700,
+        240
+      ],
+      "mode": "once",
+      "note": ""
+    },
+    {
+      "id": "think",
+      "label": "함께 고민",
+      "group": "튜터·비서",
+      "source": "reactions-core",
+      "frames": [
+        [
+          0,
+          620,
+          314,
+          300
+        ],
+        [
+          314,
+          620,
+          313,
+          300
+        ]
+      ],
+      "durations": [
+        700,
+        240
+      ],
+      "mode": "once",
+      "note": ""
+    },
+    {
+      "id": "confirmed",
+      "label": "확인 완료",
+      "group": "튜터·비서",
+      "source": "reactions-core",
+      "frames": [
+        [
+          627,
+          620,
+          313,
+          300
+        ],
+        [
+          940,
+          620,
+          314,
+          300
+        ]
+      ],
+      "durations": [
+        700,
+        240
+      ],
+      "mode": "once",
+      "note": "실제 작업 성공 확인 후에만 표시"
+    },
+    {
+      "id": "one_moment",
+      "label": "잠깐 안내",
+      "group": "튜터·비서",
+      "source": "reactions-core",
+      "frames": [
+        [
+          0,
+          922,
+          314,
+          300
+        ],
+        [
+          314,
+          922,
+          313,
+          300
+        ]
+      ],
+      "durations": [
+        700,
+        240
+      ],
+      "mode": "once",
+      "note": ""
+    },
+    {
+      "id": "encourage",
+      "label": "응원",
+      "group": "튜터·비서",
+      "source": "reactions-core",
+      "frames": [
+        [
+          627,
+          922,
+          313,
+          300
+        ],
+        [
+          940,
+          922,
+          314,
+          300
+        ]
+      ],
+      "durations": [
+        700,
+        240
+      ],
+      "mode": "once",
+      "note": ""
+    },
+    {
+      "id": "idle",
+      "label": "차분한 대기",
+      "group": "차분한 대화",
+      "source": "reactions-calm",
+      "frames": [
+        [
+          0,
+          12,
+          280,
+          280
+        ],
+        [
+          280,
+          12,
+          281,
+          280
+        ]
+      ],
+      "durations": [
+        3000,
+        180
+      ],
+      "mode": "idle",
+      "note": ""
+    },
+    {
+      "id": "agree",
+      "label": "이해·동의",
+      "group": "차분한 대화",
+      "source": "reactions-calm",
+      "frames": [
+        [
+          561,
+          12,
+          281,
+          280
+        ],
+        [
+          842,
+          12,
+          280,
+          280
+        ]
+      ],
+      "durations": [
+        850,
+        180
+      ],
+      "mode": "once",
+      "note": ""
+    },
+    {
+      "id": "clarify",
+      "label": "되묻기",
+      "group": "차분한 대화",
+      "source": "reactions-calm",
+      "frames": [
+        [
+          0,
+          276,
+          280,
+          280
+        ],
+        [
+          280,
+          276,
+          281,
+          280
+        ]
+      ],
+      "durations": [
+        850,
+        180
+      ],
+      "mode": "once",
+      "note": ""
+    },
+    {
+      "id": "uncertain",
+      "label": "검토 중",
+      "group": "차분한 대화",
+      "source": "reactions-calm",
+      "frames": [
+        [
+          561,
+          276,
+          281,
+          280
+        ],
+        [
+          842,
+          276,
+          280,
+          280
+        ]
+      ],
+      "durations": [
+        850,
+        180
+      ],
+      "mode": "hold",
+      "note": ""
+    },
+    {
+      "id": "focus",
+      "label": "집중",
+      "group": "차분한 대화",
+      "source": "reactions-calm",
+      "frames": [
+        [
+          0,
+          540,
+          280,
+          280
+        ],
+        [
+          280,
+          540,
+          281,
+          280
+        ]
+      ],
+      "durations": [
+        850,
+        180
+      ],
+      "mode": "hold",
+      "note": ""
+    },
+    {
+      "id": "empathy",
+      "label": "공감",
+      "group": "차분한 대화",
+      "source": "reactions-calm",
+      "frames": [
+        [
+          561,
+          540,
+          281,
+          280
+        ],
+        [
+          842,
+          540,
+          280,
+          280
+        ]
+      ],
+      "durations": [
+        850,
+        180
+      ],
+      "mode": "hold",
+      "note": ""
+    },
+    {
+      "id": "apology",
+      "label": "미안함·정정",
+      "group": "차분한 대화",
+      "source": "reactions-calm",
+      "frames": [
+        [
+          0,
+          804,
+          280,
+          280
+        ],
+        [
+          280,
+          804,
+          281,
+          280
+        ]
+      ],
+      "durations": [
+        850,
+        180
+      ],
+      "mode": "once",
+      "note": ""
+    },
+    {
+      "id": "alternative",
+      "label": "조심스러운 이견",
+      "group": "차분한 대화",
+      "source": "reactions-calm",
+      "frames": [
+        [
+          561,
+          804,
+          281,
+          280
+        ],
+        [
+          842,
+          804,
+          280,
+          280
+        ]
+      ],
+      "durations": [
+        850,
+        180
+      ],
+      "mode": "once",
+      "note": ""
+    },
+    {
+      "id": "insight",
+      "label": "깨달음",
+      "group": "차분한 대화",
+      "source": "reactions-calm",
+      "frames": [
+        [
+          0,
+          1068,
+          280,
+          280
+        ],
+        [
+          280,
+          1068,
+          281,
+          280
+        ]
+      ],
+      "durations": [
+        850,
+        180
+      ],
+      "mode": "once",
+      "note": ""
+    },
+    {
+      "id": "wait_answer",
+      "label": "답변 기다림",
+      "group": "차분한 대화",
+      "source": "reactions-calm",
+      "frames": [
+        [
+          561,
+          1068,
+          281,
+          280
+        ],
+        [
+          842,
+          1068,
+          280,
+          280
+        ]
+      ],
+      "durations": [
+        850,
+        180
+      ],
+      "mode": "hold",
+      "note": ""
+    },
+    {
+      "id": "wave",
+      "label": "손흔들기",
+      "group": "손동작",
+      "source": "hands",
+      "frames": [
+        [
+          16,
+          24,
+          248,
+          226
+        ],
+        [
+          264,
+          24,
+          248,
+          226
+        ],
+        [
+          510,
+          24,
+          248,
+          226
+        ],
+        [
+          264,
+          24,
+          248,
+          226
+        ]
+      ],
+      "durations": [
+        260,
+        200,
+        260,
+        200
+      ],
+      "mode": "once",
+      "note": ""
+    },
+    {
+      "id": "peace",
+      "label": "V",
+      "group": "손동작",
+      "source": "hands",
+      "frames": [
+        [
+          16,
+          248,
+          248,
+          226
+        ],
+        [
+          264,
+          248,
+          248,
+          226
+        ],
+        [
+          510,
+          248,
+          248,
+          226
+        ],
+        [
+          264,
+          248,
+          248,
+          226
+        ]
+      ],
+      "durations": [
+        260,
+        200,
+        260,
+        200
+      ],
+      "mode": "once",
+      "note": ""
+    },
+    {
+      "id": "shush",
+      "label": "쉿",
+      "group": "손동작",
+      "source": "hands",
+      "frames": [
+        [
+          16,
+          474,
+          248,
+          226
+        ],
+        [
+          264,
+          474,
+          248,
+          226
+        ],
+        [
+          510,
+          474,
+          248,
+          226
+        ],
+        [
+          264,
+          474,
+          248,
+          226
+        ]
+      ],
+      "durations": [
+        260,
+        200,
+        260,
+        200
+      ],
+      "mode": "once",
+      "note": ""
+    },
+    {
+      "id": "heart",
+      "label": "하트",
+      "group": "손동작",
+      "source": "hands",
+      "frames": [
+        [
+          16,
+          710,
+          248,
+          226
+        ],
+        [
+          264,
+          710,
+          248,
+          226
+        ],
+        [
+          510,
+          710,
+          248,
+          226
+        ],
+        [
+          264,
+          710,
+          248,
+          226
+        ]
+      ],
+      "durations": [
+        260,
+        200,
+        260,
+        200
+      ],
+      "mode": "once",
+      "note": ""
+    },
+    {
+      "id": "peek_wave",
+      "label": "뒤쪽 손흔들기",
+      "group": "손동작",
+      "source": "hands",
+      "frames": [
+        [
+          16,
+          1220,
+          248,
+          226
+        ],
+        [
+          264,
+          1220,
+          248,
+          226
+        ],
+        [
+          510,
+          1220,
+          248,
+          226
+        ],
+        [
+          264,
+          1220,
+          248,
+          226
+        ]
+      ],
+      "durations": [
+        260,
+        200,
+        260,
+        200
+      ],
+      "mode": "once",
+      "note": ""
+    },
+    {
+      "id": "write",
+      "label": "글쓰기 · 수정본",
+      "group": "손동작",
+      "source": "write-think",
+      "frames": [
+        [
+          0,
+          0,
+          444,
+          444
+        ],
+        [
+          444,
+          0,
+          443,
+          444
+        ],
+        [
+          887,
+          0,
+          443,
+          444
+        ],
+        [
+          444,
+          0,
+          443,
+          444
+        ]
+      ],
+      "durations": [
+        280,
+        240,
+        280,
+        240
+      ],
+      "mode": "hold",
+      "note": "연필 끝은 수첩 뒤에 가림"
+    },
+    {
+      "id": "temple",
+      "label": "관자놀이 생각",
+      "group": "손동작",
+      "source": "write-think",
+      "frames": [
+        [
+          0,
+          444,
+          444,
+          443
+        ],
+        [
+          887,
+          444,
+          443,
+          443
+        ],
+        [
+          0,
+          444,
+          444,
+          443
+        ],
+        [
+          887,
+          444,
+          443,
+          443
+        ]
+      ],
+      "durations": [
+        280,
+        240,
+        280,
+        240
+      ],
+      "mode": "once",
+      "note": ""
+    }
+  ],
+  "limitations": [
+    "Atlases are composed head images, not interchangeable independent facial layers",
+    "Direction × expression × viseme cross-product is not pre-rendered",
+    "Viseme frames are an authored visual vocabulary; acoustic lip-sync accuracy is unvalidated",
+    "Generated frames may drift in face geometry; some silhouettes touch cell boundaries",
+    "Expressions and gesture/reaction studies retain opaque backgrounds"
+  ],
+  "atlases": {
+    "directions": {
+      "source": "directions",
+      "frames": {
+        "up_left/open": [
+          0,
+          0,
+          241,
+          241
+        ],
+        "up_left/half": [
+          241,
+          0,
+          242,
+          241
+        ],
+        "up_left/closed": [
+          483,
+          0,
+          241,
+          241
+        ],
+        "up/open": [
+          0,
+          241,
+          241,
+          242
+        ],
+        "up/half": [
+          241,
+          241,
+          242,
+          242
+        ],
+        "up/closed": [
+          483,
+          241,
+          241,
+          242
+        ],
+        "up_right/open": [
+          0,
+          483,
+          241,
+          241
+        ],
+        "up_right/half": [
+          241,
+          483,
+          242,
+          241
+        ],
+        "up_right/closed": [
+          483,
+          483,
+          241,
+          241
+        ],
+        "left/open": [
+          0,
+          724,
+          241,
+          241
+        ],
+        "left/half": [
+          241,
+          724,
+          242,
+          241
+        ],
+        "left/closed": [
+          483,
+          724,
+          241,
+          241
+        ],
+        "front/open": [
+          0,
+          965,
+          241,
+          242
+        ],
+        "front/half": [
+          241,
+          965,
+          242,
+          242
+        ],
+        "front/closed": [
+          483,
+          965,
+          241,
+          242
+        ],
+        "right/open": [
+          0,
+          1207,
+          241,
+          241
+        ],
+        "right/half": [
+          241,
+          1207,
+          242,
+          241
+        ],
+        "right/closed": [
+          483,
+          1207,
+          241,
+          241
+        ],
+        "down_left/open": [
+          0,
+          1448,
+          241,
+          241
+        ],
+        "down_left/half": [
+          241,
+          1448,
+          242,
+          241
+        ],
+        "down_left/closed": [
+          483,
+          1448,
+          241,
+          241
+        ],
+        "down/open": [
+          0,
+          1689,
+          241,
+          242
+        ],
+        "down/half": [
+          241,
+          1689,
+          242,
+          242
+        ],
+        "down/closed": [
+          483,
+          1689,
+          241,
+          242
+        ],
+        "down_right/open": [
+          0,
+          1931,
+          241,
+          241
+        ],
+        "down_right/half": [
+          241,
+          1931,
+          242,
+          241
+        ],
+        "down_right/closed": [
+          483,
+          1931,
+          241,
+          241
+        ]
+      },
+      "composed_heads": true,
+      "frame_count": 27
+    },
+    "expressions": {
+      "source": "expressions",
+      "frames": {
+        "neutral": [
+          0,
+          24,
+          256,
+          240
+        ],
+        "wink_left": [
+          256,
+          24,
+          256,
+          240
+        ],
+        "wink_right": [
+          512,
+          24,
+          256,
+          240
+        ],
+        "happy": [
+          768,
+          24,
+          256,
+          240
+        ],
+        "sad": [
+          0,
+          264,
+          256,
+          240
+        ],
+        "side_eye": [
+          256,
+          264,
+          256,
+          240
+        ],
+        "sulky": [
+          512,
+          264,
+          256,
+          240
+        ],
+        "surprised": [
+          768,
+          264,
+          256,
+          240
+        ],
+        "angry": [
+          0,
+          504,
+          256,
+          240
+        ],
+        "sleepy": [
+          256,
+          504,
+          256,
+          240
+        ],
+        "laughing": [
+          512,
+          504,
+          256,
+          240
+        ],
+        "crying": [
+          768,
+          504,
+          256,
+          240
+        ],
+        "sobbing": [
+          0,
+          744,
+          256,
+          240
+        ],
+        "pleading": [
+          256,
+          744,
+          256,
+          240
+        ],
+        "love": [
+          512,
+          744,
+          256,
+          240
+        ],
+        "star_eyes": [
+          768,
+          744,
+          256,
+          240
+        ],
+        "thinking": [
+          0,
+          984,
+          256,
+          240
+        ],
+        "confused": [
+          256,
+          984,
+          256,
+          240
+        ],
+        "embarrassed": [
+          512,
+          984,
+          256,
+          240
+        ],
+        "smug": [
+          768,
+          984,
+          256,
+          240
+        ],
+        "unimpressed": [
+          0,
+          1224,
+          256,
+          240
+        ],
+        "scared": [
+          256,
+          1224,
+          256,
+          240
+        ],
+        "dizzy": [
+          512,
+          1224,
+          256,
+          240
+        ],
+        "relieved": [
+          768,
+          1224,
+          256,
+          240
+        ]
+      },
+      "composed_heads": true,
+      "frame_count": 24
+    },
+    "visemes": {
+      "source": "visemes",
+      "frames": {
+        "REST": [
+          0,
+          0,
+          362,
+          362
+        ],
+        "NEUTRAL": [
+          362,
+          0,
+          362,
+          362
+        ],
+        "AA": [
+          724,
+          0,
+          362,
+          362
+        ],
+        "EE": [
+          1086,
+          0,
+          362,
+          362
+        ],
+        "EH": [
+          0,
+          362,
+          362,
+          362
+        ],
+        "OH": [
+          362,
+          362,
+          362,
+          362
+        ],
+        "OO": [
+          724,
+          362,
+          362,
+          362
+        ],
+        "MBP": [
+          1086,
+          362,
+          362,
+          362
+        ],
+        "FV": [
+          0,
+          724,
+          362,
+          362
+        ],
+        "TH": [
+          362,
+          724,
+          362,
+          362
+        ],
+        "L": [
+          724,
+          724,
+          362,
+          362
+        ],
+        "RSH": [
+          1086,
+          724,
+          362,
+          362
+        ]
+      },
+      "composed_heads": true,
+      "frame_count": 12
+    },
+    "gestures": {
+      "source": "gestures",
+      "frames": {
+        "wave": [
+          0,
+          0,
+          362,
+          362
+        ],
+        "write": [
+          362,
+          0,
+          362,
+          362
+        ],
+        "peace": [
+          724,
+          0,
+          362,
+          362
+        ],
+        "shush": [
+          1086,
+          0,
+          362,
+          362
+        ],
+        "heart": [
+          0,
+          362,
+          362,
+          362
+        ],
+        "finger_heart": [
+          362,
+          362,
+          362,
+          362
+        ],
+        "thumbs_up": [
+          724,
+          362,
+          362,
+          362
+        ],
+        "ok": [
+          1086,
+          362,
+          362,
+          362
+        ],
+        "point": [
+          0,
+          724,
+          362,
+          362
+        ],
+        "clap": [
+          362,
+          724,
+          362,
+          362
+        ],
+        "thanks": [
+          724,
+          724,
+          362,
+          362
+        ],
+        "cheer": [
+          1086,
+          724,
+          362,
+          362
+        ]
+      },
+      "composed_heads": true,
+      "frame_count": 12
+    }
+  }
+}

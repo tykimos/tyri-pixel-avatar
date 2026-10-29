@@ -1,117 +1,72 @@
-<div align="center">
+# 타이리 / Tyri — High-resolution Avatar
 
-# Tyri Pixel Avatar
+**고해상도 원본 기반 아틀라스 저장소. 기존 64×64 스프라이트·아틀라스·구버전 ZIP은 main에서 제거했습니다.**
 
-### Small pixels. Big personality.
+[미리보기](index.html) · [프레임 좌표](data/catalog.json) · [LICENSE](LICENSE)
 
-A tiny, expressive face for conversational interfaces, virtual companions, and creative experiments.
+저장소를 내려받아 `index.html`을 브라우저에서 열면 됩니다. 별도 빌드나 서버 없이 고해상도 시트를 읽습니다. GitHub 파일 페이지 자체는 HTML 앱을 실행하지 않습니다.
 
-**9 directions · 24 expressions · 12 mouth shapes · 64 × 64 pixels**
+## 새 아틀라스
 
-[Get started](#get-started) · [Sprite guide](GUIDE.md) · [Animation gallery](previews/README.md) · [License](LICENSE)
+| 원본 | 실제 해상도 | 구성 | 셀 크기 |
+| --- | --- | --- | --- |
+| [방향·눈깜빡임](assets/tiles/directions) | 724×2172 | 9방향 × 3눈 상태, 27칸 | 약 241×241 |
+| [표정](assets/tiles/expressions) | 1024×1536 | 24표정 | 재생 256×240 (보존 칸 256×256) |
+| [입 모양](assets/tiles/visemes) | 1448×1086 | 12발음 프레임 | 362×362 |
+| [손동작](assets/tiles/gestures) | 1448×1086 | 12동작 | 362×362 |
 
-![Tyri talking, reacting and looking around](previews/showcase_hero.gif)
+새 이미지 생성 원본을 사용했습니다. 64px 파일을 확대해 채운 것이 아닙니다. 요청한 생성 해상도 대신 **실제 출력 파일 크기**를 표에 기록했습니다.
 
-**말하고, 웃고, 윙크하고, 고개를 돌리는 픽셀 캐릭터.**
+## 승인된 리액션과 손 애니메이션
 
-Personal & noncommercial research use only. Keep the character name **타이리 / Tyri**.
+| 원본 | 해상도 | 칸 수 |
+| --- | --- | --- |
+| [얼굴+손 승인 디자인](assets/tiles/approved) | 1536×1024 | 6 |
+| [손동작 애니메이션](assets/tiles/hands) | 1024×1536 | 24 |
+| [글쓰기·관자놀이 생각 수정](assets/tiles/write-think) | 1774×887 | 8 |
+| [튜터·비서 기본 8종](assets/tiles/reactions-core) | 1254×1254 | 16 |
+| [차분한 대화 추가 10종](assets/tiles/reactions-calm) | 1122×1402 | 20 |
 
-</div>
+원본 9장은 **163개 무손실 PNG 조각**으로 저장합니다. 총 **149개 시트 칸**이며 큰 칸 일부를 전송용으로 추가 분할했습니다. 이는 서로 다른 동작 149개를 뜻하지 않습니다. 미리보기에는 리액션 18종과 손동작 애니메이션 7종을 연결했습니다. 초기 글쓰기 대신 연필 끝이 수첩 뒤에 가려지는 수정본을 재생합니다. 일부 생성 프레임은 손이 사라져 재생 순서에서 제외했으며 원본에는 보존됩니다.
 
-## One face, many ways to react
+## 미리보기와 재생 정책
 
-<table>
-<tr>
-<td align="center" width="50%">
-<img src="previews/showcase_emotions.gif" width="456" alt="Tyri cycles through joy, winks, love, surprise, side-eye and sleep while moving her mouth">
-<br><strong>A little more personality.</strong><br>
-Joy, tears, winks, heart eyes, a little attitude—and more.
-</td>
-<td align="center" width="50%">
-<img src="previews/showcase_directions.gif" width="456" alt="Tyri turns through nine directional poses while talking and blinking">
-<br><strong>A different point of view.</strong><br>
-Look up, down, left, right, and between. Keep talking.
-</td>
-</tr>
-</table>
+- 리액션: 기본 표정 → 짧은 반응 → 기본 표정. 집중·공감·작업·답변 대기는 상태를 유지합니다.
+- 방향 키는 화면 기준 시선 방향, `left/right` 손 또는 윙크 명칭은 캐릭터의 해부학적 좌우입니다.
+- 확인 완료 리액션은 실제 작업 성공을 확인한 뒤에만 사용해야 합니다. 미리보기 버튼은 시각 테스트입니다.
+- `반복`을 선택하면 짧은 리액션도 반복 재생합니다.
+- 각 탭의 PNG 링크는 현재 시트의 첫 전송 조각입니다. 전체 시트 복원은 아래 명령을 사용합니다. 화면 표시 크기는 원본 파일 크기와 별개입니다.
 
-- **Mix expression and speech.** Select a mood and a mouth shape independently.
-- **Keep the pixels crisp.** Transparent 64 × 64 frames, shown above at integer scale.
-- **Start small, build your own.** PNG atlases, JSON coordinates, source artwork, and offline HTML previews.
-- **Explore three languages.** Approximate mouth mappings and sample greetings for Korean, English, and Japanese.
+## 개별 PNG 추출 및 검증
 
-*GIFs are silent, scripted demonstrations. Speech recognition, TTS, and a conversation model are not included; real-audio lip sync has not been validated.*
-
-## Hand gestures, separate from the face
-
-Wave, write, V, shush, two-hand heart, finger heart, thumbs up, OK, point, clap, thanks and cheer. **12 gestures · wrist-anchored raised hands · left/right hands · palm/back views.**
-
-[Hand sprite guide](HANDS.md) · [Interactive preview (download and open)](hands_preview.html) · [9-direction animation](previews/hands_9directions.gif) · [Download hand pack](tyri-hands-v3.zip)
-
-## Get started
-
-```bash
-git clone https://github.com/tykimos/tyri-pixel-avatar.git
-cd tyri-pixel-avatar
+```sh
+python -m pip install -r requirements.txt
+python scripts/reassemble_sources.py
+python scripts/export_frames.py
+python -m unittest discover -s tests
+node --test tests/player.test.cjs
 ```
 
-Open either file locally in your browser—no build step required:
+`assets/sheets/`에 9개 원본 크기 시트를 복원하고, `exports/`에 **원본 픽셀 그대로** 149개 PNG를 추출합니다. 복원한 PNG의 압축·메타데이터는 원본과 다를 수 있으나 RGBA 픽셀 해시로 내용 일치를 검증합니다. `data/catalog.json`의 `regions`는 시트 전체를 균등 분할한 보존용 좌표이고, `reactions.frames`는 승인된 미리보기의 동작별 크롭 좌표입니다. 얼굴·손을 독립 레이어로 분리하는 명령이 아닙니다.
 
-| Preview | Try it |
-| --- | --- |
-| `emotion_preview.html` | Choose a direction, expression, and mouth; cycle expressions or test mouth animation. |
-| `preview.html` | Test blinking and mouth shapes, or load an audio file with matching cue JSON. |
+## 지원 범위와 남은 제작 작업
 
-You can also download the repository with **Code → Download ZIP**, unzip it, and open the same files.
+현재는 **완성형 얼굴/얼굴+손 프레임 아틀라스**입니다. 다음을 완성했다고 주장하지 않습니다.
 
-## Build with Tyri
+- 9방향 × 24표정 × 12입 모양의 모든 조합을 렌더링한 아틀라스
+- 눈·입·앞손·뒷손·소품의 독립 투명 레이어 및 자유 합성
+- 모든 손동작의 양쪽 손·손바닥·손등 변형
+- 실제 음성과의 자동 립싱크 또는 발음 정확도 검증
+- 프레임 간 얼굴 픽셀 고정 및 완전한 실루엣 분리
 
-Choose the atlas that fits your prototype:
+일부 원본에는 불투명 배경이 남고, 일부 실루엣은 셀 경계에 닿습니다. 표정·방향·발음별 생성 프레임 사이에 얼굴 형태 차이가 있으므로 제작용 정합 보정은 별도 작업입니다. 기존 코드와 JSON 스키마를 그대로 교체하는 호환 패치가 아닙니다.
 
-| Kit | Frames | Files |
-| --- | ---: | --- |
-| **Core** · 9 directions × 3 eye states × 12 mouths | 324 | [`atlas.png`](atlas.png) + [`manifest.json`](manifest.json) |
-| **Expressions** · 9 directions × 24 expressions × 12 mouths | 2,592 | [`emotion_atlas.png`](emotion_atlas.png) + [`emotions.json`](emotions.json) |
+`assets/reference/`에는 이전 작업의 고해상도 얼굴·방향·입 원본만 참고용으로 보존했습니다. 구버전 저해상도 자료는 다음 보관 브랜치에서 복구할 수 있습니다.
 
-Use the JSON frame rectangles instead of hard-coded offsets. For example:
+[archive/lowres-before-highres-20261028](https://github.com/tykimos/tyri-pixel-avatar/tree/archive/lowres-before-highres-20261028)
 
-```js
-// Load emotions.json and emotion_atlas.png first.
-const [x, y, w, h] = emotions.frames["front/wink_left/AA"];
-ctx.imageSmoothingEnabled = false;
-ctx.drawImage(atlasImage, x, y, w, h, 0, 0, w * 4, h * 4);
-```
+## 이름·출처·라이선스
 
-**[Read the integration guide →](GUIDE.md)** for cue timing, frame layout, regeneration commands, and limitations.
-
-<details>
-<summary><strong>Explore all expressions and validation previews</strong></summary>
-
-
-[24-expression contact sheet](previews/emotions_contact.png) · [All-direction emotion GIF](previews/emotions_9directions.gif) · [Wink GIF](previews/winks_9directions.gif) · [Eye checks](previews/eye_repair_check.png)
-
-[한국어 greeting](previews/greeting_ko_9directions.gif) · [English greeting](previews/greeting_en_9directions.gif) · [日本語 greeting](previews/greeting_ja_9directions.gif)
-
-Automated checks cover frame consistency, alpha preservation, distinct mouth states, and eye/glasses regressions. Direction angles and mouth projections are stylized approximations. See [`test_results.json`](test_results.json), [`emotion_tests.json`](emotion_tests.json), and the [guide](GUIDE.md).
-
-</details>
-
-## License & credit
-
-**Keep her name: 타이리 / Tyri.** The character must retain these official names,
-including in modified and redistributed versions. Do not rename her.
-Use the language-appropriate name in your interface and include **타이리 (Tyri)**
-in your credits, README, documentation, or about screen. See LICENSE §4.1.
-
-**이름 유지 필수:** 캐릭터의 이름은 한국어 **“타이리”**, 영어 **“Tyri”**로 유지해야 합니다.
-수정·재배포 버전에서도 다른 캐릭터 이름으로 바꿀 수 없습니다.
-크레딧·README·문서·소개 화면 등에 **“타이리 (Tyri)”**를 함께 표기해 주세요.
-앱이나 프로젝트의 이름은 별도로 정할 수 있습니다.
-
-**Personal and noncommercial research use only. Commercial use requires separate written permission.** This is a source-available project with a custom license, not an OSI-approved open-source license. See [LICENSE](LICENSE) for the full terms.
-
-개인 비상업적 프로젝트·학습·실험 및 비상업적 학술 연구에 사용할 수 있습니다. 상용 서비스·고객 납품·기업 내부 업무 등은 별도 허가가 필요합니다.
-
-Created by **[Taeyoung Kim · tykimos](https://github.com/tykimos)**. AI-assisted source artwork, assembled into programmable pixel sprites.
-
-If Tyri helps your experiment, a star or a short demo in an issue is welcome.
+**타이리 / Tyri** 이름을 유지해야 합니다. Tyri Pixel Avatar by Taeyoung Kim (tykimos).
+원본 이미지는 이미지 생성 도구로 제작하고, 프레임 좌표·재생·추출 코드를 새로 작성했습니다.
+기존 [Tyri Personal and Noncommercial Research License 1.1](LICENSE)을 그대로 유지합니다.
