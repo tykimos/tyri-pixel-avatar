@@ -1,72 +1,108 @@
-# 타이리 / Tyri — High-resolution Avatar
+# 타이리 (Tyri) — 얼굴과 손을 분리한 픽셀 아바타
 
-**고해상도 원본 기반 아틀라스 저장소. 기존 64×64 스프라이트·아틀라스·구버전 ZIP은 main에서 제거했습니다.**
+**하나의 얼굴을 같은 크기·위치에 고정하고, 투명한 손 스프라이트를 별도로 움직입니다.** 손이 나타나거나 사라져도 얼굴 크기가 달라지지 않습니다.
 
-[미리보기](index.html) · [프레임 좌표](data/catalog.json) · [LICENSE](LICENSE)
+![손이 없어도, 다른 손동작을 해도 같은 크기를 유지하는 타이리](previews/layered-hero.gif)
 
-저장소를 내려받아 `index.html`을 브라우저에서 열면 됩니다. 별도 빌드나 서버 없이 고해상도 시트를 읽습니다. GitHub 파일 페이지 자체는 HTML 앱을 실행하지 않습니다.
+[미리보기 파일](index.html) · [MP4 보기](previews/layered-hero.mp4) · [분리된 파츠 보기](previews/layered-parts.png) · [얼굴 PNG](assets/sprites/face/neutral.png) · [손 PNG 폴더](assets/sprites/hands) · [좌표·동작 JSON](data/layers.json)
 
-## 새 아틀라스
+## 바로 사용하기
 
-| 원본 | 실제 해상도 | 구성 | 셀 크기 |
-| --- | --- | --- | --- |
-| [방향·눈깜빡임](assets/tiles/directions) | 724×2172 | 9방향 × 3눈 상태, 27칸 | 약 241×241 |
-| [표정](assets/tiles/expressions) | 1024×1536 | 24표정 | 재생 256×240 (보존 칸 256×256) |
-| [입 모양](assets/tiles/visemes) | 1448×1086 | 12발음 프레임 | 362×362 |
-| [손동작](assets/tiles/gestures) | 1448×1086 | 12동작 | 362×362 |
+1. [저장소 ZIP](https://github.com/tykimos/tyri-pixel-avatar/archive/refs/heads/main.zip)을 내려받아 전체 압축을 풉니다.
+2. `index.html`을 브라우저에서 엽니다. **미리보기에는 서버, 빌드, npm 설치가 필요하지 않습니다.**
+3. 왼쪽의 **손 없음**과 오른쪽의 **손동작**을 같은 크기 캔버스로 비교합니다. 처음에는 손 흔들기가 선택됩니다.
+4. 합성 / 얼굴만 / 손만, 체크 / 흰색 / 어두운 배경, 얼굴 기준선을 전환합니다. 화면 아래에서 현재 얼굴·손 PNG를 받을 수 있습니다.
 
-새 이미지 생성 원본을 사용했습니다. 64px 파일을 확대해 채운 것이 아닙니다. 요청한 생성 해상도 대신 **실제 출력 파일 크기**를 표에 기록했습니다.
+GitHub의 HTML 파일 페이지에서는 앱이 실행되지 않습니다. 다운로드한 폴더 안에서 열어 주세요. `data/layers.js`를 직접 읽으므로 오프라인에서도 작동합니다.
 
-## 승인된 리액션과 손 애니메이션
+## 포함된 스프라이트
 
-| 원본 | 해상도 | 칸 수 |
-| --- | --- | --- |
-| [얼굴+손 승인 디자인](assets/tiles/approved) | 1536×1024 | 6 |
-| [손동작 애니메이션](assets/tiles/hands) | 1024×1536 | 24 |
-| [글쓰기·관자놀이 생각 수정](assets/tiles/write-think) | 1774×887 | 8 |
-| [튜터·비서 기본 8종](assets/tiles/reactions-core) | 1254×1254 | 16 |
-| [차분한 대화 추가 10종](assets/tiles/reactions-calm) | 1122×1402 | 20 |
+| 파츠 / 동작 | PNG 수 | 기본 재생에 사용 | 구성 |
+| --- | ---: | ---: | --- |
+| 고정 얼굴 | 1 | 1 | 정면 중립 얼굴, 1254 × 1254 |
+| 손 흔들기 `wave` | 3 | 3 | 오른손 |
+| 브이 `peace` | 3 | 2 | 오른손 2개 + 왼손 대체 포즈 1개 |
+| 쉿 `shush` | 3 | 3 | 오른손 |
+| 하트 `heart` | 3 | 3 | 양손을 묶은 그룹 |
+| 글쓰기 `write` | 3 | 3 | 양손·연필·수첩을 묶은 그룹 |
+| 생각하기 `think` | 3 | 3 | 오른손 |
+| **합계** | **19** | **18** | 얼굴 1개 + 손 PNG 18개 중 17개 재생 |
 
-원본 9장은 **163개 무손실 PNG 조각**으로 저장합니다. 총 **149개 시트 칸**이며 큰 칸 일부를 전송용으로 추가 분할했습니다. 이는 서로 다른 동작 149개를 뜻하지 않습니다. 미리보기에는 리액션 18종과 손동작 애니메이션 7종을 연결했습니다. 초기 글쓰기 대신 연필 끝이 수첩 뒤에 가려지는 수정본을 재생합니다. 일부 생성 프레임은 손이 사라져 재생 순서에서 제외했으며 원본에는 보존됩니다.
+손 PNG는 각각 **418 × 418**, 실제 알파 투명 배경입니다. 왼손 브이 파일은 보존된 대체 파츠이며 기본 오른손 애니메이션에 섞이지 않습니다. 각 동작은 파츠를 여러 번 참조하는 9개 재생 프레임으로 구성되며, 3.2초 단위로 반복됩니다.
 
-## 미리보기와 재생 정책
+**하트의 두 손과 글쓰기의 손·소품은 각 PNG 안에서 하나의 그룹입니다.** 얼굴과는 독립적으로 배치되지만, 그룹 안의 손가락·각 손·연필·수첩을 개별 조작하는 구조는 아닙니다.
 
-- 리액션: 기본 표정 → 짧은 반응 → 기본 표정. 집중·공감·작업·답변 대기는 상태를 유지합니다.
-- 방향 키는 화면 기준 시선 방향, `left/right` 손 또는 윙크 명칭은 캐릭터의 해부학적 좌우입니다.
-- 확인 완료 리액션은 실제 작업 성공을 확인한 뒤에만 사용해야 합니다. 미리보기 버튼은 시각 테스트입니다.
-- `반복`을 선택하면 짧은 리액션도 반복 재생합니다.
-- 각 탭의 PNG 링크는 현재 시트의 첫 전송 조각입니다. 전체 시트 복원은 아래 명령을 사용합니다. 화면 표시 크기는 원본 파일 크기와 별개입니다.
+## 얼굴 크기를 고정하는 방식
 
-## 개별 PNG 추출 및 검증
+- 캔버스는 항상 **1024 × 1024**입니다. 브라우저 화면 크기는 CSS로만 조절합니다.
+- 얼굴 파일과 변환은 `head.sprite`, `head.transform` 한 곳에 있으며 `head.locked = true`입니다. 손의 범위에 맞춰 얼굴을 다시 확대·축소하는 자동 맞춤은 없습니다.
+- 얼굴의 의미 있는 알파 영역(`alpha ≥ 128`)은 `content_bbox: [249, 252, 749, 703]`입니다. 이 영역의 표시 폭은 **680px**로 고정됩니다. 원본 PNG 전체의 투명 여백은 기준선 계산에서 제외합니다.
+- 애니메이션에는 손 인스턴스만 허용합니다. 얼굴 참조나 얼굴 변환 덮어쓰기는 검증 단계에서 거부합니다.
+- `side: left/right`는 **캐릭터의 해부학적 좌우**입니다. 화면의 왼쪽·오른쪽 또는 앞뒤 가림 순서를 뜻하지 않습니다.
+- 가림 순서는 `z`로 정합니다. 뒤쪽 손은 `z < 100`, 얼굴은 `z = 100`, 앞쪽 손은 `z > 100`입니다. 현재 제공하는 손동작은 얼굴 앞에 합성합니다.
 
-```sh
-python -m pip install -r requirements.txt
-python scripts/reassemble_sources.py
-python scripts/export_frames.py
-python -m unittest discover -s tests
-node --test tests/player.test.cjs
+### 최소 통합 예제
+
+저장소 루트에 HTML 파일을 만들면 아래처럼 사용할 수 있습니다. `faceVisible`, `handsVisible`로 각 레이어 표시를 바꿔도 얼굴 변환은 유지됩니다.
+
+```html
+<canvas id="tyri" width="1024" height="1024"></canvas>
+<script src="data/layers.js"></script>
+<script src="layered-player.js"></script>
+<script>
+(async () => {
+  const m = window.TYRI_LAYERS, player = window.TyriLayeredPlayer;
+  const ctx = document.getElementById('tyri').getContext('2d');
+  const entries = await Promise.all(Object.entries(m.sprites).map(([id, s]) =>
+    new Promise((resolve, reject) => {
+      const image = new Image();
+      image.onload = () => resolve([id, image]);
+      image.onerror = () => reject(new Error(s.path));
+      image.src = s.path;
+    })
+  ));
+  const images = Object.fromEntries(entries), start = performance.now();
+  function frame(now) {
+    const commands = player.getDrawCommands(m, 'wave', now - start, {
+      faceVisible: true, handsVisible: true
+    });
+    player.drawContext(ctx, commands, images);
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+})().catch(console.error);
+</script>
 ```
 
-`assets/sheets/`에 9개 원본 크기 시트를 복원하고, `exports/`에 **원본 픽셀 그대로** 149개 PNG를 추출합니다. 복원한 PNG의 압축·메타데이터는 원본과 다를 수 있으나 RGBA 픽셀 해시로 내용 일치를 검증합니다. `data/catalog.json`의 `regions`는 시트 전체를 균등 분할한 보존용 좌표이고, `reactions.frames`는 승인된 미리보기의 동작별 크롭 좌표입니다. 얼굴·손을 독립 레이어로 분리하는 명령이 아닙니다.
+## 검증과 재생성
 
-## 지원 범위와 남은 제작 작업
+[실제 렌더 검증 결과](docs/layered-render-validation.json)는 7개 상태의 프레임 시작·반복 경계 **62개 표본을 모두 통과**했습니다. 얼굴 단독 RGBA가 동일하고, 합성 화면에서 손에 가리지 않은 픽셀이 얼굴과 일치하며, 레이어를 숨겼을 때 잔상이 남지 않는 것을 검사합니다. 손이 얼굴을 가리는 합성 픽셀은 얼굴 단독 화면과 달라지는 것이 정상입니다.
 
-현재는 **완성형 얼굴/얼굴+손 프레임 아틀라스**입니다. 다음을 완성했다고 주장하지 않습니다.
+```sh
+npm install
+npm test
+npm run test:pixels
+python3 -m pip install -r requirements.txt
+python3 -m unittest discover -s tests
+```
 
-- 9방향 × 24표정 × 12입 모양의 모든 조합을 렌더링한 아틀라스
-- 눈·입·앞손·뒷손·소품의 독립 투명 레이어 및 자유 합성
-- 모든 손동작의 양쪽 손·손바닥·손등 변형
-- 실제 음성과의 자동 립싱크 또는 발음 정확도 검증
-- 프레임 간 얼굴 픽셀 고정 및 완전한 실루엣 분리
+Node 픽셀 검증·미리보기 렌더에는 `@napi-rs/canvas` **0.1.100**을 사용합니다. 위 개발 의존성은 브라우저 미리보기 실행에는 필요하지 않습니다.
 
-일부 원본에는 불투명 배경이 남고, 일부 실루엣은 셀 경계에 닿습니다. 표정·방향·발음별 생성 프레임 사이에 얼굴 형태 차이가 있으므로 제작용 정합 보정은 별도 작업입니다. 기존 코드와 JSON 스키마를 그대로 교체하는 호환 패치가 아닙니다.
+```sh
+python3 scripts/build_layered_assets.py  # 보관한 원화에서 셀·좌표 기록 재추출
+npm run preview:render                 # GIF/MP4 미리보기 생성; FFmpeg 필요
+```
 
-`assets/reference/`에는 이전 작업의 고해상도 얼굴·방향·입 원본만 참고용으로 보존했습니다. 구버전 저해상도 자료는 다음 보관 브랜치에서 복구할 수 있습니다.
+얼굴·손 원화를 새로 생성하고 투명도와 손 방향을 수정한 제작 과정을 [이미지 생성 기록](docs/sprite-generation.json)에 남겼습니다. 빌더는 보관된 원화의 셀을 자르고 배치 정보를 작성하며 원화 픽셀을 다시 그리지 않습니다.
 
-[archive/lowres-before-highres-20261028](https://github.com/tykimos/tyri-pixel-avatar/tree/archive/lowres-before-highres-20261028)
+## 현재 지원 범위와 이전 자료
 
-## 이름·출처·라이선스
+새 레이어 구성은 **정면 중립 얼굴 1개와 손동작 6종**입니다. 얼굴의 방향·표정·입 모양을 독립 조합하거나 음성에 자동 립싱크하는 기능은 포함하지 않습니다. 모든 동작의 양손·손바닥·손등 변형도 제공하지 않습니다.
 
-**타이리 / Tyri** 이름을 유지해야 합니다. Tyri Pixel Avatar by Taeyoung Kim (tykimos).
-원본 이미지는 이미지 생성 도구로 제작하고, 프레임 좌표·재생·추출 코드를 새로 작성했습니다.
-기존 [Tyri Personal and Noncommercial Research License 1.1](LICENSE)을 그대로 유지합니다.
+이전 방향·표정·발음 및 얼굴+손 완성형 시트는 [원본 시트 미리보기](reference.html)와 [이전 자료 안내](SOURCE_ATLASES.md)에 보존했습니다. 이 참고용 시트들은 새 고정 얼굴 레이어에 자동으로 연결되지 않습니다.
+
+## 이름·출처·이용 조건
+
+캐릭터 이름 **타이리 / Tyri**를 유지해 주세요. **Tyri Pixel Avatar by Taeyoung Kim (tykimos)** · [원본 저장소](https://github.com/tykimos/tyri-pixel-avatar).
+
+기존 [Tyri Personal and Noncommercial Research License 1.1](LICENSE)을 그대로 적용합니다. 개인 비상업적 사용 및 비상업적 연구를 허용하며, 상업적 사용에는 별도 서면 허가가 필요합니다. 재배포 시 이름·출처·라이선스를 함께 유지해야 합니다.

@@ -1,9 +1,110 @@
-<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>타이리 / Tyri — High Resolution</title>
-<style>
-:root{color-scheme:dark;font-family:system-ui,sans-serif;background:#10151d;color:#e9edf5}body{max-width:1200px;margin:0 auto;padding:28px}h1{margin-bottom:5px}header p,small{color:#aeb8ca}button,select,a.button{font:inherit;background:#202b3d;border:1px solid #3c4d66;border-radius:9px;padding:10px;color:inherit;cursor:pointer}button.active{background:#734d27;border-color:#eebd77}nav{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0}main{display:grid;grid-template-columns:minmax(280px,1fr) 1fr;gap:24px}.stage{background:repeating-conic-gradient(#1c2532 0% 25%,#161d28 0% 50%) 50%/24px 24px;border-radius:16px;padding:15px;text-align:center}canvas{width:100%;max-width:512px;image-rendering:auto}#choices{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;align-content:start}#info{min-height:50px;color:#cbd4e2}a{color:#ffc889}.controls{display:flex;gap:8px;margin:16px 0;flex-wrap:wrap}footer{margin-top:28px;border-top:1px solid #344153;padding-top:18px;color:#9eaabe}@media(max-width:700px){main{grid-template-columns:1fr}body{padding:16px}}
-</style>
-<header><h1>타이리 / Tyri</h1><p>고해상도 아틀라스 · 표정과 손동작</p></header>
-<nav id="modes" aria-label="아틀라스 종류"></nav>
-<main><section><div class="stage"><canvas id="canvas" width="512" height="512" aria-label="타이리 프레임 미리보기"></canvas></div><div class="controls"><button id="play">일시정지</button><button id="reset">기본 표정</button><label><input id="loop" type="checkbox"> 선택한 동작 반복</label></div><div id="info" role="status"></div><a id="source" download>현재 고해상도 원본 PNG</a></section><section><div id="choices"></div><p id="note"></p></section></main>
-<footer>Tyri Pixel Avatar by Taeyoung Kim (tykimos). <a href="LICENSE">이용 조건</a> · <a href="README.md">구성 안내</a><p>완성형 얼굴 프레임을 재생합니다. 방향·표정·발음의 임의 조합 및 음성 자동 분석은 구현하지 않았습니다.</p></footer>
-<script src="data/catalog.js"></script><script src="player.js"></script><script src="app.js"></script></html>
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11151e">
+  <title>타이리 / Tyri — 얼굴과 손을 따로</title>
+  <style>
+    :root{color-scheme:dark;--bg:#11151e;--surface:#1a202c;--border:#343d4f;--ink:#f4f1ea;--muted:#aeb7c8;--accent:#ffd389;--accent-ink:#2c2110;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;line-height:1.55}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink)}button,a,input{touch-action:manipulation}button,a{ -webkit-tap-highlight-color:transparent}button{font:inherit}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #b7d6ff;outline-offset:4px}a{color:var(--accent);text-underline-offset:4px}button{min-height:44px;cursor:pointer}button:disabled{cursor:wait;opacity:.45}button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+    .page{width:min(1160px,100%);margin:0 auto;padding:34px 28px 24px}.eyebrow{margin:0 0 10px;color:var(--accent);font-size:12px;font-weight:750;letter-spacing:.14em}.heading{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;margin-bottom:26px}h1{font-size:clamp(28px,4vw,44px);font-weight:720;line-height:1.2;letter-spacing:-.055em;margin:0 0 13px}.intro{color:var(--muted);margin:0;max-width:660px;font-size:15px}.name-pill{white-space:nowrap;font-size:13px;padding:8px 12px;border:1px solid var(--border);border-radius:999px;margin:1px 0}
+    .workspace{border:1px solid var(--border);border-radius:22px;overflow:hidden;background:var(--surface)}.toolbar{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px 20px;border-bottom:1px solid var(--border);flex-wrap:wrap}.toolbar-group{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.control-label{font-size:12px;color:var(--muted)}.segments{display:flex;gap:3px;background:#10151e;border:1px solid var(--border);border-radius:11px;padding:3px}.segments button{border:1px solid transparent;border-radius:8px;background:transparent;color:var(--muted);padding:7px 14px;font-size:13px;min-height:36px;line-height:1.25}.comparison{display:grid;grid-template-columns:1fr 1fr;gap:18px;padding:20px 20px 12px}.preview{min-width:0;margin:0}.preview figcaption{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:14px;margin:0 0 9px}.preview figcaption span:last-child{font-size:11px;color:var(--muted)}.stage{position:relative;aspect-ratio:1;overflow:hidden;border-radius:13px;border:1px solid rgba(135,150,173,.22)}.stage[data-background="checker"]{background-color:#d2d5d9;background-image:repeating-conic-gradient(#e7e8ea 0% 25%,#cfd3d8 0% 50%);background-position:50%;background-size:24px 24px}.stage[data-background="white"]{background:#fff}.stage[data-background="dark"]{background:#080b12}.stage canvas{display:block;width:100%;height:100%;object-fit:contain}.layer-label{position:absolute;right:9px;bottom:9px;background:rgba(15,20,29,.82);color:#fff;font-size:10px;letter-spacing:.02em;padding:3px 7px;border-radius:5px;pointer-events:none}.comparison-note{margin:0;padding:2px 20px 16px;color:var(--muted);font-size:12px;text-align:center}.controls{padding:18px 20px 20px;border-top:1px solid var(--border)}.controls-title{display:flex;align-items:baseline;gap:10px;justify-content:space-between;margin-bottom:11px}.controls-title h2{font-size:14px;margin:0;font-weight:650}.controls-title span{font-size:11px;color:var(--muted)}.choices{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px}.choice{border:1px solid var(--border);border-radius:10px;padding:11px 4px;background:#202838;color:var(--ink);font-size:13px;white-space:nowrap}.playback{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:15px;flex-wrap:wrap}.playback-actions{display:flex;align-items:center;gap:8px}.action{border:1px solid #546076;border-radius:9px;background:#273246;color:var(--ink);padding:8px 16px;font-size:13px}.action.secondary{background:transparent;color:var(--muted)}.timing{font-variant-numeric:tabular-nums;color:var(--muted);font-size:12px}.guide-toggle{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--muted)}input[type="checkbox"]{accent-color:var(--accent);width:16px;height:16px}.progress-track{height:3px;overflow:hidden;border-radius:3px;background:#10151e;margin-top:16px}.progress-fill{height:100%;width:0;background:var(--accent);will-change:width}.status{margin:12px 0 0;min-height:1.6em;font-size:13px;color:var(--muted)}.status.error{color:#ffb6ad;white-space:pre-wrap}.status:empty{display:none}
+    .assets{margin-top:23px;display:grid;grid-template-columns:1fr 1fr;gap:18px}.asset-panel{padding:20px;border:1px solid var(--border);border-radius:16px;background:#161c27}.asset-panel h2{font-size:14px;margin:0 0 5px}.asset-panel p{font-size:12px;color:var(--muted);margin:0 0 13px}.download-list{display:flex;flex-wrap:wrap;gap:7px}.download{display:inline-flex;align-items:center;gap:7px;border:1px solid #4b473b;background:#27251f;border-radius:8px;padding:8px 11px;text-decoration:none;font-size:12px;min-height:38px}.download:before{content:'↓';font-size:16px;line-height:1}.download[aria-disabled="true"]{pointer-events:none;opacity:.4}.empty{color:var(--muted);font-size:12px;align-self:center}.geometry{margin:18px 0 0;padding:14px 0 0;border-top:1px solid var(--border);font-size:12px;color:var(--muted)}.geometry summary{cursor:pointer;width:fit-content}.geometry p{margin:8px 0 0;font-variant-numeric:tabular-nums}.geometry code{color:#d1d8e5;font-size:11px}.footer{margin-top:28px;border-top:1px solid var(--border);padding-top:17px;display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:12px;color:var(--muted);font-size:11px}.footer p{margin:0}.footer nav{display:flex;gap:16px}.footer a{color:var(--muted)}.footer .license{width:100%;font-size:10px;opacity:.85}.noscript{padding:16px;background:#603329;color:#fff;border-radius:10px;margin-bottom:20px}
+    @media(max-width:800px){.choices{grid-template-columns:repeat(4,minmax(0,1fr))}.heading{gap:14px}.name-pill{display:none}.page{padding:26px 18px 20px}.comparison{gap:12px;padding:16px 16px 10px}.toolbar,.controls{padding-left:16px;padding-right:16px}.toolbar{gap:12px}.comparison-note{padding-left:16px;padding-right:16px}}
+    @media(max-width:480px){.page{padding:22px 12px 18px}.heading{margin-bottom:20px}h1{font-size:30px}.intro{font-size:13px}.workspace{border-radius:16px}.toolbar{padding:12px;align-items:flex-start}.toolbar-group{gap:7px}.toolbar .control-label{display:none}.segments button{padding:7px 11px;min-height:38px}.comparison{gap:8px;padding:13px 10px 9px}.preview figcaption{font-size:12px;display:block;margin-bottom:7px}.preview figcaption span:last-child{display:block;font-size:10px;line-height:1.3;margin-top:2px}.stage{border-radius:9px}.layer-label{font-size:9px;right:5px;bottom:5px;padding:2px 4px}.comparison-note{font-size:11px;padding:2px 12px 13px}.controls{padding:14px 12px 16px}.choices{gap:6px}.choice{padding:10px 2px;font-size:12px}.playback{gap:10px}.timing{font-size:11px}.guide-toggle{font-size:11px}.assets{grid-template-columns:1fr;gap:10px;margin-top:16px}.asset-panel{padding:15px}.footer{margin-top:20px}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}.progress-fill{will-change:auto}}
+  </style>
+</head>
+<body>
+<div class="page">
+  <header class="heading">
+    <div>
+      <p class="eyebrow">TYRI PIXEL AVATAR</p>
+      <h1>같은 얼굴, 자유로운 손동작.</h1>
+      <p class="intro">타이리의 얼굴은 같은 크기와 위치에 고정됩니다.<br>손 스프라이트만 따로 움직여, 손이 나타나도 얼굴이 작아지지 않습니다.</p>
+    </div>
+    <p class="name-pill">타이리 (Tyri)</p>
+  </header>
+  <noscript><p class="noscript">미리보기를 보려면 JavaScript를 켜 주세요. 아래 원본 자료에서도 스프라이트를 확인할 수 있습니다.</p></noscript>
+  <main>
+    <section class="workspace" aria-label="얼굴과 손 레이어 미리보기">
+      <div class="toolbar">
+        <div class="toolbar-group">
+          <span class="control-label">오른쪽 미리보기</span>
+          <div id="layer-modes" class="segments" role="group" aria-label="표시할 레이어">
+            <button type="button" data-mode="composite" aria-pressed="true">합성</button>
+            <button type="button" data-mode="face" aria-pressed="false">얼굴만</button>
+            <button type="button" data-mode="hands" aria-pressed="false">손만</button>
+          </div>
+        </div>
+        <div class="toolbar-group">
+          <span class="control-label">배경</span>
+          <div id="backgrounds" class="segments" role="group" aria-label="미리보기 배경">
+            <button type="button" data-background="checker" aria-pressed="true">체크</button>
+            <button type="button" data-background="white" aria-pressed="false">흰색</button>
+            <button type="button" data-background="dark" aria-pressed="false">어두움</button>
+          </div>
+        </div>
+      </div>
+      <div class="comparison">
+        <figure class="preview">
+          <figcaption><span>손 없음</span><span>항상 같은 얼굴</span></figcaption>
+          <div class="stage" data-background="checker">
+            <canvas id="baseline-canvas" width="1024" height="1024" aria-label="손이 없는 고정 크기 타이리 얼굴"></canvas>
+            <span class="layer-label">얼굴 기준</span>
+          </div>
+        </figure>
+        <figure class="preview">
+          <figcaption><span id="selected-label">손 흔들기</span><span id="mode-label">같은 얼굴 + 독립 손</span></figcaption>
+          <div class="stage" data-background="checker">
+            <canvas id="preview-canvas" width="1024" height="1024" aria-label="선택한 손동작과 고정 크기 타이리 얼굴"></canvas>
+            <span id="active-layer-label" class="layer-label">합성</span>
+          </div>
+        </figure>
+      </div>
+      <p class="comparison-note">두 캔버스는 같은 크기입니다. 얼굴의 크기와 위치를 직접 비교해 보세요.</p>
+      <div class="controls">
+        <div class="controls-title"><h2>손동작 선택</h2><span>1024 × 1024 · 투명 PNG 레이어</span></div>
+        <div id="animation-choices" class="choices" role="group" aria-label="손동작"></div>
+        <div class="playback">
+          <div class="playback-actions">
+            <button id="play-toggle" class="action" type="button" disabled>일시정지</button>
+            <button id="restart" class="action secondary" type="button" disabled>손 없음으로</button>
+            <span id="timing" class="timing" aria-live="off"></span>
+          </div>
+          <label class="guide-toggle"><input id="show-guides" type="checkbox"> 얼굴 기준선</label>
+        </div>
+        <div class="progress-track" aria-hidden="true"><div id="progress" class="progress-fill"></div></div>
+        <p id="status" class="status" role="status">스프라이트를 불러오고 있습니다.</p>
+        <details class="geometry">
+          <summary>고정된 얼굴 좌표 확인</summary>
+          <p id="head-geometry"></p>
+          <p>기준선은 투명 여백을 제외한 얼굴 실루엣 영역입니다. 화면 크기는 CSS로만 조절하며, 손의 유무나 동작에 따라 얼굴을 다시 맞추지 않습니다.</p>
+        </details>
+      </div>
+    </section>
+    <section class="assets" aria-label="독립 스프라이트 다운로드">
+      <div class="asset-panel">
+        <h2>고정 얼굴 PNG</h2>
+        <p>모든 손동작에서 동일한 얼굴 파일을 사용합니다.</p>
+        <div class="download-list"><a id="face-download" class="download" aria-disabled="true">얼굴 PNG</a></div>
+      </div>
+      <div class="asset-panel">
+        <h2>선택한 손 PNG</h2>
+        <p id="hand-download-note">현재 프레임의 손을 얼굴과 분리해서 받을 수 있습니다.</p>
+        <div id="hand-downloads" class="download-list"></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>타이리 (Tyri) · Tyri Pixel Avatar by Taeyoung Kim (tykimos)</p>
+    <nav aria-label="자료와 이용 조건"><a href="reference.html">원본 시트 보기</a><a href="README.md">구성 안내</a><a href="LICENSE">이용 조건</a><a href="https://github.com/tykimos/tyri-pixel-avatar">GitHub</a></nav>
+    <p class="license">개인 비상업적 사용 및 비상업적 연구용. 상업적 이용은 별도 허가가 필요합니다.</p>
+  </footer>
+</div>
+<script src="data/layers.js"></script>
+<script src="layered-player.js"></script>
+<script src="layered-app.js"></script>
+</body>
+</html>
