@@ -21,5 +21,44 @@
       "hands-primary": "Use case: precise-object-edit. Edit the attached transparent hand sprite atlas, preserving the existing 1254×1254 pixel canvas, exact invisible 3×3 grid with 418px cells, all cell positions, hand sizes, peach palette, pixel-art shading and genuine alpha transparency. Make ONLY the following correction: all nine sprites must depict the SAME anatomical RIGHT hand, as in the first two columns. The THIRD COLUMN currently uses a mirrored/opposite hand. Redraw only those three third-column hands with correct matching right-hand anatomy. In the top-right waving hand, the thumb MUST be on SCREEN-RIGHT (same side as the top-middle hand), with the four long fingers on its left. It can lean slightly right but must NOT become a left hand. In the middle-right V sign, match the thumb and folded-finger arrangement of the middle-middle right hand; do not mirror. In the bottom-right shushing hand, match the thumb/folded-finger arrangement of the bottom-middle right hand. Keep the first and second columns visually unchanged. No faces, heads, hair, bodies, other objects or text. Outside every sprite the alpha must be zero; inside the skin and dark outlines it should be fully opaque. Remove stray barely visible alpha haze outside the outlines while keeping all finger tips. Do not simulate transparency with a checkerboard or solid background.",
       "hands-secondary": "Use case: precise-object-edit. Edit the attached transparent hand-and-notebook sprite atlas. Preserve the exact current 1254×1254 canvas and invisible 3×3 grid with 418px cells, exact group positions, pixel-art rendering, warm peach colors, hand/prop sizes and genuine transparent background. The ONLY content correction: REMOVE the three small orange/yellow decorative tapping/motion rays above the fingertip in the BOTTOM-MIDDLE cell. That cell must contain only the pointing/thinking hand, just like the other bottom-row cells, with a tiny natural pose change allowed but no symbol or effect. Preserve all six upper-cell heart-hand and notebook-hand groups unchanged. Keep every fingertip and outline complete, no faces/hair/heads/bodies/text/grid lines. Outside sprite outlines the alpha must be zero; solid skin/props/outlines should be fully opaque. Remove stray barely visible alpha haze outside outlines, without changing the shapes. No fake transparency checkerboard, no solid background."
     }
+  },
+  "face_detail_revision": {
+    "method": "Built-in image_gen; one detailed redraw, then the same selected face used in every state",
+    "reason": "The earlier face had coarse pixel clusters and the side-by-side GIF reduced the visible head to approximately 385 pixels wide.",
+    "previous_face_commit": "166b0c1a79ccf81c8cbef052ffc17f6fa962a4ae",
+    "prompt": "Use case: identity-preserve.\nAsset type: Tyri / 타이리 canonical face sprite, a single transparent PNG for a layered game-avatar renderer.\nInput 1 is the primary edit target and identity source: neutral.png. Input 2 is ONLY a rendering-detail reference: 01-wave-01.png. Do not copy Input 2's hand, pose, background, framing, or different face proportions.\n\nRe-create Input 1 as genuinely finer, denser pixel-sprite artwork. This is a detailed redraw, NOT an enlargement of its existing large square pixel blocks. Preserve Tyri's exact recognizable design: front-facing floating head, symmetrical round gold wire-frame glasses, large warm brown eyes, the same tiny closed neutral smile, peach-pink skin, golden-orange center-parted wavy hair with the same outer hair silhouette, and both small gold hoop earrings. Keep the facial proportions, eye spacing, head angle, hair parting, warm restrained palette, and gentle expression from Input 1. Do not age the character or change the identity.\n\nDesired rendering: high-density polished 2D game-sprite pixel art, approaching the finer detail density seen in Input 2. At equivalent displayed head width, use many more smaller pixel steps and much finer linework than Input 1. Refine the iris shading and tiny eye catchlights; make the gold glasses rims thin, coherent and finely stepped; resolve individual flowing hair strands, layered curls and narrow golden highlight bands. Deliberate small pixel clusters with clean, readable shapes, subtle shading and crisp tiny stepped contours. Preserve a pixel-art texture while removing the coarse 10-pixel-like chunky mosaic appearance of Input 1. No bilinear blur, no block enlargement, no vector outlines, no photorealism, no smooth plastic or exaggerated 3D rendering.\n\nComposition: request a large 2048×2048 square canvas. The complete head INCLUDING all hair and both earrings should occupy approximately 80–85% of canvas width, centered, with around 8–10% transparent safety margin. The silhouette must be entirely inside the canvas; do not crop hair or earrings. Only one head, one front view, no duplicates or sprite grid.\n\nBackground: real alpha transparency, absolutely no colored backdrop or fake checkerboard. Opaque character interior and clean transparent exterior. No hands, fingers, arms, shoulders, neck, body, chest, props, decorative sparks, lettering, labels, logo, frame or watermark. Preserve the original face's identity and color balance while genuinely redrawing the fine details.",
+    "references": [
+      "Previous assets/sprites/face/neutral.png at the preceding commit",
+      "Earlier hand-wave artwork used for fine rendering texture only"
+    ],
+    "requested_size": [
+      2048,
+      2048
+    ],
+    "actual_canvas_size": [
+      1254,
+      1254
+    ],
+    "actual_content_bbox_xywh": [
+      71,
+      117,
+      1121,
+      1004
+    ],
+    "file_sha256": "b657970e827b3fd76f8a12a4349e038be3ba522749f2b969805fe6c1f1b605e6",
+    "previous_content_bbox_xywh": [
+      249,
+      252,
+      749,
+      703
+    ],
+    "visual_review": {
+      "identity": "Front view, warm brown eyes, round gold glasses, golden-orange center-parted wavy hair, neutral closed smile, peach skin, gold hoop earrings retained; generated redraw is not pixel-identical.",
+      "detail": "Visibly finer stepped glasses rims, finer iris shading and catchlights, additional narrow hair highlight bands and smaller stepped hair contours compared with the original coarse sprite.",
+      "composition": "Single head only; no hand, arm, neck, body, text, background, or fake checkerboard.",
+      "limitations": "Actual raster size differs from requested 2048. Silhouette is larger than requested 80-85% width; actual margins and alpha geometry are listed. Some low-alpha pixels extend beyond the meaningful silhouette."
+    },
+    "meaningful_silhouette_touches_canvas_edge": false,
+    "note": "The source was redrawn with finer detail; this is not a claim of recovering unknown original pixels or producing a native 2048px output."
   }
 }

@@ -2,15 +2,26 @@
 
 **하나의 얼굴을 같은 크기·위치에 고정하고, 투명한 손 스프라이트를 별도로 움직입니다.** 손이 나타나거나 사라져도 얼굴 크기가 달라지지 않습니다.
 
-![손이 없어도, 다른 손동작을 해도 같은 크기를 유지하는 타이리](previews/layered-hero.gif)
+![원본 픽셀로 렌더한 타이리의 무손실 손동작 애니메이션](previews/layered-native.webp)
 
-[미리보기 파일](index.html) · [MP4 보기](previews/layered-hero.mp4) · [분리된 파츠 보기](previews/layered-parts.png) · [얼굴 PNG](assets/sprites/face/neutral.png) · [손 PNG 폴더](assets/sprites/hands) · [좌표·동작 JSON](data/layers.json)
+[원본 크기 정지 PNG](previews/layered-native.png) · [무손실 애니메이션 WebP](previews/layered-native.webp) · [호환 영상 MP4](previews/layered-native.mp4)
+
+[인터랙티브 미리보기](index.html) · [분리된 파츠 보기](previews/layered-parts.png) · [얼굴 PNG](assets/sprites/face/neutral.png) · [손 PNG 폴더](assets/sprites/hands) · [좌표·동작 JSON](data/layers.json)
+
+<details>
+<summary>축소 비교 GIF 보기 — 손 없음과 여러 손동작 나란히</summary>
+
+![같은 얼굴 크기를 나란히 비교하는 축소 미리보기](previews/layered-hero.gif)
+
+이 GIF는 256색으로 축소한 비교용입니다. 얼굴의 세부 묘사는 위의 원본 크기 PNG 또는 무손실 WebP에서 확인해 주세요.
+
+</details>
 
 ## 바로 사용하기
 
 1. [저장소 ZIP](https://github.com/tykimos/tyri-pixel-avatar/archive/refs/heads/main.zip)을 내려받아 전체 압축을 풉니다.
 2. `index.html`을 브라우저에서 엽니다. **미리보기에는 서버, 빌드, npm 설치가 필요하지 않습니다.**
-3. 왼쪽의 **손 없음**과 오른쪽의 **손동작**을 같은 크기 캔버스로 비교합니다. 처음에는 손 흔들기가 선택됩니다.
+3. **손 없음**과 **손동작**을 같은 크기 캔버스로 비교합니다. 처음에는 손 흔들기가 선택되며, 600px 이하의 모바일 화면에서는 위아래로 크게 표시합니다.
 4. 합성 / 얼굴만 / 손만, 체크 / 흰색 / 어두운 배경, 얼굴 기준선을 전환합니다. 화면 아래에서 현재 얼굴·손 PNG를 받을 수 있습니다.
 
 GitHub의 HTML 파일 페이지에서는 앱이 실행되지 않습니다. 다운로드한 폴더 안에서 열어 주세요. `data/layers.js`를 직접 읽으므로 오프라인에서도 작동합니다.
@@ -19,7 +30,7 @@ GitHub의 HTML 파일 페이지에서는 앱이 실행되지 않습니다. 다�
 
 | 파츠 / 동작 | PNG 수 | 기본 재생에 사용 | 구성 |
 | --- | ---: | ---: | --- |
-| 고정 얼굴 | 1 | 1 | 정면 중립 얼굴, 1254 × 1254 |
+| 고정 얼굴 | 1 | 1 | 정면 중립 얼굴 · [실제 원본 크기와 얼굴 영역](docs/preview-quality.json) |
 | 손 흔들기 `wave` | 3 | 3 | 오른손 |
 | 브이 `peace` | 3 | 2 | 오른손 2개 + 왼손 대체 포즈 1개 |
 | 쉿 `shush` | 3 | 3 | 오른손 |
@@ -32,11 +43,21 @@ GitHub의 HTML 파일 페이지에서는 앱이 실행되지 않습니다. 다�
 
 **하트의 두 손과 글쓰기의 손·소품은 각 PNG 안에서 하나의 그룹입니다.** 얼굴과는 독립적으로 배치되지만, 그룹 안의 손가락·각 손·연필·수첩을 개별 조작하는 구조는 아닙니다.
 
+## 원화 디테일과 미리보기 품질
+
+**얼굴 원화의 세밀한 묘사와 출력 과정의 손실 제거를 각각 처리했습니다.** 눈·안경·머리카락의 타이리 정체성을 유지하면서 미세한 묘사를 새로 제작한 얼굴 원화를 사용합니다. 기존의 큰 픽셀 블록을 확대하는 것만으로 디테일을 보완하지 않습니다.
+
+상단 미리보기는 한 캐릭터의 얼굴 원화를 **원본 픽셀 1:1**로 직접 렌더한 뒤 PNG와 무손실 WebP로 저장합니다. 출력 크기는 실제 얼굴 영역을 기준으로 계산합니다. 웹 페이지에서 축소되어 보이면 파일을 직접 열어 원본 크기로 확인할 수 있습니다.
+
+현재 얼굴 PNG 전체 크기는 **1254 × 1254px**, 머리카락과 귀걸이를 포함한 실제 실루엣은 **1121 × 1004px**입니다. 단일 캐릭터 미리보기는 **1690 × 1690px** 캔버스에 이 얼굴을 원본 크기로 그립니다.
+
+[미리보기 품질 기록](docs/preview-quality.json)에 **투명 여백을 포함한 PNG 전체 치수와 실제 얼굴 실루엣 영역**을 구분해서 기록합니다. 파일 전체 치수만으로 얼굴의 세부 묘사 정도를 설명하지 않습니다.
+
 ## 얼굴 크기를 고정하는 방식
 
-- 캔버스는 항상 **1024 × 1024**입니다. 브라우저 화면 크기는 CSS로만 조절합니다.
+- 웹 앱의 논리 캔버스는 항상 **1024 × 1024**입니다. 브라우저 화면 크기는 CSS로만 조절합니다.
 - 얼굴 파일과 변환은 `head.sprite`, `head.transform` 한 곳에 있으며 `head.locked = true`입니다. 손의 범위에 맞춰 얼굴을 다시 확대·축소하는 자동 맞춤은 없습니다.
-- 얼굴의 의미 있는 알파 영역(`alpha ≥ 128`)은 `content_bbox: [249, 252, 749, 703]`입니다. 이 영역의 표시 폭은 **680px**로 고정됩니다. 원본 PNG 전체의 투명 여백은 기준선 계산에서 제외합니다.
+- 얼굴의 의미 있는 알파 영역(`alpha ≥ 128`)은 `content_bbox`로 기록합니다. 웹 앱에서 이 영역의 표시 폭은 **논리 좌표 680px**로 고정됩니다. 투명 여백은 기준선 계산에서 제외하며, 실제 원본 치수는 [품질 기록](docs/preview-quality.json)을 확인하세요.
 - 애니메이션에는 손 인스턴스만 허용합니다. 얼굴 참조나 얼굴 변환 덮어쓰기는 검증 단계에서 거부합니다.
 - `side: left/right`는 **캐릭터의 해부학적 좌우**입니다. 화면의 왼쪽·오른쪽 또는 앞뒤 가림 순서를 뜻하지 않습니다.
 - 가림 순서는 `z`로 정합니다. 뒤쪽 손은 `z < 100`, 얼굴은 `z = 100`, 앞쪽 손은 `z > 100`입니다. 현재 제공하는 손동작은 얼굴 앞에 합성합니다.
@@ -78,6 +99,8 @@ GitHub의 HTML 파일 페이지에서는 앱이 실행되지 않습니다. 다�
 
 [실제 렌더 검증 결과](docs/layered-render-validation.json)는 7개 상태의 프레임 시작·반복 경계 **62개 표본을 모두 통과**했습니다. 얼굴 단독 RGBA가 동일하고, 합성 화면에서 손에 가리지 않은 픽셀이 얼굴과 일치하며, 레이어를 숨겼을 때 잔상이 남지 않는 것을 검사합니다. 손이 얼굴을 가리는 합성 픽셀은 얼굴 단독 화면과 달라지는 것이 정상입니다.
 
+원본 크기 미리보기의 PNG·WebP 프레임을 비교하는 별도 검증은 [미리보기 검증 결과](docs/preview-validation.json)에 기록합니다.
+
 ```sh
 npm install
 npm test
@@ -90,8 +113,11 @@ Node 픽셀 검증·미리보기 렌더에는 `@napi-rs/canvas` **0.1.100**을 �
 
 ```sh
 python3 scripts/build_layered_assets.py  # 보관한 원화에서 셀·좌표 기록 재추출
-npm run preview:render                 # GIF/MP4 미리보기 생성; FFmpeg 필요
+TYRI_PREVIEW_KEEP_FRAMES=1 npm run preview:render  # 미리보기와 검증용 프레임 생성; FFmpeg 필요
+python3 scripts/verify_preview_quality.py --frames-dir /tmp/tyri-layered-previews-출력된경로 --output docs/preview-validation.json
 ```
+
+검증 명령의 `--frames-dir`에는 렌더 명령이 출력한 `validation_frames` 경로를 넣습니다.
 
 얼굴·손 원화를 새로 생성하고 투명도와 손 방향을 수정한 제작 과정을 [이미지 생성 기록](docs/sprite-generation.json)에 남겼습니다. 빌더는 보관된 원화의 셀을 자르고 배치 정보를 작성하며 원화 픽셀을 다시 그리지 않습니다.
 

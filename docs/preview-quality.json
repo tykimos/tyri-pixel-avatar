@@ -1,0 +1,50 @@
+{
+  "schema": "tyri.preview-quality.v1",
+  "source": {
+    "path": "assets/sprites/face/neutral.png",
+    "file_sha256": "b657970e827b3fd76f8a12a4349e038be3ba522749f2b969805fe6c1f1b605e6",
+    "canvas_size": [
+      1254,
+      1254
+    ],
+    "content_bbox": [
+      71,
+      117,
+      1121,
+      1004
+    ]
+  },
+  "native": {
+    "canvas_size": [
+      1690,
+      1690
+    ],
+    "face_transform": [
+      0.9999999999999999,
+      0,
+      0,
+      0.9999999999999999,
+      213,
+      107
+    ],
+    "face_pixels_per_source_pixel": 1,
+    "face_resampling": "none; integer translation at original pixel size",
+    "animation": "previews/layered-native.webp",
+    "encoding": "lossless WebP",
+    "poster": "previews/layered-native.png",
+    "video": "previews/layered-native.mp4",
+    "video_encoding": "H.264 CRF 16; lossy compatibility copy"
+  },
+  "comparison": {
+    "canvas_size": [
+      1280,
+      840
+    ],
+    "face_display_width": 385.15625,
+    "sampling": "one direct high-quality downsample from original sprites",
+    "gif": "256-color comparison copy"
+  },
+  "duration_ms": 20800,
+  "source_frame_count": 56,
+  "face_transform_identical_in_all_states": true
+}

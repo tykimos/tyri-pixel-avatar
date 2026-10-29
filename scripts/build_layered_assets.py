@@ -17,7 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CONFIG = {
     'wave': {'label':'손 흔들기','side':'right','surface':'palm','target_height':225,'anchor':[225,710]},
     'peace': {'label':'브이','side':'right','surface':'palm','target_height':220,'anchor':[280,720]},
-    'shush': {'label':'쉿','side':'right','surface':'mixed','target_height':235,'tip_target':[512,594]},
+    'shush': {'label':'쉿','side':'right','surface':'mixed','target_height':235,'tip_target':[505,565]},
     'heart': {'label':'하트','side':'both','surface':'mixed','target_width':300,'anchor':[512,845]},
     'write': {'label':'글쓰기','side':'both','surface':'mixed','target_width':350,'anchor':[512,930]},
     'think': {'label':'생각하기','side':'right','surface':'mixed','target_height':270,'tip_target':[308,438]},
@@ -80,7 +80,10 @@ def main():
                 sprite_side = 'left' if alternate_left else config['side']
                 number = 1 if alternate_left else col+1
                 out=ROOT/'assets/sprites/hands'/sprite_side/f'{key}-{number:02d}.png'
-                out.parent.mkdir(parents=True,exist_ok=True);im.save(out,compress_level=9)
+                out.parent.mkdir(parents=True,exist_ok=True)
+                temporary=out.with_suffix('.tmp.png')
+                im.save(temporary,format='PNG',compress_level=9)
+                temporary.replace(out)
                 sprite_id=f'hand.{sprite_side}.{key}.{number:02d}'
                 role='hand-prop' if key=='write' else 'hand'
                 meta=image_metadata(out,im,role);bbox=bounds(im)
